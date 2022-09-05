@@ -1,7 +1,7 @@
 # Subasta Total
 <p>Subasta o también conocido como Subasta total es una aplicación web donde todas tus pujas solamente se ven influidas por fondos viruales (sin dinero físico o criptomonedas). Es totalmente virtual, no se dejen engañar y pujen ahora que la cuenta atrás acaba pronto</p>
 
-## Nodelado
+## Modelado
 <img src="img/modelado.PNG">
 
 ## Desarrollo en Entorno cliente
