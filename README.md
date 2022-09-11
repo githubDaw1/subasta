@@ -28,17 +28,19 @@ Paleta de colores: complementaria
 
 ![Paleta de colores - Complementarias](img/paletaColores.PNG)
 
-Fuente del prototipo: ??
+Fuente del prototipo: Open Sans
 
-¿Por qué?
+Open Sans es una fuente sans-serif y este tipo de fuente mejora la legibilidad en todos los tipos de 
+dispositivos y facilita la lectura a las personas con dificultades de vision.
 
-Fuente acompañante: ??
 
-¿Por qué?
+Fuente acompañante: Noto Sans
+
+Esta fuente también termina en Sans y es sans-serif. Su unión no sería un problema.
 
 Contrast finder
 
-imagen
+![Mejor combinación de colores](img/contraste.PNG)
 
 Equilibrio visual y tensión compositiva.
 
