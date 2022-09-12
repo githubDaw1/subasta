@@ -44,9 +44,13 @@ Contrast finder
 
 Equilibrio visual y tensión compositiva.
 
-¿Motivos?
+- Equilibrio informal: deja la idea simetría, dependiendo del objeto visualizado, este puede tener un gran valor y viceversa. Se basa en asimetría intencionada. Unas tienen menor peso que las grandes.
+- Forma regular = aumento de peso (valor)
+- Colores luminosos e intensos tienen mayor valor
+- El equilibrio depende de su posición
+- Técnica sugestiva: trata de llamar la atención del usuario, utilizando puntos de apoyo
 
-Enlance de prototipo 1920x1080 (portátil)
+Prototipo 1920x1080 (portátil): [Prototipo](https://www.figma.com/proto/MGazLbzsWFdFpbrXs1uyWc/Prototipo-subasta?node-id=1%3A5&starting-point-node-id=1%3A5)
 
 Enlance de prototipo 360x640 (móvil)
 
