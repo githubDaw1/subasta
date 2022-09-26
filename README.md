@@ -5,7 +5,7 @@ Subasta o también conocido como Subasta total es una aplicación web donde toda
 
 
 ## Modelado
-![Modelo de base de datos](img/modelado.PNG)
+![Modelo de base de datos](../img/modelado.webp)
 
 ## Desarrollo en Entorno cliente
 
@@ -18,15 +18,13 @@ Buscando un proveedor de hosting
 
 
 ## Diseño de interfaces
-Figma: [Prototipo](https://www.figma.com/proto/MGazLbzsWFdFpbrXs1uyWc/Prototipo-subasta?node-id=1%3A5&starting-point-node-id=1%3A5)
-
 | Color dominante: naranja |
 |---------|
 | La impulsividad de los compradores para conseguir los productos que hay en oferta. Las reacciones de los pujadores y color dominante (naranja) son los facotres que forman esta gran combinación. Lo más llamativo de cada subasta celebrada será el ganador/a, la cantidad de pujas, y el último valor para el producto. |
 
 Paleta de colores: complementaria
 
-![Paleta de colores - Complementarias](img/paletaColores.PNG)
+![Paleta de colores - Complementarias](../img/paletaColores.webp)
 
 Fuente del prototipo: Open Sans
 
@@ -40,7 +38,7 @@ Esta fuente también termina en Sans y es sans-serif. Su unión no sería un pro
 
 Contrast finder
 
-![Mejor combinación de colores](img/contraste.PNG)
+![Mejor combinación de colores](../img/contraste.webp)
 
 Equilibrio visual y tensión compositiva.
 
@@ -50,9 +48,9 @@ Equilibrio visual y tensión compositiva.
 - El equilibrio depende de su posición
 - Técnica sugestiva: trata de llamar la atención del usuario, utilizando puntos de apoyo
 
-Prototipo 1920x1080 (portátil): [Prototipo](https://www.figma.com/proto/MGazLbzsWFdFpbrXs1uyWc/Prototipo-subasta?node-id=1%3A5&starting-point-node-id=1%3A5)
+Prototipo 1920x1080 (portátil): [Prototipo](https://www.figma.com/proto/MGazLbzsWFdFpbrXs1uyWc/Prototipo-subasta-(DESKTOP)?node-id=1%3A5&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A5)
 
-Enlance de prototipo 360x640 (móvil)
+Enlance de prototipo 360x640 (móvil): [Prototipo](https://www.figma.com/proto/WEoUJsjENQh8x2WGeOYmgg/Prototipo-subasta-(PHONE)?node-id=4%3A3&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A5)
 
 ## Horas de libre configuración
 Bucar la forma más eficiente de traducir las páginas del proyecto (Mínimo: inglés o español)

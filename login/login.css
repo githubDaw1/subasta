@@ -1,0 +1,16 @@
+body {
+  margin: 0; /* top, right, bottom and left */
+  padding: 0; /* top, right, bottom and left */
+  background-color: #17a2b8;
+  height: 100vh;
+}
+
+#login-box {
+  margin-top: 150px;
+  width: 400px;
+  height: 275px;
+  border: 1px solid #9C9C9C; /* width | style | color*/
+  background-color: #EAEAEA;
+}
+
+form { padding: 20px; } /* top, right, bottom and left */
