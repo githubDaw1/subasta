@@ -5,7 +5,7 @@ Subasta o también conocido como Subasta total es una aplicación web donde toda
 
 
 ## Modelado
-![Modelo de base de datos](../img/modelado.webp)
+![Modelo de base de datos](img/modelado.webp)
 
 ## Desarrollo en Entorno cliente
 
@@ -24,7 +24,7 @@ Buscando un proveedor de hosting
 
 Paleta de colores: complementaria
 
-![Paleta de colores - Complementarias](../img/paletaColores.webp)
+![Paleta de colores - Complementarias](img/paletaColores.webp)
 
 Fuente del prototipo: Open Sans
 
@@ -38,7 +38,7 @@ Esta fuente también termina en Sans y es sans-serif. Su unión no sería un pro
 
 Contrast finder
 
-![Mejor combinación de colores](../img/contraste.webp)
+![Mejor combinación de colores](img/contraste.webp)
 
 Equilibrio visual y tensión compositiva.
 
