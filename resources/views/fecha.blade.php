@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Validar fechas</title>
+  <link href="{{ asset('img/logo.png')}}" type="image/x-icon" rel="icon">
   <link href="{{ asset('css/fecha.css') }}" rel="stylesheet">
 </head>
 
@@ -33,7 +34,6 @@
       </div>
 
     </div>
-
 
     <div class="fin">
 

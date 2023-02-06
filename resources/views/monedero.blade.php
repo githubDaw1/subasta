@@ -18,27 +18,22 @@
     $subQuery = "SELECT COUNT(*) from subasta WHERE precIni > 0"; // Consulta de subastas
     $subResult = mysqli_query($conexion, $subQuery); // Resultado de subastas
 
-    while ($row = mysqli_fetch_array($subResult)) {
-      $totalSubastas = $row;
-    }
+    while ($row = mysqli_fetch_array($subResult)) { $totalSubastas = $row; }
 
     echo "Subastas existentes: ". $totalSubastas[0] ."<br/><br/>";
 
     $usuQuery = "SELECT codUsu, nomUsu, apeUsu from usuario WHERE permiso < 1";
     $usuResult = mysqli_query($conexion, $usuQuery);
 
-    while ($row = mysqli_fetch_array($usuResult)) {
-      $compradores[] = $row;
-    }
+    while ($row = mysqli_fetch_array($usuResult)) { $compradores[] = $row; }
 
     $reservas = 50000;
 
-    $puQuery = "SELECT MAX(valor) AS 'maxValue', codUsu, codSubasta from puja GROUP BY codSubasta ORDER BY codSubasta DESC"; // Consulta de pujas
+    // Consulta de pujas
+    $puQuery = "SELECT MAX(valor) AS 'maxValue', codUsu, codSubasta from puja GROUP BY codSubasta ORDER BY codSubasta DESC";
     $puResult = mysqli_query($conexion, $puQuery); // Resultado de pujas
 
-    while ($row = mysqli_fetch_array($puResult)) {
-      $pujas[] = $row;
-    }
+    while ($row = mysqli_fetch_array($puResult)) { $pujas[] = $row; }
 
     $p = (count($pujas) - 1);
 
@@ -89,20 +84,21 @@
       if (($reservas - $gastos[$g]) > 0) {
         echo "<br/>Le queda a ". $compradores[$g]['nomUsu'] ." ". $compradores[$g]['apeUsu'] ." -> ". ($reservas - $gastos[$g]);
       } else {
-        echo "<br/>Se ha reiniciado tu monedero. Ahora le queda a ". $compradores[$g]['nomUsu'] ." ". $compradores[$g]['apeUsu'] ." -> $reservas";
+        echo "<br/>Se ha reiniciado tu monedero.<br/>";
+        echo "Ahora le queda a ". $compradores[$g]['nomUsu'] ." ". $compradores[$g]['apeUsu'] ." -> $reservas";
       }
     }
 
   ?>
 
   <div class="dragDrop">
-    <img src="../img/billetes.jfif" alt="Billetes">
-    <img src="../img/carteraVacia.jfif" alt="Cartera Vacía">
+    <img src="{{ asset('../img/billetes.jfif') }}" alt="Billetes">
+    <img src="{{ asset('../img/carteraVacia.jfif') }}" alt="Cartera Vacía">
     <div class="spinner-border text-secondary" id="load" role="status" aria-hidden="true"></div>
   </div>
 
   <div class="secundario">
-    <img src="img/carteraVacia.jfif" alt="Cartera Vacía">
+    <img src="{{ asset('img/carteraVacia.jfif') }}" alt="Cartera Vacía">
   </div>
 
 

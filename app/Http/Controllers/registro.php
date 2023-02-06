@@ -1,6 +1,6 @@
 <?php
-  require_once("Models/Modelo.php");
-  $usuarios = new Modelo();
+  require_once("Models/Usuario.php");
+  $usuarios = new Usuario();
   $users = $usuarios->getUsuarios();
   require_once("Views/registro.php");
 ?>

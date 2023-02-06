@@ -17,12 +17,12 @@
 
   <?php
 
-    $pujaInicial = $_POST['inicial'];
-    $pujaActual = $_POST['actual'];
-    $inicio = $_POST['fecha1'];
-    $fin = $_POST['fecha2'];
+    $pujaInicial = $_GET['inicial'];
+    $pujaActual = $_GET['actual'];
+    $inicio = $_GET['fecha1'];
+    $fin = $_GET['fecha2'];
 
-    if (isset($_POST['submit'])) {
+    if (isset($_GET['submit'])) {
 
       if (!empty($pujaInicial) && !empty($pujaActual)) {
         echo "<br/>Puja inicial: ". $pujaInicial;
@@ -34,7 +34,9 @@
 
   ?>
 
-  <form action="" method="POST" enctype="multipart/form-data">
+  <form action="" method="GET" enctype="multipart/form-data">
+
+    @csrf
 
     <div class="row">
 

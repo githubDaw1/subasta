@@ -31,11 +31,12 @@ nav {
 }
 
 nav a {
-  font-size: 36px;
+  font-size: 30px;
   float: left;
   color: rgb(255, 255, 255);
   padding: 0;
-  margin: 25px 50px;
+  margin: 25px 40px;
+  text-decoration: none;
 }
 
 /*** Contenido princiapl ***/
@@ -137,7 +138,7 @@ section:nth-child(3) {
   height: auto;
 }
 
-section:nth-child(3) div {
+section:nth-child(3) .productos {
   box-sizing: border-box;
   /*border-bottom: 1px solid #ccc;*/
   margin: 20px 0 10px 10%;
@@ -147,9 +148,17 @@ section:nth-child(3) div {
   margin-bottom: 50px;
 }
 
-section:nth-child(3) div ul {
-  border: 2px solid rgb(0, 0, 0);
+section:nth-child(3) .subasta {
+  box-sizing: border-box;
+  /*border-bottom: 1px solid #ccc;*/
+  margin: 20px 0 10px 35%;
+  width: 30%;
+  text-align: center;
+  float: left;
+  margin-bottom: 50px;
 }
+
+section:nth-child(3) div ul { border: 2px solid rgb(0, 0, 0); }
 
 section:nth-child(3) button {
   /*margin: 20px 0 20px 10%;
@@ -158,7 +167,6 @@ section:nth-child(3) button {
   margin-bottom: 75px;*/
   position: relative;
   float: left;
-  
 }
 
 section:nth-child(3) div ul li {
@@ -224,14 +232,196 @@ footer {
   margin-top: 10px;
 }
 
-footer h2 { border-color: rgb(255, 255, 255); } /* Color: white */
-
 footer p { margin-top: 1.5em; }
 
 footer h2, footer p {
   box-sizing: border-box;
   padding: 0.5em;
-  font-size: 0.75em;
   /*margin: 0.3em auto;*/
   height: 50px;
+}
+
+.fin-float { clear: both; }
+
+button a, button a:hover {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+/* Small mobile */
+@media only screen and (max-width: 320px) {
+
+  section:first-child div { height: 100px; }
+
+  main form {
+    width: 70%;
+    height: 350px;
+    padding: 25px 40px;
+    margin: 30px 15%;
+  }
+
+  nav input[type=text] {
+    padding: 6px;
+    margin: 25px 0 0 25px;
+    font-size: 17px;
+    border: none;
+    float: left;
+  }
+  
+  nav button {
+    padding: 6px 10px;
+    margin: 25px 50px 0px 0px;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    float: left;
+  }
+}
+
+/* Medium mobile */
+@media only screen and (min-width: 320px) and (max-width: 375px) {
+
+  section:first-child div { height: 100px; }
+
+  main form {
+    width: 70%;
+    height: 350px;
+    padding: 25px;
+    margin: 30px 15%;
+  }
+
+  nav input[type=text] {
+    padding: 6px;
+    margin: 25px 0 0 25px;
+    font-size: 17px;
+    border: none;
+    float: left;
+  }
+  
+  nav button {
+    padding: 6px 10px;
+    margin: 25px 50px 0px 0px;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    float: left;
+  }
+}
+
+/* Big mobile */
+@media only screen and (min-width: 375px) and (max-width: 425px) {
+
+  section:first-child div { height: 80px; }
+
+  main form {
+    width: 60%;
+    height: 350px;
+    padding: 25px;
+    margin: 30px 25%;
+  }
+
+  nav input[type=text] {
+    padding: 6px;
+    margin: 35px 0 0 50px;
+    font-size: 17px;
+    border: none;
+    float: left;
+  }
+  
+  nav button {
+    padding: 6px 10px;
+    margin: 35px 50px 0px 0px;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    float: left;
+  }
+}
+
+/* Tablets */
+@media only screen and (min-width: 425px) and (max-width: 768px) {
+
+  /*section:first-child div { height: 80px; }*/
+
+  main form {
+    width: 50%;
+    height: 350px;
+    padding: 25px;
+    margin: 30px 25%;
+  }
+
+  nav input[type=text] {
+    padding: 6px;
+    margin: 35px 0 0 50px;
+    font-size: 17px;
+    border: none;
+    float: left;
+  }
+  
+  nav button {
+    padding: 6px 10px;
+    margin: 35px 50px 0px 0px;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    float: left;
+  }
+}
+
+/* Laptops */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+  /*section:first-child div { height: 80px; }*/
+
+  main form {
+    width: 40%;
+    height: 350px;
+    margin: 30px 30%;
+  }
+
+  nav input[type=text] {
+    padding: 6px;
+    margin: 35px 0 0 250px;
+    font-size: 17px;
+    border: none;
+    float: left;
+  }
+  
+  nav button {
+    padding: 6px 10px;
+    margin: 35px 50px 0px 0px;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    float: left;
+  }
+}
+
+/** Media query for small devices **/
+@media screen and (max-width: 600px) {
+
+  .topnav a:not(:first-child, :last-child) { display: none; }
+
+  .topnav .icon { float: right; }
+
+  .topnav.responsive { position: relative; }
+  
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    text-align: left;
+  }
+
+  .topnav.icon, .topnav.responsive a { display: block; }
+
+  table {
+    overflow-x: scroll;
+    text-align: left;
+    font-size: 14px;
+  }
 }

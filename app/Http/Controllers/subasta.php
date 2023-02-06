@@ -1,10 +1,11 @@
 <?php
-  require_once("Models/Modelo.php");
+  require_once("Models/Producto.php");
+  require_once("Models/Subasta.php");
   
-  $productos = new Modelo();
+  $productos = new Producto();
   $products = $productos->getProductos();
 
-  $subastas = new Modelo();
+  $subastas = new Subasta();
   $sub = $subastas->getSubastas();
 
   require_once("Views/subasta.php");
