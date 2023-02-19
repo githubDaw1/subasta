@@ -19,7 +19,7 @@ Subasta o también conocido como Subasta total es una aplicación web donde toda
 ![Modelo de base de datos](img/modelado.webp)
 
 ## Ruta de páginas
-![Modelo de base de datos](img/figma.png)
+![Modelo de base de datos](img/figma.PNG)
 
 ## Despliegue de aplciaciones web
 Buscando un proveedor de hosting
