@@ -52,31 +52,31 @@
     // Añadir un usuario
     public function addUsuarios($id, $nombre, $ape, $correo, $passw, $inicio) {
 
-      $insertUsers = mysqli_query($this->con, "INSERT INTO usuario(codUsu, nomUsu, apeUsu, user, password, fechaUnion, permiso) VALUES ('$id', '$nombre', '$ape', '$correo', '$passw', '$inicio', '0')");
+      mysqli_query($this->con, "INSERT INTO usuario(codUsu, nomUsu, apeUsu, user, password, fechaUnion, permiso) VALUES ('$id', '$nombre', '$ape', '$correo', '$passw', '$inicio', '0')");
 
-      while ($row = mysqli_fetch_array($insertUsers)) { $usuarios[] = $row; }
+      /*while ($row = mysqli_fetch_array($insertUsers)) { $usuarios[] = $row; }
 
-      return $usuarios;
+      return $usuarios;*/
     }
 
     // Eliminar un usuario
     public function deleteUsuarios($id) {
 
-      $deleteUsers = mysqli_query($this->con, "DELETE FROM usuario WHERE codUsu='$id'");
+      mysqli_query($this->con, "DELETE FROM usuario WHERE codUsu='$id'");
 
-      while ($row = mysqli_fetch_array($deleteUsers)) { $usuarios[] = $row; }
+      /*while ($row = mysqli_fetch_array($deleteUsers)) { $usuarios[] = $row; }
 
-      return $usuarios;
+      return $usuarios;*/
     }
 
     // Actualizar un usuario
     public function updateUsuarios($codigo, $nombre, $ape, $correo, $passw) {
 
-      $updateUsers = mysqli_query($this->con, "UPDATE usuario SET nomUsu='$nombre', apeUsu='$ape', user='$correo', password='$passw' WHERE codUsu='$codigo'");
+      mysqli_query($this->con, "UPDATE usuario SET nomUsu='$nombre', apeUsu='$ape', user='$correo', password='$passw' WHERE codUsu='$codigo'");
 
-      while ($row = mysqli_fetch_array($updateUsers)) { $usuarios[] = $row; }
+      /*while ($row = mysqli_fetch_array($updateUsers)) { $usuarios[] = $row; }
 
-      return $usuarios;
+      return $usuarios;*/
     }
   }
 

@@ -6,7 +6,7 @@
 
     <form method="GET">
 
-      <input type="number" name="codigo" value="<?php echo intval(count($sub)) + 1; ?>" disabled>
+      <input type="number" name="codigo" value="<?php echo intval(count($sub)) + 1; ?>">
       <input type="date" name="fechaIni">
       <input type="date" name="fechaFin">
       <input type="number" name="participantes" min="1">
@@ -78,7 +78,7 @@
         // echo "You pressed Button 1<br>";
 
         if (!empty($_GET['codigo']) && !empty($_GET['fechaIni']) && !empty($_GET['fechaFin']) && !empty($_GET['participantes'])) {
-          $sub = $subastas->addSubastas($codSub, $fechaIni, $fechaFin, $invitados);
+          $subastas->addSubastas($codSub, $fechaIni, $fechaFin, $invitados);
         }
 
       break;
@@ -102,7 +102,7 @@
               echo "<br><br>Id: ". $_GET['codigo']. "<br>Nombre: ". $_GET['nomUsuario']. "<br>Apellidos: ". $_GET['apeUsuario'];
               echo "<br>Correo: ". $_GET['usuario']. "<br>Contraseña: ". $sub[$s]['password']. "<br>Fecha: ". $_GET['fecha'];*/
 
-              $sub = $subastas->updateSubastas($_GET['codigo'], $_GET['fechaIni'], $_GET['fechaFin'], $_GET['participantes']);
+              $subastas->updateSubastas($_GET['codigo'], $_GET['fechaIni'], $_GET['fechaFin'], $_GET['participantes']);
             }
           }
         }
@@ -120,7 +120,7 @@
           for ($s = 0; $s < count($sub); $s++) {
 
             if (intval($sub[$s]['codSubasta']) == intval($_GET['codigo'])) {
-              $sub = $subastas->deleteSubastas($_GET['codigo']);
+              $subastas->deleteSubastas($_GET['codigo']);
             }
           }
         }

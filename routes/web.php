@@ -49,4 +49,8 @@
     return view('tablas');
   });
 
+  /*Route::get('/producto', function() {
+    return view('producto');
+  });*/
+
 ?>

@@ -6,7 +6,7 @@
 
     <form method="GET">
 
-      <input type="number" name="codigo" value="<?php echo intval(count($pu)) + 1; ?>" disabled>
+      <input type="number" name="codigo" value="<?php echo intval(count($pu)) + 1; ?>">
       <input type="number" name="valor">
       <input type="date" name="fecha">
       <input type="number" name="codUsu">
@@ -83,7 +83,7 @@
 
         if (!empty($_GET['codigo']) && !empty($_GET['valor']) && !empty($_GET['fecha']) &&
             !empty($_GET['codUsu']) && !empty($_GET['codSub'])) {
-          $pu = $pujas->addPujas($codPuja, $valor, $fecha, $codUsu, $codSub);
+          $pujas->addPujas($codPuja, $valor, $fecha, $codUsu, $codSub);
         }
 
       break;
@@ -108,7 +108,7 @@
               // echo "<br><br>Id: ". $_GET['codigo']. "<br>Nombre: ". $_GET['nomUsuario']. "<br>Apellidos: ". $_GET['apeUsuario'];
               // echo "<br>Correo: ". $_GET['usuario']. "<br>Contraseña: ". $pu[$p]['password']. "<br>Fecha: ". $_GET['fecha'];*/
 
-              $pu = $pujas->updatePujas($_GET['codigo'], $_GET['valor'], $_GET['fecha'], $_GET['codUsu'], $_GET['codSub']);
+              $pujas->updatePujas($_GET['codigo'], $_GET['valor'], $_GET['fecha'], $_GET['codUsu'], $_GET['codSub']);
             }
           }
         }
@@ -127,7 +127,7 @@
           for ($p = 0; $p < count($pu); $p++) {
 
             if (intval($pu[$p]['codPuja']) == intval($_GET['codigo'])) {
-              $pu = $pujas->deletePujas($_GET['codigo']);
+              $pujas->deletePujas($_GET['codigo']);
             }
           }
         }

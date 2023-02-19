@@ -20,13 +20,12 @@ header img {
   height: 500px;
 }
 
-/***** Nav styles *****/
 nav {
   overflow: hidden;
   position: relative;
   top: 0;
-  color: rgb(255, 255, 255); /* White */
-  background-color: rgb(0, 0, 0); /* Black */
+  /*background-color: #005DA3;*/
+  background-color: rgb(0, 0, 0);
   text-align: left;
   width: 100%;
   justify-content: center;
@@ -35,6 +34,7 @@ nav {
 nav a {
   font-size: 30px;
   float: left;
+  /*color: #F0C481;*/
   color: rgb(255, 255, 255);
   padding: 0;
   margin: 25px 40px;
@@ -57,7 +57,7 @@ nav input[type=text] {
 
 nav button {
   padding: 6px 10px;
-  margin: 35px 50px 0px 0px;
+  margin: 5px 40px 0px 0px;
   font-size: 17px;
   border: none;
   cursor: pointer;
@@ -66,7 +66,6 @@ nav button {
 
 nav  button:hover { background: #ccc; }
 
-/*** Contenido princiapl ***/
 /* main { text-align: center; } */
 
 section:first-child {
@@ -138,8 +137,8 @@ form input:not(:first-child) {
 
 form button {
   float: left;
-  /*margin: 25px 10px;*/
-  /*vertical-align: middle;*/
+  /*margin: 25px 10px;
+  vertical-align: middle;*/
   text-align: center;
   width: 90px;
   margin: 25px 0 25px 10%;
@@ -172,7 +171,6 @@ main table tr > * { border: 1px solid #0d6efd; }
   border: 1px solid gray;
   border-radius: 1rem;
   padding: 20px;
-  
 }
 
 main input[type=text], main select, main textarea {
@@ -181,9 +179,9 @@ main input[type=text], main select, main textarea {
   border: 1px solid #ccc;
   border-radius: 4px;
   resize: vertical;
-}*/
+}
 
-/*main form select { margin-bottom: 20px; }
+main form select { margin-bottom: 20px; }
 
 main form h2 { margin-top: 30px; }
 
@@ -213,7 +211,6 @@ main input[type=submit] {
   float: right;
 }*/
 
-/***** Pie *****/
 footer {
   clear: both;
   width: 100%;
@@ -237,10 +234,8 @@ footer h2, footer p {
 
 .fin-float { clear: both; }
 
-/* Small mobile */
+/** Small mobile **/
 @media only screen and (max-width: 320px) {
-
-  /*section:first-child div { height: 100px; }*/
 
   main form {
     width: 70%;
@@ -256,7 +251,7 @@ footer h2, footer p {
     border: none;
     float: left;
   }
-  
+
   nav button {
     padding: 6px 10px;
     margin: 25px 50px 0px 0px;
@@ -267,10 +262,8 @@ footer h2, footer p {
   }
 }
 
-/* Medium mobile */
+/** Medium mobile **/
 @media only screen and (min-width: 320px) and (max-width: 375px) {
-
-  /*section:first-child div { height: 100px; }*/
 
   main form {
     width: 70%;
@@ -286,7 +279,7 @@ footer h2, footer p {
     border: none;
     float: left;
   }
-  
+
   nav button {
     padding: 6px 10px;
     margin: 25px 50px 0px 0px;
@@ -297,10 +290,8 @@ footer h2, footer p {
   }
 }
 
-/* Big mobile */
+/** Big mobile **/
 @media only screen and (min-width: 375px) and (max-width: 425px) {
-
-  /*section:first-child div { height: 80px; }*/
 
   main form {
     width: 60%;
@@ -316,7 +307,7 @@ footer h2, footer p {
     border: none;
     float: left;
   }
-  
+
   nav button {
     padding: 6px 10px;
     margin: 35px 50px 0px 0px;
@@ -327,10 +318,8 @@ footer h2, footer p {
   }
 }
 
-/* Tablets */
+/** Tablets **/
 @media only screen and (min-width: 425px) and (max-width: 768px) {
-
-  /*section:first-child div { height: 80px; }*/
 
   main form {
     width: 50%;
@@ -346,7 +335,7 @@ footer h2, footer p {
     border: none;
     float: left;
   }
-  
+
   nav button {
     padding: 6px 10px;
     margin: 35px 50px 0px 0px;
@@ -357,10 +346,8 @@ footer h2, footer p {
   }
 }
 
-/* Laptops */
+/** Laptops **/
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-
-  /*section:first-child div { height: 80px; }*/
 
   main form {
     width: 40%;
@@ -375,7 +362,7 @@ footer h2, footer p {
     border: none;
     float: left;
   }
-  
+
   nav button {
     padding: 6px 10px;
     margin: 35px 50px 0px 0px;
@@ -394,7 +381,7 @@ footer h2, footer p {
   .topnav .icon { float: right; }
 
   .topnav.responsive { position: relative; }
-  
+
   .topnav.responsive a.icon {
     position: absolute;
     right: 0;

@@ -1,8 +1,9 @@
 <?php
   use App\Models\Producto;
   use App\Models\Subasta;
-?>
 
+  $codigo = $_GET['codUsu'];
+?>
 
 <!DOCTYPE html>
 
@@ -14,10 +15,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portal de Subastas</title>
   <link href="{{ asset('img/logo.png') }}" type="image/x-icon" rel="icon">
-  <link href="{{ asset('css/login.css') }}" rel="stylesheet">
+  <!--<link href="{{ asset('css/login.css') }}" rel="stylesheet">-->
   <link href="{{ asset('css/styles.css') }}" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
@@ -29,15 +30,18 @@
   <nav class="topnav" id="myTopnav">
 
     <a href="{{ asset('/') }}" class="active">Inicio</a>
+    <a href="{{ asset('/portal') }}">Portal</a>
     <a href="{{ asset('/subasta') }}">Subastas</a>
-    <a href="{{ asset('/puja') }}">Pujas</a>
-    <a href="{{ asset('/login') }}" class="disabled">Iniciar sesion</a>
-    <a href="{{ asset('/registro') }}" class="disabled">Registrarse</a>
 
-    <button name="out" id="out">Log out</button>
+    <a href="#loginModal" data-target="#loginModal" class="disabled">Iniciar sesion</a>
+    <a href="#registroModal" data-target="#registroModal" class="disabled">Registrarse</a>
 
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-      <i class="fa fa-bars"></i>
+    <a href="{{ asset('/') }}">
+      <button name="out" id="out">Log out</button>
+    </a>
+
+    <a href="javascript:void(0);" class="icon nav">
+      <img src="{{ asset('img/menu.svg') }}" alt="Menu">
     </a>
 
   </nav>
@@ -82,10 +86,6 @@
         </li>
 
       </ul>-->
-
-    </section>
-
-    <section>
 
       <?php
 
@@ -140,7 +140,7 @@
         </ul>
 
         <button class="buscarSubasta">
-          <a href="{{ asset('/subasta?indice='. ($i + 1)) }}">Buscar subasta</a>
+          <a href="{{ asset('/subasta?indice='. ($i + 1)) .'&codUsu=' .$codigo }}">Ir a subasta</a>
         </button>
 
       </div>
@@ -151,7 +151,7 @@
 
     </section>
 
-    <section>
+    <section class="paginacion">
 
       <ul>
 
@@ -174,10 +174,6 @@
 
       </ul>
 
-      <!--
-        <p>Resultados:</p>
-        -->
-
     </section>
 
   </main>
@@ -190,9 +186,8 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@latest/dist/umd/popper.min.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/js/bootstrap.min.js" defer></script>
   <script src="{{ asset('js/reloj.js') }}" defer></script>
-  <script src="{{ asset('js/script.js') }}" defer></script>
-  <script src="{{ asset('js/nav.js') }}" defer></script>
   <script src="{{ asset('js/login.js') }}" defer></script>
+  <script src="{{ asset('js/script.js') }}" defer></script>
 
 </body>
 

@@ -6,12 +6,12 @@
 
     <form method="GET">
 
-      <input type="number" name="codigo" value="<?php echo intval(count($products)) + 1; ?>" disabled>
+      <input type="number" name="codigo" value="<?php echo intval(count($products)) + 1; ?>">
       <input type="text" name="nombre">
       <input type="text" name="material">
       <input type="number" name="anchura" min="0">
       <input type="number" name="altura" min="0">
-      <input type="number" name="codSub" value="<?php echo intval(count($products)) + 1; ?>" disabled>
+      <input type="number" name="codSub" value="<?php echo intval(count($products)) + 1; ?>">
 
       <div class="fin-float"></div>
 
@@ -56,14 +56,14 @@
             <td><?php echo $products[$p]['codSubasta']; ?></td>
 
             <!--
-                  <td>
-                    <button name="editProd">Editar producto</button>
-                  </td>
+              <td>
+                <button name="editProd">Editar producto</button>
+              </td>
 
-                  <td>
-                    <button name="delProd">Borrar producto</button>
-                  </td>
-                -->
+              <td>
+                <button name="delProd">Borrar producto</button>
+              </td>
+              -->
 
           </tr>
 
@@ -97,9 +97,9 @@
         echo "You pressed Button 1<br>";
         //echo "Nombre: " . $_GET['nomProd'] . "<br>Material: " . $_GET['material'];
 
-        if (!empty($_GET['codProd']) && !empty($_GET['nomProd']) && !empty($_GET['material']) &&
+        if (!empty($_GET['codigo']) && !empty($_GET['nombre']) && !empty($_GET['material']) &&
             !empty($_GET['anchura']) && !empty($_GET['altura']) && !empty($_GET['codSub'])) {
-          $products = $productos->addProductos($codigo, $nombre, $material, $anchura, $altura, $codSub);
+          $productos->addProductos($codigo, $nombre, $material, $anchura, $altura, $codSub);
         }
 
       break;
@@ -107,10 +107,10 @@
       case "Edit product":
 
         //print "You pressed Button 2<br>";
-        /*echo "Id: ". $_GET['codProd']. "<br>Nombre: ". $_GET['nomProd']. "<br>Apellidos: ". $_GET['material'];
+        /*echo "Id: ". $_GET['codigo']. "<br>Nombre: ". $_GET['nomProd']. "<br>Apellidos: ". $_GET['material'];
         echo "<br>Correo: ". $_GET['anchura']. "<br>Contraseña: ". $_GET['altura'];*/
 
-        if (!empty($_GET['codProd']) && !empty($_GET['nomProd']) && !empty($_GET['material']) &&
+        if (!empty($_GET['codigo']) && !empty($_GET['nombre']) && !empty($_GET['material']) &&
             !empty($_GET['anchura']) && !empty($_GET['altura'])) {
 
           //echo "Clave del producto: ". $clave ."<br>Nombre del producto: ". $nombre ."<br>Material: ". $material;W
@@ -118,15 +118,15 @@
 
           for ($u = 0; $u < count($products); $u++) {
 
-            if (intval($products[$p]['codProd']) == intval($_GET['codProd'])) {
+            if (intval($products[$p]['codProd']) == intval($_GET['codigo'])) {
 
-              /* print "Id: ". $_GET['codProd']. "<br>Nombre: ". $_GET['nomProd']. "<br>Apellidos: ". $_GET['material'];
+              /* print "Id: ". $_GET['codigo']. "<br>Nombre: ". $_GET['nomProd']. "<br>Apellidos: ". $_GET['material'];
                 print "<br>Correo: ". $_GET['anchura']. "<br>Contraseña: ". $_GET['altura']. "<br>Fecha: ". $_GET['fecha'];
 
-                echo "<br><br>Id: ". $_GET['codProd']. "<br>Nombre: ". $_GET['nomProd']. "<br>Apellidos: ". $_GET['material'];
+                echo "<br><br>Id: ". $_GET['codigo']. "<br>Nombre: ". $_GET['nomProd']. "<br>Apellidos: ". $_GET['material'];
                 echo "<br>Correo: ". $_GET['anchura']. "<br>Contraseña: ". products[$p]['password']. "<br>Fecha: ". $_GET['fecha'];*/
 
-              $products = $productos->updateProductos($codigo, $nombre, $material, $anchura, $altura, $codSub);
+              $productos->updateProductos($codigo, $nombre, $material, $anchura, $altura, $codSub);
             }
           }
         }
@@ -136,17 +136,17 @@
       case "Delete product":
 
         /*print "You pressed Button 3<br>";
-        echo "Id: ". $_GET['codProd'] ."<br>Nombre: ". $_GET['nomProd']. "<br>Apellidos: ". $_GET['material'];*/
+        echo "Id: ". $_GET['codigo'] ."<br>Nombre: ". $_GET['nomProd']. "<br>Apellidos: ". $_GET['material'];*/
 
-        if (!empty($_GET['codProd']) && !empty($_GET['nomProd']) && !empty($_GET['material']) &&
-          !empty($_GET['anchura']) && !empty($_GET['altura'])) {
+        if (!empty($_GET['codigo']) && !empty($_GET['nombre']) && !empty($_GET['material']) &&
+            !empty($_GET['anchura']) && !empty($_GET['altura'])) {
 
           //echo "Clave del producto: ". $clave ."<br>Nombre  del producto: ". $nombre ."<br>Material: ". $material;
 
           for ($u = 0; $u < count($products); $u++) {
 
-            if (intval($products[$p]['codProd']) == intval($_GET['codProd'])) {
-              $products = $productos->deleteProductos($codigo);
+            if (intval($products[$p]['codProd']) == intval($_GET['codigo'])) {
+              $productos->deleteProductos($codigo);
             }
           }
         }

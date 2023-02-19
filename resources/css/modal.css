@@ -5,7 +5,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
   z-index: 99999;
   opacity: 0;
   transition: opacity 400ms ease-in;
@@ -20,7 +20,7 @@
 .modalDialog>div {
   width: 500px;
   position: relative;
-  margin: 10% auto;
+  margin: 6% auto;
   padding: 5px 20px 13px 20px;
   border-radius: 10px;
   background-image: linear-gradient(#fff, #999);
@@ -28,7 +28,7 @@
 }
 
 .close {
-  background: #606061;
+  background-color: #606061;
   color: #FFFFFF;
   line-height: 25px;
   position: absolute;
@@ -42,7 +42,7 @@
   box-shadow: 1px 1px 3px #000;
 }
 
-.close:hover { background: #00d9ff; }
+.close:hover { background-color: #00d9ff; }
 
 #loginModal div form {
   width: 70%;
@@ -55,7 +55,7 @@
 
 #registroModal div form {
   width: 70%;
-  height: 600px;
+  height: 480px;
   border: 1px solid #9C9C9C;
   background-color: #EAEAEA;
   padding: 25px 50px;
@@ -94,6 +94,4 @@
   padding: 10px;
 }
 
-.form-group:last-child input:hover {
-  background-color: rgba(255, 255, 255);
-}
+.form-group:last-child input:hover { background-color: rgb(255, 255, 255); }

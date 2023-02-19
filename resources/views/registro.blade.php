@@ -15,7 +15,7 @@
   <link href="{{ asset('css/login.css') }}" rel="stylesheet">
   <link href="{{ asset('css/registro.css') }}" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
@@ -32,10 +32,7 @@
     <a href="{{ asset('/login') }}">Iniciar sesion</a>
     <a href="{{ asset('/registro') }}">Registrarse</a>
 
-    <!--<input type="text" placeholder="Search.." name="search">
-    <button type="submit"><i class="fa fa-search"></i></button>-->
-
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <a href="javascript:void(0);" class="icon nav">
       <i class="fa fa-bars"></i>
     </a>
 
@@ -183,8 +180,7 @@
         $correo = $_GET["usuario"];
         $password = $_GET["passw"];
 
-        $regex = "/^[A-Za-zÑñÁáÉéÍíÓóÚúÜü]@subasta\.com$/ism";
-
+        $regex = "/^[a-zA-ZÑñÁáÉéÍíÓóÚúÜü0-9._%+-]+@subasta.com$/ism";
         //$regex = "/^[A-Za-z]{1,50}$/";
 
         //$regex = "/^[A-Za-zÑñÁáÉéÍíÓóÚúÜü]{1,50}$/";

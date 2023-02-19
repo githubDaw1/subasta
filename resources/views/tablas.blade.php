@@ -16,7 +16,7 @@
   <title>Todas las tablas</title>
   <link href="{{ asset('img/logo.png') }}" type="image/x-icon" rel="icon">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="{{ asset('css/tablas.css') }}" rel="stylesheet">
 </head>
 
@@ -29,15 +29,17 @@
   <nav class="topnav" id="myTopnav">
 
     <a href="{{ asset('/') }}" class="active">Inicio</a>
-    <a href="{{ asset('/subasta') }}" class="disabled">Subastas</a>
-    <a href="{{ asset('/puja') }}" class="disabled">Pujas</a>
-    <a href="{{ asset('/login') }} class="disabled"">Iniciar sesion</a>
-    <a href="{{ asset('/registro') }} class="disabled"">Registrarse</a>
+    <a href="{{ asset('/portal?codUsu=1') }}">Portal</a>
+    <a href="{{ asset('/subasta') }}">Subastas</a>
+    <a href="{{ asset('/login') }}" class="disabled">Iniciar sesion</a>
+    <a href="{{ asset('/registro') }}" class="disabled">Registrarse</a>
 
-    <button name="out" id="out">Log out</button>
+    <a href="{{ asset('/') }}">
+      <button name="out" id="out">Log out</button>
+    </a>
 
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-      <i class="fa fa-bars"></i>
+    <a href="javascript:void(0);" class="icon nav">
+      <img src="{{ asset('img/menu.svg') }}" alt="Menu">
     </a>
 
   </nav>
@@ -102,9 +104,8 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@latest/dist/umd/popper.min.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/js/bootstrap.min.js" defer></script>
   <script src="{{ asset('js/reloj.js') }}" defer></script>
-  <script src="{{ asset('js/script.js') }}" defer></script>
-  <script src="{{ asset('js/nav.js') }}" defer></script>
   <script src="{{ asset('js/tablas.js') }}" defer></script>
+  <script src="{{ asset('js/script.js') }}" defer></script>
 
 </body>
 

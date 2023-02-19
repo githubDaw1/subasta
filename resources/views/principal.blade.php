@@ -8,10 +8,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Página principal</title>
   <link href="{{ asset('img/logo.png')}}" type="image/x-icon" rel="icon">
-  <link href="{{ asset('icons/icomoon.css') }}" rel="stylesheet">
+  <link href="{{ asset('icons/icomoon.min.css') }}" rel="stylesheet">
   <link href="{{ asset('css/modal.css') }}" rel="stylesheet">
   <link href="{{ asset('css/estilos.css') }}" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
@@ -46,14 +46,14 @@
   <nav class="topnav" id="myTopnav">
 
     <a href="{{ asset('/') }}" class="active">Inicio</a>
+    <a href="{{ asset('/portal') }}" class="disabled">Portal</a>
     <a href="{{ asset('/subasta') }}" class="disabled">Subastas</a>
-    <a href="{{ asset('/puja') }}" class="disabled">Pujas</a>
 
     <a href="#loginModal" data-target="#loginModal">Iniciar sesion</a>
     <a href="#registroModal" data-target="#registroModal">Registrarse</a>
 
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-      <i class="fa fa-bars"></i>
+    <a href="javascript:void(0);" class="icon nav">
+      <img src="{{ asset('img/menu.svg') }}" alt="Menu">
     </a>
 
   </nav>
@@ -293,10 +293,10 @@
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@latest/dist/umd/popper.min.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/js/bootstrap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/animejs@latest/lib/anime.min.js"></script>
   <!--<script src="js/dataApi.js" defer></script>
   <script src="js/app.js" defer></script>-->
-  <script src="js/reloj.js" defer></script>
-  <script src="js/nav.js" defer></script>
+  <script src="{{ asset('js/script.js') }}" defer></script>
 
 </body>
 

@@ -20,13 +20,12 @@ header img {
   height: 500px;
 }
 
-/***** Nav styles *****/
+/** Nav styles **/
 nav {
   overflow: hidden;
   position: relative;
   top: 0;
-  color: rgb(255, 255, 255); /* White */
-  background-color: rgb(0, 0, 0); /* Black */
+  background-color: #005DA3;
   text-align: left;
   width: 100%;
   justify-content: center;
@@ -35,7 +34,7 @@ nav {
 nav a {
   font-size: 30px;
   float: left;
-  color: rgb(255, 255, 255);
+  color: #F0C481;
   padding: 0;
   margin: 25px 40px;
   text-decoration: none;
@@ -64,9 +63,9 @@ nav button {
   float: left;
 }
 
-nav  button:hover { background: #ccc; }
+nav  button:hover { background-color: #ccc; }
 
-/*** Contenido princiapl ***/
+/** Contenido princiapl **/
 main { text-align: center; }
 
 section:first-child {
@@ -79,7 +78,6 @@ section:first-child div {
   background-color: #f9f9f9;
   color: #912600;
   border-bottom: 1px solid #ddd;
-  /*height: 50px;*/
 }
 
 section:nth-child(2) {
@@ -117,7 +115,7 @@ main .form-group {
 
 main form label, main form input, main form select { float: left; }
 
-/***** Pie *****/
+/** Pie **/
 footer {
   clear: both;
   width: 100%;
@@ -125,8 +123,8 @@ footer {
   padding: 1em 0;
   font-size: 1.5em;
   text-align: center;
-  color: rgb(255, 255, 255); /* White */
-  border-top: 1px solid #ddd; /* Width | Style | Color */
+  color: rgb(255, 255, 255);
+  border-top: 1px solid #ddd;
   margin-top: 10px;
 }
 
@@ -141,10 +139,8 @@ footer h2, footer p {
 
 .fin-float { clear: both; }
 
-/* Small mobile */
+/** Small mobile **/
 @media only screen and (max-width: 320px) {
-
-  /*section:first-child div { height: 100px; }*/
 
   main form {
     width: 70%;
@@ -171,7 +167,7 @@ footer h2, footer p {
   }
 }
 
-/* Medium mobile */
+/** Medium mobile **/
 @media only screen and (min-width: 320px) and (max-width: 375px) {
 
   /*section:first-child div { height: 100px; }*/
@@ -201,7 +197,7 @@ footer h2, footer p {
   }
 }
 
-/* Big mobile */
+/** Big mobile **/
 @media only screen and (min-width: 375px) and (max-width: 425px) {
 
   /*section:first-child div { height: 80px; }*/
@@ -231,7 +227,7 @@ footer h2, footer p {
   }
 }
 
-/* Tablets */
+/** Tablets **/
 @media only screen and (min-width: 425px) and (max-width: 768px) {
 
   /*section:first-child div { height: 80px; }*/
@@ -261,7 +257,7 @@ footer h2, footer p {
   }
 }
 
-/* Laptops */
+/** Laptops **/
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
 
   /*section:first-child div { height: 80px; }*/

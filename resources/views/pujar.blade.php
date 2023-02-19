@@ -17,10 +17,15 @@
 
   <?php
 
-    $pujaInicial = $_GET['inicial'];
+    /*$pujaInicial = $_GET['inicial'];
     $pujaActual = $_GET['actual'];
     $inicio = $_GET['fecha1'];
-    $fin = $_GET['fecha2'];
+    $fin = $_GET['fecha2'];*/
+
+    $pujaInicial = 0;
+    $pujaActual = 100;
+    $inicio = "";
+    $fin = "";
 
     if (isset($_GET['submit'])) {
 

@@ -6,12 +6,12 @@
 
     <form method="GET" class="usuario">
 
-      <input type="number" name="codigo" value="<?php echo intval(count($users)) + 1; ?>" disabled>
+      <input type="number" name="codigo" value="<?php echo intval(count($users)) + 1; ?>">
       <input type="text" name="nombre">
       <input type="text" name="apellidos">
       <input type="email" name="usuario">
       <input type="password" name="secreto">
-      <input type="date" name="fecha" value="<?php echo date("Y-m-d"); ?>" disabled>
+      <input type="date" name="fecha" value="<?php echo date("Y-m-d"); ?>">
 
       <div class="fin-float"></div>
 
@@ -66,8 +66,6 @@
 
 <?php
 
-
-
   if (isset($_REQUEST['btnUser'])) {
 
     $codigo = $_GET['codigo'];
@@ -85,7 +83,7 @@
 
         if (!empty($_GET['codigo']) && !empty($_GET['nombre']) && !empty($_GET['apellidos']) &&
             !empty($_GET['usuario']) && !empty($_GET['secreto']) && !empty($_GET['fecha'])) {
-          $users = $usuario->addUsuarios($codigo, $nombre, $apellidos, $cuenta, trim(strval(hash('sha512', $secreto))), $fecha);
+          $usuario->addUsuarios($codigo, $nombre, $apellidos, $cuenta, trim(strval(hash('sha512', $secreto))), $fecha);
         }
 
       break;
@@ -107,7 +105,7 @@
               echo "<br><br>Id: ". $_GET['codigo']. "<br>Nombre: ". $_GET['nombre']. "<br>Apellidos: ". $_GET['apellidos'];
               echo "<br>Correo: ". $_GET['usuario']. "<br>Contraseña: ". $users[$u]['password']. "<br>Fecha: ". $_GET['fecha'];*/
 
-              $users = $usuario->updateUsuarios($_GET['codigo'], $_GET['nombre'], $_GET['apellidos'], $_GET['usuario'], trim(strval(hash('sha512', $_GET['secreto']))));
+              $usuario->updateUsuarios($_GET['codigo'], $_GET['nombre'], $_GET['apellidos'], $_GET['usuario'], trim(strval(hash('sha512', $_GET['secreto']))));
             }
           }
         }
@@ -124,7 +122,7 @@
           for ($u = 0; $u < count($users); $u++) {
 
             if (intval($users[$u]['codUsu']) == intval($_GET['codigo'])) {
-              $users = $usuario->deleteUsuarios($_GET['codigo']);
+              $usuario->deleteUsuarios($_GET['codigo']);
             }
           }
         }

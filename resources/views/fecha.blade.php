@@ -19,8 +19,8 @@
     $fechaFin = date_create("2020-04-01 10:00:05");
 
     /*
-    echo date_format($fechaIni, "d/m/Y H:i:s") ."<br/><br/>";
-    echo date_format($fechaFin, "d/m/Y H:i:s") ."<br/><br/>";
+      echo date_format($fechaIni, "d/m/Y H:i:s") ."<br/><br/>";
+      echo date_format($fechaFin, "d/m/Y H:i:s") ."<br/><br/>";
     */
 
   ?>
