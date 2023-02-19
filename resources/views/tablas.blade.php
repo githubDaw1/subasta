@@ -101,8 +101,10 @@
     <p>Autor: Rafael Aguilar Muñoz</p>
   </footer>
 
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@latest/dist/umd/popper.min.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/js/bootstrap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/animejs@latest/lib/anime.min.js" defer></script>
   <script src="{{ asset('js/reloj.js') }}" defer></script>
   <script src="{{ asset('js/tablas.js') }}" defer></script>
   <script src="{{ asset('js/script.js') }}" defer></script>

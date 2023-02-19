@@ -97,7 +97,7 @@
 
           for ($u = 0; $u < count($users); $u++) {
 
-            if (intval($users[$u]['codUsu']) == intval($_GET['codigo'])) {
+            if (intval($users[$u]['codUsu']) == intval($u + 1)) {
 
               /*print "Id: ". $_GET['codigo']. "<br>Nombre: ". $_GET['nombre']. "<br>Apellidos: ". $_GET['apellidos'];
               print "<br>Correo: ". $_GET['usuario']. "<br>Contraseña: ". $_GET['secreto']. "<br>Fecha: ". $_GET['fecha'];
@@ -105,7 +105,9 @@
               echo "<br><br>Id: ". $_GET['codigo']. "<br>Nombre: ". $_GET['nombre']. "<br>Apellidos: ". $_GET['apellidos'];
               echo "<br>Correo: ". $_GET['usuario']. "<br>Contraseña: ". $users[$u]['password']. "<br>Fecha: ". $_GET['fecha'];*/
 
-              $usuario->updateUsuarios($_GET['codigo'], $_GET['nombre'], $_GET['apellidos'], $_GET['usuario'], trim(strval(hash('sha512', $_GET['secreto']))));
+              $codigo = intval($u + 1);
+
+              $usuario->updateUsuarios($codigo, $_GET['nombre'], $_GET['apellidos'], $_GET['usuario'], trim(strval(hash('sha512', $_GET['secreto']))));
             }
           }
         }
