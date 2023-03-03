@@ -17,8 +17,14 @@
         * Show the application dashboard.
         * @ return \Illuminate\Contracts\Support\Renderable
         */
-        public function index() {
+        public function request() {
+
+
             return view('home');
+        }
+
+        public function metodo(Request $request) {
+          // Acceda a los datos del formulario enviados a través de la solicitud POST
         }
     }
 

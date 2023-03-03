@@ -35,12 +35,15 @@ for (var f = 0; f < formularios.length; f++) {
 
     botones[b].onclick = function() {
 
-      input[0].disabled = false;
-      input[(input.length - 1)].disabled = false;
-
       if (b != 0) {
         input[0].min = 1;
         input[0].max = columnas[col][(columnas.length - 1)] + 1;
+        input[0].disabled = false;
+        input[(input.length - 1)].disabled = false;
+
+        while(input[0].disabled ) {
+
+        }
         botones[1].type = "submit";
         botones[2].type = "submit";
       } else {

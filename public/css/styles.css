@@ -7,17 +7,20 @@ body {
 }
 
 header {
+  width: 100%;
+  height: 600px;
   font-size: 30px;
   font-weight: bold;
   font-style: italic;
   text-decoration: 5px underline dotted rgb(255, 0, 0);
   text-align: center;
   color: rgb(0, 0, 255);
+  background-color: #fff;
 }
 
 header img {
   width: 100%;
-  height: 500px;
+  height: 100%;
 }
 
 /*** Nav styles ***/
@@ -50,6 +53,7 @@ nav .disabled {
   cursor: not-allowed;
   opacity: 0.5;
   pointer-events: none;
+  /*display: none;*/
 }
 
 nav input[type=text] {
@@ -62,7 +66,7 @@ nav input[type=text] {
 
 nav button {
   padding: 6px 10px;
-  margin: 8px 50px 0px 0px;
+  margin: 8px 50px 0 0;
   font-size: 17px;
   border: none;
   cursor: pointer;
@@ -75,15 +79,17 @@ nav button:hover { background-color: #ccc; }
 main {
   text-align: center;
   width: 100%;
-  height: 100%;
-  /*height: 1500px;*/
+  height: auto;
+  float: left;
 }
 
 .fin-float { clear: both; }
 
 section:first-child {
   width: 100%;
-  margin-bottom: 50px;
+  /*margin-bottom: 40px;*/
+  text-align: center;
+  float: left;
 }
 
 section:first-child div {
@@ -91,7 +97,6 @@ section:first-child div {
   background-color: #f9f9f9;
   color: #912600;
   border-bottom: 1px solid #ddd;
-  height: 50px;
 }
 
 section:nth-child(2) {
@@ -103,6 +108,20 @@ section:nth-child(2) h2 {
   font-size: 40px;
   color: rgb(255, 0, 0);
 }
+
+.bloquePujas {
+  width: 100%;
+  height: auto;
+  padding: 30px 0;
+}
+
+.bloquePujas .pujas {
+  width: 20%;
+  margin: 30px 0 30px 20%;
+  float: left;
+}
+
+.bloquePujas .pujas button, section:nth-child(2) .subasta button { margin-top: 15px; }
 
 /*section:nth-child(2) ul {
   box-sizing: border-box;
@@ -119,7 +138,7 @@ section:nth-child(2) ul li {
   padding: 0;
 }
 
-section:nth-child(2) ul li h3, section:nth-child(2) ul li p { padding-left: 0px; }
+section:nth-child(2) ul li h3, section:nth-child(2) ul li p { padding-left: 0; }
 
 section:nth-child(2) ul li a:link, section:nth-child(2) ul li a:visited {
   color: #666;
@@ -165,13 +184,34 @@ section:nth-child(2) ul li .guardar img {
   vertical-align: middle;
 }*/
 
+
+.subastas {
+  /*box-sizing: border-box;*/
+  width: 100%;
+  height: auto;
+  text-align: center;
+  float: left;
+  /*margin-bottom: 50px;*/
+}
+
 section:nth-child(2) .productos {
   box-sizing: border-box;
   margin: 20px 0 10px 10%;
   width: 30%;
+  height: auto;
   text-align: center;
   float: left;
-  margin-bottom: 50px;
+  /*margin-bottom: 50px;*/
+}
+
+/*section:nth-child(2) .productos button {
+  float: left;
+  margin: 25px 10px;
+  vertical-align: middle;
+  width: 90px;
+  margin: 25px 0 25px 10%;
+  height: 100px;
+  display: flex;
 }
 
 section:nth-child(2) .producto {
@@ -181,61 +221,91 @@ section:nth-child(2) .producto {
   text-align: center;
   float: left;
   margin-bottom: 50px;
-}
+}*/
 
 section:nth-child(2) .subasta {
   box-sizing: border-box;
-  /*border-bottom: 1px solid #ccc;*/
-  margin: 20px 0 10px 35%;
-  width: 30%;
+  margin: 20px 30% 50px 30%;
+  width: 40%;
   text-align: center;
   float: left;
-  margin-bottom: 50px;
+  /*margin-bottom: 50px;*/
 }
 
 section:nth-child(2) div ul { border: 2px solid rgb(0, 0, 0); }
 
 section:nth-child(2) button {
-  /*margin: 20px 0 20px 10%;
   float: left;
+  /*margin: 25px 10px;
+  vertical-align: middle;*/
   text-align: center;
-  margin-bottom: 75px;*/
-  position: relative;
-  float: left;
+  /*width: 90px;
+  margin: 25px 0 25px 10%;
+  height: 100px;*/
+  border: 0;
+  background-image: linear-gradient(150deg, #9500ff, #09f, #00DDFF);
+  border-radius: 8px;
+  color: #fff;
+  /*display: flex;*/
+  font-size: 18px;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.3s;
 }
+
+section:nth-child(2) button span {
+  background-color: #111;
+  padding: 16px 24px;
+  border-radius:6px;
+  transition: 0.3s;
+}
+
+section:nth-child(2) button:hover span { background: none; }
+
+section:nth-child(2) button:active span { transform: scale(0.9); }
 
 section:nth-child(2) div ul li {
   width: 100%;
   text-align: center;
-  padding: 15px 0px;
+  padding: 15px 0;
   list-style-type: none;
 }
+
+section:nth-child(2) div ul li img { width: 80%; }
 
 section:nth-child(2) ul li h3 { font-size: 1.5em; }
 
 section:nth-child(2) ul li h4 {
   font-size: 1.2em;
-  padding: 15px 0px;
+  padding: 15px 0;
 }
 
-section:nth-child(2) .subasta form {
+section:nth-child(2) form {
   clear: both;
-  margin-top: 75px;
+  /*margin-top: 75px;*/
   padding: 0 25%;
+  width: 30%;
+  height: 50px;
+  margin: 50px 0 50px 15%;
 }
 
-section:nth-child(2) .subasta form input{ float: left; }
+section:nth-child(2) form input { float: left; }
 
-section:nth-child(2) .subasta form button { margin-top: 10px; }
+section:nth-child(2) form button { margin-top: 10px; }
+
+input.codSub, input.codUsu { display: none; }
+
+/*input.valorPuja { margin: 30px 20%;
+}*/
 
 .paginacion {
   text-align: center;
   font-size: 90%;
   padding: 0;
-  /*margin: 500px 20%;*/
-  clear: both;
-  margin: 100px 20%;
+  width: 100%;
   height: auto;
+  float: left;
+  padding: 100px 25% 50 25%;
 }
 
 .paginacion ul {
@@ -269,7 +339,7 @@ footer {
   font-size: 1.5em;
   text-align: center;
   color: rgb(255, 255, 255);
-  border-top: 1px solid #ddd; /* Width | Style | Color */
+  border-top: 1px solid #ddd;
   margin-top: 10px;
 }
 
@@ -286,13 +356,11 @@ footer h2, footer p {
 
 button a, button a:hover {
   text-decoration: none;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 
 /** Small mobile **/
 @media only screen and (max-width: 320px) {
-
-  section:first-child div { height: 100px; }
 
   main form {
     width: 70%;
@@ -301,28 +369,13 @@ button a, button a:hover {
     margin: 30px 15%;
   }
 
-  nav input[type=text] {
-    padding: 6px;
-    margin: 25px 0 0 25px;
-    font-size: 17px;
-    border: none;
-    float: left;
-  }
+  nav input[type=text] { margin: 25px 0 0 25px; }
 
-  /*nav button {
-    padding: 6px 10px;
-    margin: 25px 50px 0px 0px;
-    font-size: 17px;
-    border: none;
-    cursor: pointer;
-    float: left;
-  }*/
+  /*nav button { margin: 25px 50px 0 0; }*/
 }
 
 /** Medium mobile **/
-@media only screen and (min-width: 320px) and (max-width: 375px) {
-
-  section:first-child div { height: 100px; }
+@media only screen and (min-width: 321px) and (max-width: 375px) {
 
   main form {
     width: 70%;
@@ -331,28 +384,13 @@ button a, button a:hover {
     margin: 30px 15%;
   }
 
-  nav input[type=text] {
-    padding: 6px;
-    margin: 25px 0 0 25px;
-    font-size: 17px;
-    border: none;
-    float: left;
-  }
+  nav input[type=text] { margin: 25px 0 0 25px; }
 
-  /*nav button {
-    padding: 6px 10px;
-    margin: 25px 50px 0px 0px;
-    font-size: 17px;
-    border: none;
-    cursor: pointer;
-    float: left;
-  }*/
+  /*nav button { margin: 25px 50px 0 0; }*/
 }
 
 /** Big mobile **/
-@media only screen and (min-width: 375px) and (max-width: 425px) {
-
-  section:first-child div { height: 80px; }
+@media only screen and (min-width: 376px) and (max-width: 425px) {
 
   main form {
     width: 60%;
@@ -361,26 +399,13 @@ button a, button a:hover {
     margin: 30px 25%;
   }
 
-  nav input[type=text] {
-    padding: 6px;
-    margin: 35px 0 0 50px;
-    font-size: 17px;
-    border: none;
-    float: left;
-  }
+  nav input[type=text] { margin: 35px 0 0 50px; }
 
-  /*nav button {
-    padding: 6px 10px;
-    margin: 35px 50px 0px 0px;
-    font-size: 17px;
-    border: none;
-    cursor: pointer;
-    float: left;
-  }*/
+  /*nav button { margin: 30px 50px 0 0; }*/
 }
 
 /** Tablets **/
-@media only screen and (min-width: 425px) and (max-width: 768px) {
+@media only screen and (min-width: 426px) and (max-width: 768px) {
 
   main form {
     width: 50%;
@@ -389,26 +414,13 @@ button a, button a:hover {
     margin: 30px 25%;
   }
 
-  nav input[type=text] {
-    padding: 6px;
-    margin: 35px 0 0 50px;
-    font-size: 17px;
-    border: none;
-    float: left;
-  }
+  nav input[type=text] { margin: 35px 0 0 50px; }
 
-  /*nav button {
-    padding: 6px 10px;
-    margin: 35px 50px 0px 0px;
-    font-size: 17px;
-    border: none;
-    cursor: pointer;
-    float: left;
-  }*/
+  /*nav button { margin: 30px 50px 0 0; }*/
 }
 
 /** Laptops **/
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
 
   main form {
     width: 40%;
@@ -416,22 +428,9 @@ button a, button a:hover {
     margin: 30px 30%;
   }
 
-  nav input[type=text] {
-    padding: 6px;
-    margin: 35px 0 0 250px;
-    font-size: 17px;
-    border: none;
-    float: left;
-  }
+  nav input[type=text] { margin: 35px 0 0 250px; }
 
-  /*nav button {
-    padding: 6px 10px;
-    margin: 35px 50px 0px 0px;
-    font-size: 17px;
-    border: none;
-    cursor: pointer;
-    float: left;
-  }*/
+  /*nav button { margin: 30px 50px 0 0; }*/
 }
 
 /** Media query for small devices **/

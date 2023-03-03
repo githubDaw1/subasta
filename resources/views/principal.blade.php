@@ -6,17 +6,16 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-security-policy|content-type|default-style|refresh">
   <title>Página principal</title>
   <link href="{{ asset('img/logo.png')}}" type="image/x-icon" rel="icon">
   <link href="{{ asset('icons/icomoon.min.css') }}" rel="stylesheet">
   <link href="{{ asset('css/modal.css') }}" rel="stylesheet">
   <link href="{{ asset('css/estilos.css') }}" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
 
-  <!-- Contenedor Header -->
   <header>
 
     <h1 class="titulo">Subastas</h1>
@@ -45,9 +44,9 @@
 
   <nav class="topnav" id="myTopnav">
 
-    <a href="{{ asset('/') }}" class="active">Inicio</a>
-    <a href="{{ asset('/portal') }}" class="disabled">Portal</a>
-    <a href="{{ asset('/subasta') }}" class="disabled">Subastas</a>
+    <a href="/" class="active">Inicio</a>
+    <a href="/portal" class="disabled">Portal</a>
+    <a href="/subasta" class="disabled">Subastas</a>
 
     <a href="#loginModal" data-target="#loginModal">Iniciar sesion</a>
     <a href="#registroModal" data-target="#registroModal">Registrarse</a>
@@ -291,12 +290,7 @@
     <p>Autor: Rafael Aguilar Muñoz</p>
   </footer>
 
-  <script src="https://code.jquery.com/jquery-3.6.3.min.js" defer></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@latest/dist/umd/popper.min.js" defer></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/js/bootstrap.min.js" defer></script>
-  <script src="https://cdn.jsdelivr.net/npm/animejs@latest/lib/anime.min.js" defer></script>
-  <!--<script src="js/dataApi.js" defer></script>
-  <script src="js/app.js" defer></script>-->
+  <script src="{{ asset('js/app.js') }}" defer></script>
   <script src="{{ asset('js/script.js') }}" defer></script>
 
 </body>

@@ -4,15 +4,19 @@
 
   use Illuminate\Http\Request;
 
-  class UsuariosControlller extends Controller {
+  class LoginController extends Controller {
 
     public function __invoke() {
       //
     }
 
     public function request() {
-      return view('usuarios');
+      return view('pujar');
     }
+
+    /*public function index() {
+      return view('login');
+    }*/
 
     public function imageUploadPost($imagen) {
 

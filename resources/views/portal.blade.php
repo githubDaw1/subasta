@@ -2,7 +2,8 @@
   use App\Models\Producto;
   use App\Models\Subasta;
 
-  $codigo = $_GET['codUsu'];
+  $codigo = $_GET['idUsu'];
+  $numPagina = $_GET['pagina'];
 ?>
 
 <!DOCTYPE html>
@@ -14,11 +15,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portal de Subastas</title>
-  <link href="{{ asset('img/logo.png') }}" type="image/x-icon" rel="icon">
-  <!--<link href="{{ asset('css/login.css') }}" rel="stylesheet">-->
+  <link href="{{ asset('img/logo.png')}}" type="image/x-icon" rel="icon">
+  <link href="{{ asset('icons/icomoon.min.css') }}" rel="stylesheet">
   <link href="{{ asset('css/styles.css') }}" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
@@ -29,14 +28,15 @@
 
   <nav class="topnav" id="myTopnav">
 
-    <a href="{{ asset('/') }}" class="active">Inicio</a>
-    <a href="{{ asset('/portal') }}">Portal</a>
-    <a href="{{ asset('/subasta') }}">Subastas</a>
+    <a href="/" class="active">Inicio</a>
+    <a href="<?php echo '/portal?idUsu='. $codigo ?>">Portal</a>
+    <a href="/subasta" class="disabled">Subastas</a>
+    <a href="<?php echo '/pujas?idUsu='. $codigo ?>">Mis pujas</a>
 
     <a href="#loginModal" data-target="#loginModal" class="disabled">Iniciar sesion</a>
     <a href="#registroModal" data-target="#registroModal" class="disabled">Registrarse</a>
 
-    <a href="{{ asset('/') }}">
+    <a href="/">
       <button name="out" id="out">Log out</button>
     </a>
 
@@ -61,31 +61,9 @@
 
     </section>
 
-    <section>
+    <section class="subastas">
 
       <h2>Buscar subastas</h2>
-
-      <!--<ul>
-
-        <li>
-          <a href="{{ asset('/subasta') }}">Busqueda</a>
-        </li>
-
-        <li>
-          <a href="{{ asset('/resultados') }}">Resultados</a>
-        </li>
-
-        <li>
-
-          <a href="{{ asset('/guardar') }}" class="guardar">
-            Guardar
-            <span>Busqueda</span>
-            <img src="{{ asset('img/logoAcceso.png') }}" srcset="{{ asset('img/logoAcceso.svg') }}" alt="Sesion activa" />
-          </a>
-
-        </li>
-
-      </ul>-->
 
       <?php
 
@@ -98,7 +76,9 @@
         /*$pujas = new Puja();
         $pu = $pujas->getPujas();*/
 
-        for ($i = 0; $i < count($products); $i++) {
+        $indicePagina = intval(count($products)) * intval($numPagina - 1);
+
+        for ($i = $indicePagina; $i < count($products); $i++) {
       ?>
 
       <div class="productos">
@@ -139,8 +119,8 @@
 
         </ul>
 
-        <button class="buscarSubasta">
-          <a href="{{ asset('/subasta?indice='. ($i + 1)) .'&codUsu=' .$codigo }}">Ir a subasta</a>
+        <button>
+          <a href="<?php echo '/subasta?idSub='. ($i + 1) .'&idUsu=' .$codigo ?>">Ir a subasta</a>
         </button>
 
       </div>
@@ -156,17 +136,27 @@
       <ul>
 
         <li>
-          <span class="fuera">Está usted en la página de resultados número</span>
-          <span class="current">1</span>
+          <a href="/portal?idUsu=<?php echo $codigo ?>&pagina=1" class="current">1</a>
         </li>
 
         <li>
-          <a href="{{ asset('/portal') }}">2</a>
+          <a href="/portal?idUsu=<?php echo $codigo ?>&pagina=2">2</a>
         </li>
 
         <li>
+          <a href="/portal?idUsu=<?php echo $codigo ?>&pagina=3">3</a>
+        </li>
 
-          <a href="{{ asset('/user') }}">
+        <li>
+          <a href="/portal?idUsu=<?php echo $codigo ?>&pagina=4">4</a>
+        </li>
+
+        <li>
+          <a href="/portal?idUsu=<?php echo $codigo ?>&pagina=5">5</a>
+        </li>
+        <li>
+
+          <a href="/portal?idUsu=<?php echo $codigo ?>&pagina=6">
             <abbr title="Página">Pág.</abbr> siguiente
           </a>
 
@@ -183,12 +173,8 @@
     <p>Autor: Rafael Aguilar Muñoz</p>
   </footer>
 
-  <script src="https://code.jquery.com/jquery-3.6.3.min.js" defer></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@latest/dist/umd/popper.min.js" defer></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/js/bootstrap.min.js" defer></script>
-  <script src="https://cdn.jsdelivr.net/npm/animejs@latest/lib/anime.min.js" defer></script>
+  <script src="{{ asset('js/app.js') }}" defer></script>
   <script src="{{ asset('js/reloj.js') }}" defer></script>
-  <script src="{{ asset('js/login.js') }}" defer></script>
   <script src="{{ asset('js/script.js') }}" defer></script>
 
 </body>

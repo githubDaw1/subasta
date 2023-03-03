@@ -15,8 +15,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <title>Todas las tablas</title>
   <link href="{{ asset('img/logo.png') }}" type="image/x-icon" rel="icon">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="{{ asset('icons/icomoon.min.css') }}" rel="stylesheet">
+  <link href="{{ asset('css/estilos.css') }}" rel="stylesheet">
+  <link href="{{ asset('css/styles.css') }}" rel="stylesheet">
   <link href="{{ asset('css/tablas.css') }}" rel="stylesheet">
 </head>
 
@@ -28,13 +29,13 @@
 
   <nav class="topnav" id="myTopnav">
 
-    <a href="{{ asset('/') }}" class="active">Inicio</a>
-    <a href="{{ asset('/portal?codUsu=1') }}">Portal</a>
-    <a href="{{ asset('/subasta') }}">Subastas</a>
-    <a href="{{ asset('/login') }}" class="disabled">Iniciar sesion</a>
-    <a href="{{ asset('/registro') }}" class="disabled">Registrarse</a>
+    <a href="/" class="active">Inicio</a>
+    <a href="/portal?codUsu=1">Portal</a>
+    <a href="/subasta">Subastas</a>
+    <a href="/login" class="disabled">Iniciar sesion</a>
+    <a href="/registro" class="disabled">Registrarse</a>
 
-    <a href="{{ asset('/') }}">
+    <a href="/">
       <button name="out" id="out">Log out</button>
     </a>
 
@@ -101,11 +102,7 @@
     <p>Autor: Rafael Aguilar Muñoz</p>
   </footer>
 
-  <script src="https://code.jquery.com/jquery-3.6.3.min.js" defer></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@latest/dist/umd/popper.min.js" defer></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/js/bootstrap.min.js" defer></script>
-  <script src="https://cdn.jsdelivr.net/npm/animejs@latest/lib/anime.min.js" defer></script>
-  <script src="{{ asset('js/reloj.js') }}" defer></script>
+  <script src="{{ asset('js/app.js') }}" defer></script>
   <script src="{{ asset('js/tablas.js') }}" defer></script>
   <script src="{{ asset('js/script.js') }}" defer></script>
 

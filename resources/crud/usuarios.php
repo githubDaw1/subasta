@@ -97,7 +97,7 @@
 
           for ($u = 0; $u < count($users); $u++) {
 
-            if (intval($users[$u]['codUsu']) == intval($u + 1)) {
+            if (intval($users[$u]['codUsu']) == intval($_GET['codigo'])) {
 
               /*print "Id: ". $_GET['codigo']. "<br>Nombre: ". $_GET['nombre']. "<br>Apellidos: ". $_GET['apellidos'];
               print "<br>Correo: ". $_GET['usuario']. "<br>Contraseña: ". $_GET['secreto']. "<br>Fecha: ". $_GET['fecha'];

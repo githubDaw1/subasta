@@ -27,7 +27,7 @@
       <div class="fin-float"></div>
 
       <div class="form-group">
-        <input type="submit" name="login" id="login" value="Verificar credenciales">
+        <button name="login" id="login">Verificar credenciales</button>
       </div>
 
     </form>
@@ -66,12 +66,12 @@
         header("Location: /tablas");
         exit();
       } else {
-        header("Location: /portal?codUsu=$codUsuario");
+        header("Location: /portal?idUsu=$codUsuario&pagina=1");
         exit();
       }
 
     } else {
-      echo "<script>alert('El usuario o la contraseña son incorrectos');</script>";
+      echo '<script type="text/javascript">alert("El usuario o la contraseña son incorrectos");</script>';
     }
   }
 

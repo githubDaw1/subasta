@@ -19,7 +19,7 @@
     // Obtener todos las subastas
     public function getSubastas() {
 
-      $selectSubastas = mysqli_query($this->con, "SELECT * FROM subasta");
+      $selectSubastas = mysqli_query($this->con, "SELECT * FROM subasta ORDER BY 1");
 
       while ($row = mysqli_fetch_array($selectSubastas)) { $subastas[] = $row; }
 

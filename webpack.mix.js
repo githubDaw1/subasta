@@ -11,4 +11,12 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js').vue().sass('resources/sass/app.scss', 'public/css');
+// mix.js('resources/js/app.js', 'public/js').vue().sass('resources/sass/app.scss', 'public/css');
+
+mix.scripts([
+  'node_modules/jquery/dist/jquery.min.js',
+  'node_modules/@popperjs/core/dist/umd/popper.min.js',
+  'node_modules/bootstrap/dist/js/bootstrap.min.js',
+  'node_modules/animejs/lib/anime.min.js',
+  'node_modules/chart.js/dist/chart.umd.js'
+],'public/js/app.js');

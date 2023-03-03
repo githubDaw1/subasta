@@ -19,7 +19,7 @@
     // Obtener todos los usuarios
     public function getUsuarios() {
 
-      $selectUsers = mysqli_query($this->con, "SELECT * FROM usuario");
+      $selectUsers = mysqli_query($this->con, "SELECT * FROM usuario ORDER BY 1");
 
       while ($row = mysqli_fetch_array($selectUsers)) { $usuarios[] = $row; }
 
@@ -28,6 +28,7 @@
       return $usuarios;
     }
 
+    // Obtener acceso
     public function getAcceso($correo, $passw) {
 
       $selectUsers = mysqli_query($this->con, "SELECT * FROM usuario WHERE user LIKE '$correo' AND password LIKE '$passw'");

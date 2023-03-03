@@ -95,3 +95,33 @@
 }
 
 .form-group:last-child input:hover { background-color: rgb(255, 255, 255); }
+
+form button {
+  float: left;
+  /*margin: 25px 10px;
+  vertical-align: middle;*/
+  text-align: center;
+  /*width: 90px;*/
+  /*margin: 25px 0 25px 10%;*/
+  /*height: 100px;*/
+  border: 0;
+  background-image: linear-gradient(150deg, #9500ff, #09f, #00DDFF);
+  border-radius: 8px;
+  color: #fff;
+  /*display: flex;*/
+  font-size: 18px;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button span {
+  background-color: #111;
+  padding: 16px 24px;
+  border-radius:6px;
+  transition: 0.3s;
+}
+
+form button:hover span { background: none; }
+
+form button:active span { transform: scale(0.9); }

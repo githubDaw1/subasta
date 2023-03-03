@@ -19,17 +19,27 @@
     // Obtener todas las pujas
     public function getPujas() {
 
-      $selectPujas = mysqli_query($this->con, "SELECT * FROM puja");
+      $selectPujas = mysqli_query($this->con, "SELECT * FROM puja ORDER BY codSubasta, valor");
 
       while ($row = mysqli_fetch_array($selectPujas)) { $pujas[] = $row; }
 
       return $pujas;
     }
 
+    // Obtener tu mejor puja
+    public function getBestPuja($codSub, $codUsu) {
+
+      $best = mysqli_query($this->con, "SELECT * FROM puja WHERE codSubasta=$codSub AND codUsu=$codUsu ORDER BY codSubasta, valor DESC LIMIT 1;");
+
+      while ($row = mysqli_fetch_array($best)) { $bestPuja[] = $row; }
+
+      return $bestPuja;
+    }
+
     // Obtener puja ganadora
     public function getPujaWin($codigo) {
 
-      $winner = mysqli_query($this->con, "SELECT * FROM puja WHERE codSubasta=$codigo ORDER BY codPuja DESC LIMIT 1;");
+      $winner = mysqli_query($this->con, "SELECT * FROM puja WHERE codSubasta=$codigo ORDER BY codSubasta, valor DESC LIMIT 1;");
 
       while ($row = mysqli_fetch_array($winner)) { $pujaWin[] = $row; }
 

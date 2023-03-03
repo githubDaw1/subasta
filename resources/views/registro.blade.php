@@ -14,8 +14,6 @@
   <link href="{{ asset('img/logo.png') }}" type="image/x-icon" rel="icon">
   <link href="{{ asset('css/login.css') }}" rel="stylesheet">
   <link href="{{ asset('css/registro.css') }}" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
@@ -26,14 +24,14 @@
 
   <nav class="topnav" id="myTopnav">
 
-    <a href="{{ asset('/') }}" class="active">Inicio</a>
-    <a href="{{ asset('/subasta') }}" class="disabled">Subastas</a>
-    <a href="{{ asset('/puja') }}" class="disabled">Pujas</a>
-    <a href="{{ asset('/login') }}">Iniciar sesion</a>
-    <a href="{{ asset('/registro') }}">Registrarse</a>
+    <a href="/" class="active">Inicio</a>
+    <a href="/subasta" class="disabled">Subastas</a>
+    <a href="/puja" class="disabled">Pujas</a>
+    <a href="/login">Iniciar sesion</a>
+    <a href="/registro">Registrarse</a>
 
     <a href="javascript:void(0);" class="icon nav">
-      <i class="fa fa-bars"></i>
+      <img src="{{ asset('img/menu.svg') }}" alt="Menu">
     </a>
 
   </nav>
@@ -59,7 +57,7 @@
 
       <h2>Subastas. Busqueda avanzada</h2>
 
-      <form action="{{ asset('/login') }}" method="GET" enctype="multipart/form-data">
+      <form action="/login" method="GET" enctype="multipart/form-data">
 
         @csrf
 
@@ -264,13 +262,9 @@
     <p>Autor: Rafael Aguilar Muñoz</p>
   </footer>
 
-  <script src="https://code.jquery.com/jquery-3.6.3.min.js" defer></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@latest/dist/umd/popper.min.js" defer></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/js/bootstrap.min.js" defer></script>
-  <script src="https://cdn.jsdelivr.net/npm/animejs@latest/lib/anime.min.js" defer></script>
+  <script src="{{ asset('js/app.js') }}" defer></script>
   <script src="{{ asset('js/reloj.js') }}" defer></script>
-  <script src="{{ asset('js/nav.js') }}" defer></script>
-  <script srtc="{{ asset('js/form.js') }}"></script>
+  <script srtc="{{ asset('js/script.js') }}"></script>
 
 </body>
 

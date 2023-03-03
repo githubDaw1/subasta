@@ -1,6 +1,7 @@
 <?php
 
   namespace App\Http\Controllers;
+  use Illuminate\Http\Request;
 
   class LoginController extends Controller {
 
@@ -8,13 +9,9 @@
       //
     }
 
-    public function store() {
+    public function request() {
       return view('login');
     }
-
-    /*public function index() {
-      return view('login');
-    }*/
 
     public function imageUploadPost($imagen) {
 
@@ -29,6 +26,10 @@
       request()->image->move(public_path('images'), $imagen);
 
       return back()->with('success', 'Image uploaded Successfully!')->with('image', $imagen);
+    }
+
+    public function metodo(Request $request) {
+      // Acceda a los datos del formulario enviados a través de la solicitud POST
     }
   }
 

@@ -6,9 +6,35 @@ var cards = document.querySelectorAll(".cardFeatures");
 var time = document.getElementsByClassName("tiempo");
 var fecha = document.getElementsByClassName("fecha");
 
-const ctx = document.getElementById('myChart');
+const nav = document.getElementsByClassName("nav");
 
-var myChart = null;
+const pujar = document.getElementsByClassName("pujar");
+
+var final = false;
+
+
+/*function showTime() {
+
+  let [hora1, minuto1, segundo1] = time[0].innerHTML.split(":");
+  let [hora2, minuto2, segundo2] = time[1].innerHTML.split(":");
+
+  if (parseInt(hora1) < parseInt(hora2)) {
+    hora1++;
+  } else if (parseInt(minuto1) < parseInt(minuto2)) {
+    minuto1++;
+  } else if (parseInt(segundo1) < parseInt(segundo2)) {
+    segundo1++;
+  } else {
+    final = true;
+  }
+
+  if (!final) {
+    arrayTime[0].innerHTML = String(hora1).padStart(2, "0") + ":" + String(minuto1).padStart(2, "0") + ":" + String(segundo1).padStart(2, "0");
+    setTimeout(showTime, 1000);
+  }
+}
+
+showTime();*/
 
 function reloj() {
 
@@ -18,7 +44,7 @@ function reloj() {
   let segundos = today.getSeconds();
   let dia = today.getDate();
   let mes = today.getMonth();
-  const semana = new Array('Lunes','Martes','Miercoles','Jueves','Viernes','Sabado', 'Domingo');
+  const semana = new Array('Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado', 'Domingo');
 
   fecha[0].innerHTML = semana[today.getDay()] + ", " + String(dia).padStart(2, '0') + "/" + String(mes).padStart(2, '0') + "/" + today.getFullYear();
   time[0].innerHTML = String(horas).padStart(2, "0") + ":" + String(minutos).padStart(2, "0") + ":" + String(segundos).padStart(2, "0");
@@ -26,7 +52,11 @@ function reloj() {
   setTimeout(reloj, 1000);
 }
 
-document.getElementsByClassName("nav")[0].onclick = function foldNav() {
+window.onload = function() {
+  reloj();
+};
+
+nav[0].onclick = function foldNav() {
 
   var topNav = document.getElementById("myTopnav");
 
@@ -37,15 +67,58 @@ document.getElementsByClassName("nav")[0].onclick = function foldNav() {
   }
 };
 
-window.onload = function() {
-  reloj();
-};
+var ctx = document.getElementById("myChart").getContext("2d");
+//const ctx = document.getElementById("myChart");
 
-for (let i = 0; i < links.lenght; i++) {
+var representacion = new Chart(ctx, {
+
+  type: "line",
+
+  data: {
+
+    labels: [0, 1, 2, 3, 4, 5],
+
+    datasets: [{
+      label: "Evolución de las pujas",
+      data: [0, 1, 2, 3, 4, 5],
+      backgroundColor: "rgb(255, 0, 0)",
+      borderColor: "rgb(255, 0, 0)",
+      tension: 0.1,
+      borderWidth: 1,
+      fill: false,
+    }]
+  },
+
+  options: {
+
+    responsive: true,
+    animation: false,
+
+    scales: {
+      y: { beginAtZero: true, min: 0, max: 5 }
+    },
+  }
+});
+
+
+
+function grafica(codSub, arrayFechas, arrayPujas) {
+
+  console.log(codSub);
+  console.log(arrayFechas);
+  console.log(arrayPujas);
+
+
+  /*representacion.data.labels = JSON.parse(arrayPujas);
+  representacion.data.datasets[0].data = JSON.parse(arrayPujas);
+  representacion.update();*/
+}
+
+for (let i = 0; i < links.length; i++) {
 
   links[i].disabled = true;
 
-  links[i].onclick = function() {
+  links[i].onclick = function () {
 
     if (links[i].className == "disabled") {
       links[i].disabled = false;
@@ -59,95 +132,113 @@ window.onpopstate = function () { window.history.go(1); };*/
 
 for (let i = 0; i < cards.length; i++) {
 
-  cards[i].onclick = function() {
+  cards[i].onclick = function () {
     location.replace("http://127.0.0.1:8000/subasta?indice=" + parseInt(i + 1));
   };
 }
 
-document.getElementsByClassName("pujar")[0].onclick = function() {
+if (pujar.length > 0) {
 
-  let ultimaPuja = document.getElementsByClassName("valorPuja")[0].min;
-  let valorActual = document.getElementsByClassName("valorPuja")[0].value;
+  pujar[0].onclick = function() {
 
-  let codigoUsu = document.getElementsByClassName("codUsu")[0].value;
-  let codigoSub = document.getElementsByClassName("indice")[0].value;
+    let ultimaPuja = document.getElementsByClassName("valorPuja")[0].min;
+    let valorActual = document.getElementsByClassName("valorPuja")[0].value;
 
-  console.log("Ultimo valor: " +  parseFloat(ultimaPuja).toFixed(2));
-  console.log("Valor actual: " + parseFloat(valorActual).toFixed(2));
+    let codigoUsu = document.getElementsByClassName("codUsu")[0].value;
+    let codigoSub = document.getElementsByClassName("indice")[0].value;
 
-  if (parseFloat(valorActual).toFixed(2) > parseFloat(ultimaPuja).toFixed(2)) {
-    document.getElementsByClassName("valorPuja")[0].min = valorActual;
-    document.getElementsByClassName("valorPuja")[0].value = valorActual;
-  }
+    console.log("Ultimo valor: " + parseFloat(ultimaPuja).toFixed(2));
+    console.log("Valor actual: " + parseFloat(valorActual).toFixed(2));
+
+    if (parseFloat(valorActual).toFixed(2) > parseFloat(ultimaPuja).toFixed(2)) {
+      document.getElementsByClassName("valorPuja")[0].min = valorActual;
+      document.getElementsByClassName("valorPuja")[0].value = valorActual;
+    }
+  };
+}
+
+/*var diccionario = {
+  "hola": "hello",
+  "adiós": "goodbye",
+  "casa": "house",
+  "coche": "car",
+  "hello": "hola",
+  "goodbye": "adiós",
+  "house": "casa",
+  "car": "coche"
 };
 
-document.getElementById("myChart").onload = function grafica(idSubasta) {
+function traducir(palabra) {
+  return diccionario[palabra];
+}
 
-  if (myChart != null) {
-    myChart.destroy();
-  }
+function detectarIdioma(palabra) {
 
-  const ctx = document.getElementById("myChart").getContext("2d");
+  if (palabra in diccionario) {
+    return "español";
+  } else {
 
-  const myChart = new Chart(ctx, {
+    for (var key in diccionario) {
 
-    type: "line",
-
-    data: {
-
-      labels: [],
-
-      datasets: [{
-        label: "Pujas",
-        data: [],
-        backgroundColor: "rgb(125, 125, 125)",
-        borderColor: "rgb(125, 125, 125)",
-        tension: 0.1,
-        borderWidth: 1,
-        fill: false,
-      }]
-    },
-
-    options: {
-
-      responsive: true,
-      animation: false,
-
-      scales: {
-        y: { beginAtZero: true, min: 0, max: 25 }
-      },
+      if (diccionario[key] === palabra) {
+        return "inglés";
+      }
     }
-  });
+  }
+}
 
-  /*fetch("fecha.php", {
-    method: "GET",
-    headers: { "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8", },
-    body: `nomTab=${tabla}`,
-  }).then(function (response) {
-    return response.text();
-  }).then(function (data) {
-    console.log(JSON.parse(data));
-    myChart.data.labels = JSON.parse(data);
-    myChart.update();
-    myChart.stop();
-  });
+function traducirInversa(palabra) {
 
-  fetch("casos.php", {
+  var idioma = detectarIdioma(palabra);
 
-    method: "GET",
-    headers: { "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8", },
-    body: `numPag=${idSubasta}`,
-  }).then(function (response) {
-    return response.json();
-  }).then(function (data) {
-    console.log(data);
-    var casos = data;
+  if (idioma === "inglés") {
 
-    for (let c = 0; c < casos.length; c++) { myChart.data.datasets[0].data[c] = casos[c]; }
+    for (var key in diccionario) {
 
-    myChart.data.datasets[0].label = "Evolución de las pujas";
-    myChart.data.datasets[0].backgroundColor = "rgb(255, 0, 0)";
-    myChart.data.datasets[0].borderColor = "rgb(255, 0, 0)";
-    myChart.update();
-  });*/
+      if (diccionario[key] === palabra) {
+        return key;
+      }
+    }
+
+  } else {
+    return diccionario[palabra];
+  }
+}
+
+function preventBack() {
+  window.history.forward();
+}
+
+setTimeout("preventBack()", 0);
+
+window.onunload = function() {
+  window.location.href = "http://localhost:8082/subasta/portal.php";
+  null
+};
+
+window.onbeforeunload = function() { return "You will  leave this page"; };
+
+window.history.back() = function() {
+  window.location.href = "http://localhost:8082/subasta/portal.php";
+};
+
+window.history.go(-1);*/
+
+document.getElementsByTagName("img")[0].draggable = true;
+
+document.getElementsByTagName("img")[0].ondragend = function loadImage() {
+  document.getElementsByTagName("img")[1].style.opacity = "0.3";
+  document.getElementById("load").style.display = "block";
+};
+
+function gastar() {
+  document.getElementsByTagName("img")[1].src = "../img/carteraVacia.jfif";
+  document.getElementsByTagName("img")[1].style.opacity = "1";
+  document.getElementById("load").style.display = "none";
+}
+
+document.getElementsByTagName("img")[0].ondrop = function llenar() {
+  document.getElementsByTagName("img")[1].src = "../img/carteraLlena.jpg";
+  document.getElementsByTagName("img")[1].style.opacity = "1";
+  document.getElementById("load").style.display = "none";
 };

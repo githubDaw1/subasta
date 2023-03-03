@@ -19,7 +19,7 @@
     // Otener todos los productos
     public function getProductos() {
 
-      $selectProducts = mysqli_query($this->con, "SELECT * FROM producto");
+      $selectProducts = mysqli_query($this->con, "SELECT * FROM producto ORDER BY 1");
 
       while ($row = mysqli_fetch_array($selectProducts)) { $productos[] = $row; }
 

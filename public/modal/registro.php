@@ -41,7 +41,7 @@
         <div class="fin-float"></div>
 
         <div class="form-group">
-          <input type="submit" name="register" id="register" value="Registrarse">
+          <button name="register" id="register">Registrarse</button>
         </div>
 
       </form>
@@ -66,23 +66,23 @@
     $regex = "/^[A-Za-zÑñÁáÉéÍíÓóÚúÜü]@subasta\.com$/ism";
 
     //$regex = "/^[A-Za-z]{1,50}$/";
-
     //$regex = "/^[A-Za-zÑñÁáÉéÍíÓóÚúÜü]{1,50}$/";
-
     //$rege = "/^[a-z0-9](\.?[a-z0-9]){5,}@g(oogle)?mail\.com$/";
 
     for ($i = 0; $i < count($users) && !$usuarioExiste; $i++) {
 
-      if (strcmp($name, $users[$i]["nomUsu"]) != 0 && strcmp($surname, $users[$i]["apeUsu"]) != 0 &&
-          strcmp($user, $users[$i]["user"]) != 0 && strcmp($users[$i]["password"], trim(strval(hash('sha512', $password)))) != 0 &&
+      if (strcmp($name, $users[$i]["nomUsu"]) != 0 &&
+          strcmp($surname, $users[$i]["apeUsu"]) != 0 &&
+          strcmp($user, $users[$i]["user"]) != 0 &&
+          strcmp($users[$i]["password"], trim(strval(hash('sha512', $password)))) != 0 &&
           $i != count($users)) {
 
         $usuarioExiste = true;
         //$permiso = intval($users[$i]["permiso"]);
 
-        echo "Nombre: ". $name ."<br/>Apellidos: ". $surname ."<br/>";
+        /*echo "Nombre: ". $name ."<br/>Apellidos: ". $surname ."<br/>";
         echo "Usuario: ". $correo. "<br/>Contraseña: ". $password ."<br/>";
-        echo "Fecha actual: ". date("Y-m-d"). "<br/>";
+        echo "Fecha actual: ". date("Y-m-d"). "<br/>";*/
 
         $usuario = new Usuario();
         $codigo = $usuario->getLastId();
@@ -107,7 +107,7 @@
         echo "Fecha actual: ". date("Y-m-d"). "<br/>";
 
         $usuario = new Usuario();
-        $user = $usuario->getLastId();
+        $user = $usuario->GETLastId();
 
         $codigo = intval($user[0]['codUsu']) + 1;
 
