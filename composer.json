@@ -5,8 +5,7 @@
     "keywords": ["framework", "laravel"],
     "license": "MIT",
     "require": {
-        "php": ">=8.0 || >=8.1",
-        "fruitcake/laravel-cors": ">=2.0",
+        "php": ">=7.3 || >=8.0",
         "guzzlehttp/guzzle": ">=7.0.1",
         "laravel/framework": ">=8.75",
         "laravel/sanctum": ">=2.15",
@@ -60,9 +59,9 @@
         "preferred-install": "dist",
         "sort-packages": true,
         "allow-plugins": {
-            "composer/installers": true,
-            "dealerdirect/phpcodesniffer-composer-installer": true,
-            "roots/wordpress-core-installer": true
+            "composer/installers": false,
+            "dealerdirect/phpcodesniffer-composer-installer": false,
+            "roots/wordpress-core-installer": false
         }
     },
     "minimum-stability": "dev",
