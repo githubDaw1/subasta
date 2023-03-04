@@ -1,8 +1,12 @@
 <?php
+  
   use App\Models\Producto;
   use App\Models\Puja;
   use App\Models\Subasta;
   use App\Models\Usuario;
+
+  date_default_timezone_set('Europe/Madrid');
+
 ?>
 
 <!DOCTYPE html>

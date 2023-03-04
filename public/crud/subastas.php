@@ -1,3 +1,7 @@
+<?php
+  date_default_timezone_set('Europe/Madrid');
+?>
+
 <section class="subastas">
 
   <h1>Tabla Subastas</h1>
@@ -6,10 +10,10 @@
 
     <form method="GET">
 
-      <input type="number" name="codigo" value="<?php echo intval(count($sub)) + 1; ?>">
+      <input type="number" name="codigo" value="<?php echo intval(count($sub)) + 1; ?>" required>
       <input type="date" name="fechaIni">
       <input type="date" name="fechaFin">
-      <input type="number" name="participantes" min="1">
+      <input type="number" name="precIni" min="1" required>
 
       <div class="fin-float"></div>
 
@@ -69,7 +73,7 @@
     $codSub = $_GET['codigo'];
     $fechaIni = $_GET['fechaIni'];
     $fechaFin = $_GET['fechaFin'];
-    $invitados = $_GET['participantes'];
+    $invitados = $_GET['precIni'];
 
     switch ($_REQUEST['btnSub']) {
 
@@ -77,7 +81,7 @@
 
         // echo "You pressed Button 1<br>";
 
-        if (!empty($_GET['codigo']) && !empty($_GET['fechaIni']) && !empty($_GET['fechaFin']) && !empty($_GET['participantes'])) {
+        if (!empty($_GET['codigo']) && !empty($_GET['fechaIni']) && !empty($_GET['fechaFin']) && !empty($_GET['precIni'])) {
           $subastas->addSubastas($codSub, $fechaIni, $fechaFin, $invitados);
         }
 
@@ -102,7 +106,7 @@
               echo "<br><br>Id: ". $_GET['codigo']. "<br>Nombre: ". $_GET['nomUsuario']. "<br>Apellidos: ". $_GET['apeUsuario'];
               echo "<br>Correo: ". $_GET['usuario']. "<br>Contraseña: ". $sub[$s]['password']. "<br>Fecha: ". $_GET['fecha'];*/
 
-              $subastas->updateSubastas($_GET['codigo'], $_GET['fechaIni'], $_GET['fechaFin'], $_GET['participantes']);
+              $subastas->updateSubastas($_GET['codigo'], $_GET['fechaIni'], $_GET['fechaFin'], $_GET['precIni']);
             }
           }
         }
