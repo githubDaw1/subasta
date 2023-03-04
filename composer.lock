@@ -3034,7 +3034,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": "^8.1"
+                "php": "^8.0"
             },
             "require-dev": {
                 "captainhook/plugin-composer": "^5.3",
