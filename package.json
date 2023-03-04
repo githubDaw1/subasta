@@ -1,15 +1,14 @@
 {
     "private": true,
     "scripts": {
-      "dev": "npm run development",
-      "development": "mix",
-      "watch": "mix watch",
-      "watch-poll": "mix watch -- --watch-options-poll=1000",
-      "hot": "mix watch --hot",
-      "prod": "npm run production",
-      "production": "mix --production"
+        "dev": "npm run development",
+        "development": "mix",
+        "watch": "mix watch",
+        "watch-poll": "mix watch -- --watch-options-poll=1000",
+        "hot": "mix watch --hot",
+        "prod": "npm run production",
+        "production": "mix --production"
     },
-
     "devDependencies": {
         "@popperjs/core": "latest",
         "autoprefixer": "latest",
@@ -29,15 +28,12 @@
     "dependencies": {
         "@types/jquery": "latest",
         "animejs": "latest",
-        "awesome-typescript-loader": "latest",
         "chart.js": "latest",
         "jquery": "latest",
         "npm-check-updates": "latest",
         "npm-upgrade": "latest",
         "npm-windows-upgrade": "latest",
         "popper.js": "latest",
-        "source-map-loader": "latest",
-        "ts-loader": "latest",
-        "typescript": "latest"
+        "source-map-loader": "latest"
     }
 }
