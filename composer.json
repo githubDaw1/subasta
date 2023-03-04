@@ -55,10 +55,16 @@
             "dont-discover": []
         }
     },
+
     "config": {
-        "optimize-autoloader": true,
-        "preferred-install": "dist",
-        "sort-packages": true
+      "optimize-autoloader": true,
+      "preferred-install": "dist",
+      "sort-packages": true,
+      "allow-plugins": {
+        "magento/magento-composer-installer": true,
+        "magento/inventory-composer-installer": true,
+        "laminas/laminas-dependency-plugin": true
+      }
     },
     "minimum-stability": "dev",
     "prefer-stable": true
