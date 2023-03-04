@@ -66,6 +66,6 @@
     return view('producto');
   });*/
 
-  Route::get('example-route', 'ExampleController')->middleware(AddCspHeaders::class);
+  //Route::get('example-route', 'ExampleController')->middleware(AddCspHeaders::class);
 
 ?>
