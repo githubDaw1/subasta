@@ -4,16 +4,6 @@
   use App\Support\Csp\Policies\CustomPolicy;
   use Spatie\Csp\AddCspHeaders;
 
-  /*use App\Http\Controllers\PrincipalController;
-  use App\Http\Controllers\LoginController;
-  use App\Http\Controllers\RegistroController;
-  use App\Http\Controllers\PortalController;
-  use App\Http\Controllers\SubastaController;
-  use App\Http\Controllers\PujarController;
-  use App\Http\Controllers\TablasController;
-  use App\Http\Controllers\ProductosController;
-  use App\Http\Controllers\UsuariosController;*/
-
   /*
   |--------------------------------------------------------------------------
   | Web Routes
@@ -24,15 +14,6 @@
   | contains the "web" middleware group. Now create something great!
   |
   */
-
-  //Route::post('/', [PrincipalController::class, 'request']);
-  //Route::post('/login', [LoginController::class, 'request']);
-  //Route::post('/registro', [RegistroController::class, 'request']);
-  //Route::post('/portal', [PortalController::class, 'request']);
-  //Route::post('/subasta', [SubastaController::class, 'request']);
-  //Route::post('/pujar', [PujarController::class, 'request']);
-  //Route::post('/tablas', [TablasController::class, 'request']);
-  //Route::post('/producto', [ProductosController::class, 'request']);
 
   Route::get('/', function() {
     return view('principal');
