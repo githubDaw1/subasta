@@ -32,7 +32,6 @@
         "jquery": "latest",
         "npm-check-updates": "latest",
         "npm-upgrade": "latest",
-        "npm-windows-upgrade": "latest",
         "popper.js": "latest",
         "source-map-loader": "latest"
     }
