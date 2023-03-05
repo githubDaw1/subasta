@@ -1,0 +1,39 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "npm run development",
+        "development": "mix",
+        "watch": "mix watch",
+        "watch-poll": "mix watch -- --watch-options-poll=1000",
+        "hot": "mix watch --hot",
+        "prod": "npm run production",
+        "production": "mix --production"
+    },
+    "devDependencies": {
+        "@popperjs/core": "latest",
+        "autoprefixer": "latest",
+        "axios": "latest",
+        "bootstrap": "latest",
+        "laravel-mix": ">=6.0.49",
+        "lodash": ">=4.17.21",
+        "postcss": ">=8.4.21",
+        "resolve-url-loader": ">=5.0.0",
+        "sass": "latest",
+        "sass-loader": "latest",
+        "tailwindcss": "latest",
+        "vue": "latest",
+        "vue-loader": "latest",
+        "vue-template-compiler": "latest"
+    },
+    "dependencies": {
+        "@types/jquery": "latest",
+        "animejs": "latest",
+        "chart.js": "latest",
+        "jquery": "latest",
+        "npm-check-updates": "latest",
+        "npm-upgrade": "latest",
+        "npm-windows-upgrade": "latest",
+        "popper.js": "latest",
+        "source-map-loader": "latest"
+    }
+}
