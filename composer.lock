@@ -8,7 +8,7 @@
     "packages": [
         {
             "name": "brick/math",
-            "version": "0.10.2",
+            "version": ">=0.10.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/brick/math.git",
@@ -139,7 +139,7 @@
         },
         {
             "name": "doctrine/inflector",
-            "version": "2.0.6",
+            "version": ">=2.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/inflector.git",
@@ -230,7 +230,7 @@
         },
         {
             "name": "doctrine/lexer",
-            "version": "1.2.3",
+            "version": ">=1.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/lexer.git",
@@ -367,7 +367,7 @@
         },
         {
             "name": "egulias/email-validator",
-            "version": "2.1.25",
+            "version": ">=2.1.25",
             "source": {
                 "type": "git",
                 "url": "https://github.com/egulias/EmailValidator.git",
@@ -497,7 +497,7 @@
         },
         {
             "name": "guzzlehttp/guzzle",
-            "version": "7.5.0",
+            "version": ">=7.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
@@ -625,7 +625,7 @@
         },
         {
             "name": "guzzlehttp/promises",
-            "version": "1.5.2",
+            "version": ">=1.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/promises.git",
@@ -709,7 +709,7 @@
         },
         {
             "name": "guzzlehttp/psr7",
-            "version": "2.4.3",
+            "version": ">=2.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
@@ -828,7 +828,7 @@
         },
         {
             "name": "intervention/image",
-            "version": "2.7.2",
+            "version": ">=2.7.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Intervention/image.git",
@@ -1339,7 +1339,7 @@
         },
         {
             "name": "league/commonmark",
-            "version": "2.3.9",
+            "version": ">=2.3.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/commonmark.git",
@@ -1527,7 +1527,7 @@
         },
         {
             "name": "league/flysystem",
-            "version": "1.1.10",
+            "version": ">=1.1.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
@@ -1621,7 +1621,7 @@
         },
         {
             "name": "league/glide",
-            "version": "1.7.2",
+            "version": ">=1.7.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/glide.git",
@@ -1691,7 +1691,7 @@
         },
         {
             "name": "league/mime-type-detection",
-            "version": "1.11.0",
+            "version": ">=1.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/mime-type-detection.git",
@@ -1747,7 +1747,7 @@
         },
         {
             "name": "masterminds/html5",
-            "version": "2.7.6",
+            "version": ">=2.7.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Masterminds/html5-php.git",
@@ -1816,7 +1816,7 @@
         },
         {
             "name": "monolog/monolog",
-            "version": "2.9.1",
+            "version": ">=2.9.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
@@ -1918,7 +1918,7 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "2.66.0",
+            "version": ">=2.66.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
@@ -2034,7 +2034,7 @@
             },
             "require": {
                 "nette/utils": ">=2.5.7 || >=3.1.5 ||  >=4.0",
-                "php": ">=7.1 || <8.3"
+                "php": ">=7.1 || >=8.3"
             },
             "require-dev": {
                 "nette/tester": ">=2.3 || >=2.4",
@@ -2169,7 +2169,7 @@
         },
         {
             "name": "nicmart/tree",
-            "version": "0.3.1",
+            "version": ">=0.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nicmart/Tree.git",
@@ -2271,7 +2271,7 @@
         },
         {
             "name": "nyholm/psr7",
-            "version": "1.5.1",
+            "version": ">=1.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Nyholm/psr7.git",
@@ -2348,7 +2348,7 @@
         },
         {
             "name": "opis/closure",
-            "version": "3.6.3",
+            "version": ">=3.6.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/opis/closure.git",
@@ -2467,7 +2467,7 @@
         },
         {
             "name": "phpoption/phpoption",
-            "version": "1.9.1",
+            "version": ">=1.9.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmittjoh/php-option.git",
@@ -2542,7 +2542,7 @@
         },
         {
             "name": "psr/container",
-            "version": "1.1.2",
+            "version": ">=1.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/container.git",
@@ -2590,7 +2590,7 @@
         },
         {
             "name": "psr/event-dispatcher",
-            "version": "1.0.0",
+            "version": ">=1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/event-dispatcher.git",
@@ -2640,7 +2640,7 @@
         },
         {
             "name": "psr/http-client",
-            "version": "1.0.1",
+            "version": ">=1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/http-client.git",
@@ -2692,7 +2692,7 @@
         },
         {
             "name": "psr/http-factory",
-            "version": "1.0.1",
+            "version": ">=1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/http-factory.git",
@@ -2747,7 +2747,7 @@
         },
         {
             "name": "psr/http-message",
-            "version": "1.0.1",
+            "version": ">=1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/http-message.git",
@@ -2800,7 +2800,7 @@
         },
         {
             "name": "psr/log",
-            "version": "2.0.0",
+            "version": ">=2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/log.git",
@@ -2850,7 +2850,7 @@
         },
         {
             "name": "psr/simple-cache",
-            "version": "1.0.1",
+            "version": ">=1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/simple-cache.git",
@@ -2977,7 +2977,7 @@
         },
         {
             "name": "ralouphie/getallheaders",
-            "version": "3.0.3",
+            "version": ">=3.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ralouphie/getallheaders.git",
@@ -3021,7 +3021,7 @@
         },
         {
             "name": "ramsey/collection",
-            "version": "2.0.0",
+            "version": ">=2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ramsey/collection.git",
@@ -3110,7 +3110,7 @@
         },
         {
             "name": "ramsey/uuid",
-            "version": "4.7.3",
+            "version": ">=4.7.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ramsey/uuid.git",
@@ -3202,7 +3202,7 @@
         },
         {
             "name": "spatie/browsershot",
-            "version": "3.57.6",
+            "version": ">=3.57.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/browsershot.git",
@@ -3268,7 +3268,7 @@
         },
         {
             "name": "spatie/crawler",
-            "version": "7.1.3",
+            "version": ">=7.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/crawler.git",
@@ -3336,7 +3336,7 @@
         },
         {
             "name": "spatie/image",
-            "version": "1.10.6",
+            "version": ">=1.10.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/image.git",
@@ -3405,7 +3405,7 @@
         },
         {
             "name": "spatie/image-optimizer",
-            "version": "1.6.3",
+            "version": ">=1.6.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/image-optimizer.git",
@@ -3460,7 +3460,7 @@
         },
         {
             "name": "spatie/laravel-csp",
-            "version": "2.8.3",
+            "version": ">=2.8.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-csp.git",
@@ -3542,7 +3542,7 @@
         },
         {
             "name": "spatie/laravel-export",
-            "version": "0.3.11",
+            "version": ">=0.3.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-export.git",
@@ -3623,7 +3623,7 @@
         },
         {
             "name": "spatie/laravel-package-tools",
-            "version": "1.12.1",
+            "version": ">=1.12.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-package-tools.git",
@@ -3682,7 +3682,7 @@
         },
         {
             "name": "spatie/robots-txt",
-            "version": "2.0.2",
+            "version": ">=2.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/robots-txt.git",
@@ -3743,7 +3743,7 @@
         },
         {
             "name": "spatie/temporary-directory",
-            "version": "2.1.1",
+            "version": ">=2.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/temporary-directory.git",
@@ -6164,7 +6164,7 @@
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",
-            "version": "2.2.6",
+            "version": ">=2.2.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tijsverkoyen/CssToInlineStyles.git",
@@ -6301,7 +6301,7 @@
         },
         {
             "name": "voku/portable-ascii",
-            "version": "1.6.1",
+            "version": ">=1.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/voku/portable-ascii.git",
@@ -6375,7 +6375,7 @@
         },
         {
             "name": "webmozart/assert",
-            "version": "1.11.0",
+            "version": ">=1.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webmozarts/assert.git",
@@ -6435,7 +6435,7 @@
     "packages-dev": [
         {
             "name": "facade/flare-client-php",
-            "version": "1.10.0",
+            "version": ">=1.10.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/facade/flare-client-php.git",
@@ -6500,7 +6500,7 @@
         },
         {
             "name": "facade/ignition",
-            "version": "2.17.7",
+            "version": ">=2.17.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/facade/ignition.git",
@@ -6578,7 +6578,7 @@
         },
         {
             "name": "facade/ignition-contracts",
-            "version": "1.0.2",
+            "version": ">=1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/facade/ignition-contracts.git",
@@ -6699,7 +6699,7 @@
         },
         {
             "name": "filp/whoops",
-            "version": "2.15.0",
+            "version": ">=2.15.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filp/whoops.git",
@@ -6886,7 +6886,7 @@
         },
         {
             "name": "mockery/mockery",
-            "version": "1.5.1",
+            "version": ">=1.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mockery/mockery.git",
@@ -6958,7 +6958,7 @@
         },
         {
             "name": "myclabs/deep-copy",
-            "version": "1.11.0",
+            "version": ">=1.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/myclabs/DeepCopy.git",
@@ -7104,7 +7104,7 @@
         },
         {
             "name": "phar-io/manifest",
-            "version": "2.0.3",
+            "version": ">=2.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phar-io/manifest.git",
@@ -7164,7 +7164,7 @@
         },
         {
             "name": "phar-io/version",
-            "version": "3.2.1",
+            "version": ">=3.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phar-io/version.git",
@@ -7215,7 +7215,7 @@
         },
         {
             "name": "phpunit/php-code-coverage",
-            "version": "10.0.1",
+            "version": ">=10.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
@@ -7292,7 +7292,7 @@
         },
         {
             "name": "phpunit/php-file-iterator",
-            "version": "4.0.1",
+            "version": ">=4.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-file-iterator.git",
@@ -7352,7 +7352,7 @@
         },
         {
             "name": "phpunit/php-invoker",
-            "version": "4.0.0",
+            "version": ">=4.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-invoker.git",
@@ -7415,7 +7415,7 @@
         },
         {
             "name": "phpunit/php-text-template",
-            "version": "3.0.0",
+            "version": ">=3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-text-template.git",
@@ -7474,7 +7474,7 @@
         },
         {
             "name": "phpunit/php-timer",
-            "version": "6.0.0",
+            "version": ">=6.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-timer.git",
@@ -7533,7 +7533,7 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "10.0.14",
+            "version": ">=10.0.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
@@ -7633,7 +7633,7 @@
         },
         {
             "name": "sebastian/cli-parser",
-            "version": "2.0.0",
+            "version": ">=2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/cli-parser.git",
@@ -7689,7 +7689,7 @@
         },
         {
             "name": "sebastian/code-unit",
-            "version": "2.0.0",
+            "version": ">=2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/code-unit.git",
@@ -7745,7 +7745,7 @@
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
-            "version": "3.0.0",
+            "version": ">=3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/code-unit-reverse-lookup.git",
@@ -7800,7 +7800,7 @@
         },
         {
             "name": "sebastian/comparator",
-            "version": "5.0.0",
+            "version": ">=5.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/comparator.git",
@@ -7876,7 +7876,7 @@
         },
         {
             "name": "sebastian/complexity",
-            "version": "3.0.0",
+            "version": ">=3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/complexity.git",
@@ -7933,7 +7933,7 @@
         },
         {
             "name": "sebastian/diff",
-            "version": "5.0.0",
+            "version": ">=5.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/diff.git",
@@ -7999,7 +7999,7 @@
         },
         {
             "name": "sebastian/environment",
-            "version": "6.0.0",
+            "version": ">=6.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/environment.git",
@@ -8062,7 +8062,7 @@
         },
         {
             "name": "sebastian/exporter",
-            "version": "5.0.0",
+            "version": ">=5.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/exporter.git",
@@ -8139,7 +8139,7 @@
         },
         {
             "name": "sebastian/global-state",
-            "version": "6.0.0",
+            "version": ">=6.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/global-state.git",
@@ -8200,7 +8200,7 @@
         },
         {
             "name": "sebastian/lines-of-code",
-            "version": "2.0.0",
+            "version": ">=2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/lines-of-code.git",
@@ -8257,7 +8257,7 @@
         },
         {
             "name": "sebastian/object-enumerator",
-            "version": "5.0.0",
+            "version": ">=5.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/object-enumerator.git",
@@ -8314,7 +8314,7 @@
         },
         {
             "name": "sebastian/object-reflector",
-            "version": "3.0.0",
+            "version": ">=3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/object-reflector.git",
@@ -8369,7 +8369,7 @@
         },
         {
             "name": "sebastian/recursion-context",
-            "version": "5.0.0",
+            "version": ">=5.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/recursion-context.git",
@@ -8432,7 +8432,7 @@
         },
         {
             "name": "sebastian/type",
-            "version": "4.0.0",
+            "version": ">=4.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/type.git",
@@ -8488,7 +8488,7 @@
         },
         {
             "name": "sebastian/version",
-            "version": "4.0.1",
+            "version": ">=4.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/version.git",
@@ -8615,7 +8615,7 @@
         },
         {
             "name": "theseer/tokenizer",
-            "version": "1.2.1",
+            "version": ">=1.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/theseer/tokenizer.git",
