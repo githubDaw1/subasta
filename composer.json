@@ -54,16 +54,7 @@
             "dont-discover": []
         }
     },
-    "config": {
-        "optimize-autoloader": true,
-        "preferred-install": "dist",
-        "sort-packages": true,
-        "allow-plugins": {
-            "composer/installers": false,
-            "dealerdirect/phpcodesniffer-composer-installer": false,
-            "roots/wordpress-core-installer": false
-        }
-    },
+
     "minimum-stability": "dev",
     "prefer-stable": true
 }
