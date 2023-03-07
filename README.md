@@ -1,5 +1,9 @@
 # Subasta Total
-Subasta o también conocido como Subasta total es una aplicación web donde todas tus pujas solamente se ven influidas por fondos viruales (sin dinero físico o criptomonedas). Es totalmente virtual, no se dejen engañar y pujen ahora que la cuenta atrás acaba pronto.
+<p>
+Subasta total es una aplicación web donde todas tus pujas solamente se ven influidas por fondos viruales (sin dinero físico o criptomonedas).
+</p><br/>
+
+<p>Es totalmente virtual, no se dejen engañar y pujen ahora que la cuenta atrás acaba pronto.</p>
 
 ## Tecnologías
 | Frontend |
@@ -11,11 +15,10 @@ Subasta o también conocido como Subasta total es una aplicación web donde toda
 |---------|
 | [![PHP](img/tecnologias/PHP.svg)](https://www.php.net)  [![MySQL](img/tecnologias/MySQL.svg)](https://www.mysql.com/)  [![Laravel](img/tecnologias/laravel.svg)](https://laravel.com/)  [![NodeJS](img/tecnologias/NodeJS.png)](https://nodejs.org/es/) |
 
-Framework: Laravel 8
-Lenguaje: PHP 8.0
-Verión de Mysql establecida por el servidor
-Verión de Nodejs: versiones recientes (las últimas versiones)
-
+<p>Framework: Laravel 8</p><br/>
+<p>Lenguaje: PHP 8.0</p><br/>
+<p>Verión de Mysql establecida por el servidor</p><br/>
+<p>Verión de Nodejs: versiones recientes (las últimas versiones)</p>
 
 | Others |
 |--------|
