@@ -53,8 +53,9 @@ nav .disabled {
   cursor: not-allowed;
   opacity: 0.5;
   pointer-events: none;
-  /*display: none;*/
 }
+
+nav a.login, nav a.registro { opacity: 0; }
 
 nav input[type=text] {
   padding: 6px;
@@ -293,7 +294,7 @@ section:nth-child(2) form input { float: left; }
 
 section:nth-child(2) form button { margin-top: 10px; }
 
-input.codSub, input.codUsu { display: none; }
+input.idSub, input.idUsu { display: none; }
 
 /*input.valorPuja { margin: 30px 20%;
 }*/

@@ -1,5 +1,5 @@
 <?php
-  
+
   use App\Models\Producto;
   use App\Models\Puja;
   use App\Models\Subasta;
@@ -34,10 +34,11 @@
   <nav class="topnav" id="myTopnav">
 
     <a href="/" class="active">Inicio</a>
-    <a href="/portal?codUsu=1">Portal</a>
-    <a href="/subasta">Subastas</a>
-    <a href="/login" class="disabled">Iniciar sesion</a>
-    <a href="/registro" class="disabled">Registrarse</a>
+    <a href="/portal?idUsu=1&pagina=1">Portal</a>
+    <a href="/subasta?id=Usu=1">Subastas</a>
+
+    <a href="#loginModal" data-target="#loginModal" class="login disabled">Iniciar sesion</a>
+    <a href="#registroModal" data-target="#registroModal" class="registro disabled">Registrarse</a>
 
     <a href="/">
       <button name="out" id="out">Log out</button>

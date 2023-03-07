@@ -54,12 +54,12 @@
   <nav class="topnav" id="myTopnav">
 
     <a href="/" class="active">Inicio</a>
-    <a href="<?php echo '/portal?idUsu='. $codigoUsuario ?>">Portal</a>
+    <a href="<?php echo '/portal?idUsu='. $codigoUsuario ."&pagina=1" ?>">Portal</a>
     <a href="<?php echo '/subasta?idSub='. $codigoSubasta .'&idUsu='. $codigoUsuario; ?>">Subastas</a>
     <a href="<?php echo '/pujas?idUsu='. $codigoUsuario ?>">Mis pujas</a>
 
-    <a href="#loginModal" data-target="#loginModal" class="disabled">Iniciar sesion</a>
-    <a href="#registroModal" data-target="#registroModal" class="disabled">Registrarse</a>
+    <a href="#loginModal" data-target="#loginModal" class="login disabled">Iniciar sesion</a>
+    <a href="#registroModal" data-target="#registroModal" class="registro disabled">Registrarse</a>
 
     <a href="/">
       <button name="out" id="out">Log out</button>
@@ -166,57 +166,53 @@
 
       </div>
 
-        <form method="GET" class="pujaForm">
+      <form method="GET" class="pujaForm">
 
-          <input type="number" min="<?php echo $codigoSubasta ?>" max="<?php echo $codigoSubasta ?>" value="<?php echo $codigoSubasta ?>" class="codSub" name="codSub">
+        <input type="number" min="<?php echo $codigoSubasta ?>" max="<?php echo $codigoSubasta ?>" value="<?php echo $codigoSubasta ?>" class="idSub" name="idSub">
 
-          <input type="number" min="<?php echo $codigoUsuario ?>" max="<?php echo $codigoUsuario ?>" value="<?php echo $codigoUsuario ?>" class="codUsu" name="codUsu">
+        <input type="number" min="<?php echo $codigoUsuario ?>" max="<?php echo $codigoUsuario ?>" value="<?php echo $codigoUsuario ?>" class="idUsu" name="idUsu">
 
-          <input type="number" min="<?php echo $puWin[0]['valor']; ?>" value="<?php echo $puWin[0]['valor']; ?>" class="valorPuja" name="puja">
+        <input type="number" min="<?php echo $puWin[0]['valor']; ?>" value="<?php echo $puWin[0]['valor']; ?>" class="valorPuja" name="puja">
 
-          <button class="pujar" name="pujar" value="Crear puja">Pujar</button>
+        <button class="pujar" name="pujar" value="Crear puja">Pujar</button>
 
-          <?php
+      </form>
 
-            if (isset($_GET['pujar'])) {
+      <?php
 
-              $valor = $_GET['puja'];
-              //date_default_timezone_set('Europe/Madrid');
+        if (isset($_GET['pujar'])) {
 
-              $fecha = date("Y-m-d");
+          $valor = $_GET['puja'];
+          //date_default_timezone_set('Europe/Madrid');
 
-              echo "<br/>Id: ". $codigo;
-              echo "<br/>Valor insertado: ". $valor;
-              echo "<br/>Fecha: ". $fecha;
-              echo "<br/>Id_Usuario: ". $codigoUsuario;
-              echo "<br/>Id_Subasta: ". $codigoSubasta;
-              echo "<br/>Valor de la última puja: ". $valorFinal;
+          $fecha = date("Y-m-d");
 
-              if ($pujadorFinal == intval($codigoUsuario)) {
-                echo '<script>
-                  alert("La puja ganadora te pertenece, espera una puja mayor de otra persona");
-                </script>';
-              } else {
+          //echo "<br/>Id: ". $codigo;
+          echo "<br/>Valor insertado: ". $valor;
+          echo "<br/>Fecha: ". $fecha;
+          //echo "<br/>Id_Usuario: ". $codigoUsuario;
+          //echo "<br/>Id_Subasta: ". $codigoSubasta;
+          //echo "<br/>Valor de la última puja: ". $valorFinal;
 
-                if (number_format(floatval($valor), 2, '.', '') > $valorFinal) {
+          if ($pujadorFinal == intval($codigoUsuario)) {
+            echo '<script>alert("La puja ganadora te pertenece, espera una puja mayor de otra persona");</script>';
+          } else {
 
-                  $pujas->addPujas($codigo, $valor, $fecha, $codigoUsuario, $codigoSubasta);
+            if (number_format(floatval($valor), 2, '.', '') > $valorFinal) {
 
-                  header("Location: /subasta?idSub=$codigoSubasta&idUsu=$codigoUsuario&puja=$valor");
-                  exit();
-                }
-              }
+              $pujas->addPujas($codigo, $valor, $fecha, $codigoUsuario, $codigoSubasta);
+
+              header("Location: /subasta?idSub=$codigoSubasta&idUsu=$codigoUsuario&puja=$valor");
+              exit();
             }
+          }
+        }
 
-          ?>
+      ?>
 
-        </form>
+      <p>Puja más alta: <?php echo $valorFinal; ?></p><br/><br/><br/>
 
-        <br/>
-
-        <p>Puja más alta: <?php echo $valorFinal; ?></p><br/><br/><br/>
-
-        <!--<p class="ganador"></p>-->
+      <!--<p class="ganador"></p>-->
 
       </div>
 

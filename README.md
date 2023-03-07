@@ -11,15 +11,22 @@ Subasta o también conocido como Subasta total es una aplicación web donde toda
 |---------|
 | [![PHP](img/tecnologias/PHP.svg)](https://www.php.net)  [![MySQL](img/tecnologias/MySQL.svg)](https://www.mysql.com/)  [![Laravel](img/tecnologias/laravel.svg)](https://laravel.com/)  [![NodeJS](img/tecnologias/NodeJS.png)](https://nodejs.org/es/) |
 
+Framework: Laravel 8
+Lenguaje: PHP 8.0
+Verión de Mysql establecida por el servidor
+Verión de Nodejs: versiones recientes (las últimas versiones)
+
+
 | Others |
 |--------|
-| [![Figma](img/tecnologias/figma.svg)](https://www.figma.com/)  [![Git](img/tecnologias/git.svg)](https://git-scm.com/)  ![GitHub](img/tecnologias/GitHub.svg) |
+| [![Figma](img/tecnologias/figma.svg)](https://www.figma.com/)  [![Git](img/tecnologias/git.svg)](https://git-scm.com/)  [![GitHub](img/tecnologias/GitHub.svg)](https://github.com/) |
+
 
 ## Modelado
-![Modelo de base de datos](img/modelado.webp)
+<img src="./img/modelado.webp" width="600" height="600">
 
 ## Ruta de páginas
-![Modelo de base de datos](img/figma.PNG)
+<img src="./img/figma.PNG" width="600" height="600">
 
 ## Despliegue de aplciaciones web
 Buscando un proveedor de hosting

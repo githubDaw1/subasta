@@ -50,7 +50,7 @@
   <nav class="topnav" id="myTopnav">
 
     <a href="/" class="active">Inicio</a>
-    <a href="<?php echo '/portal?idUsu='. $codigoUsuario ?>">Portal</a>
+    <a href="<?php echo '/portal?idUsu='. $codigoUsuario ."&pagina=1" ?>">Portal</a>
     <a href="<?php echo '/subasta' ?>" class="disabled">Subastas</a>
     <a href="<?php echo '/pujas?idUsu='. $codigoUsuario ?>">Mis pujas</a>
 
@@ -86,9 +86,9 @@
 
       <h2>Mis pujas</h2>
 
-      <p>
-        Pujador: <?php echo $users[intval($codigoUsuario - 1)]['nomUsu'] ." ". $users[intval($codigoUsuario - 1)]['apeUsu'] ?>
-      </p>
+      <!--<p>
+        Pujador: <?php //echo $users[intval($codigoUsuario - 1)]['nomUsu'] ." ". $users[intval($codigoUsuario - 1)]['apeUsu'] ?>
+      </p>-->
 
       <?php
 
