@@ -23,10 +23,10 @@ Verión de Nodejs: versiones recientes (las últimas versiones)
 
 
 ## Modelado
-<img src="./img/modelado.webp" width="600" height="600">
+<img src="./img/modelado.webp" width="1000" height="600">
 
 ## Ruta de páginas
-<img src="./img/figma.PNG" width="600" height="600">
+<img src="./img/figma.PNG" width="1000" height="600">
 
 ## Despliegue de aplciaciones web
 Buscando un proveedor de hosting
