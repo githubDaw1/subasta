@@ -88,6 +88,7 @@ h1 {
   font-size: 30px;
   text-align: center;
   font-weight: bold;
+  color: #A36200;
 }
 
 p { font-size: 16px; }
@@ -96,7 +97,7 @@ nav {
   overflow: hidden;
   position: relative;
   top: 0;
-  background-color: #199CFF;
+  background-color: #0089F0;
   text-align: left;
   width: 100%;
   justify-content: center;
@@ -114,10 +115,11 @@ nav a:not(:last-child), nav a:last-child {
   font-size: 30px;
 }
 
-nav .disabled {
+nav a.disabled {
   cursor: not-allowed;
-  opacity: 0.5;
+  opacity: 1;
   pointer-events: none;
+  color: rgb(255, 255, 255);
 }
 
 nav input[type=text] {
@@ -249,10 +251,12 @@ section:first-child div {
   width: 50px;
 }
 
-.boxProfesional .datosProfesional h5 {
-  font-size: 12px;
+.boxProfesional .datosProfesional h5, .boxProfesional .datosProfesional h6 {
+  color: #A36200;
   font-weight: bold;
 }
+
+.boxProfesional .datosProfesional h5 { font-size: 12px; }
 
 .boxProfesional .datosProfesional h6 { font-size: 11px; }
 
@@ -303,13 +307,13 @@ section:first-child div {
 }
 
 footer {
-  /*clear: both;*/
+  clear: both;
   width: 100%;
-  background-color: #000000;
+  background-color: #0089F0;
   padding: 1em 0;
   font-size: 1.5em;
   text-align: center;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   border-top: 1px solid #ddd;
   margin-top: 10px;
 }
@@ -429,11 +433,6 @@ footer h2, footer p {
     width: 50px;
   }
 
-  .boxProfesional .datosProfesional h5 {
-    font-size: 12px;
-    font-weight: bold;
-  }
-
   .boxProfesional .datosProfesional h6 { font-size: 11px; }
 
   .cardCallToActions p {
@@ -535,11 +534,6 @@ footer h2, footer p {
   .boxCardCallToActions img {
     border-radius: 50%;
     width: 50px;
-  }
-
-  .boxProfesional .datosProfesional h5 {
-    font-size: 12px;
-    font-weight: bold;
   }
 
   .boxProfesional .datosProfesional h6 { font-size: 11px; }
@@ -645,11 +639,6 @@ footer h2, footer p {
     width: 50px;
   }
 
-  .boxProfesional .datosProfesional h5 {
-    font-size: 12px;
-    font-weight: bold;
-  }
-
   .boxProfesional .datosProfesional h6 { font-size: 11px; }
 
   .cardCallToActions p {
@@ -698,7 +687,10 @@ footer h2, footer p {
     padding: 10% 5px;
   }
 
-  .botonGetStarted { padding: 5px 20px; }
+  header .botonGetStarted {
+    width: 250px;
+    padding: 10px 20px;
+  }
 
   nav input[type=text] { margin: 35px 0 0 50px; }
 
@@ -740,11 +732,6 @@ footer h2, footer p {
     width: 50px;
   }
 
-  .boxProfesional .datosProfesional h5 {
-    font-size: 12px;
-    font-weight: bold;
-  }
-
   .boxProfesional .datosProfesional h6 { font-size: 11px; }
 
   .cardCallToActions p {
@@ -770,6 +757,11 @@ footer h2, footer p {
   header .info {
     height: 500px;
     padding: 10% 75px;
+  }
+
+  header .botonGetStarted {
+    width: 250px;
+    padding: 10px 20px;
   }
 
   nav a { margin: 25px; }
@@ -807,11 +799,6 @@ footer h2, footer p {
   .boxCardCallToActions img {
     border-radius: 50%;
     width: 50px;
-  }
-
-  .boxProfesional .datosProfesional h5 {
-    font-size: 12px;
-    font-weight: bold;
   }
 
   .boxProfesional .datosProfesional h6 { font-size: 11px; }

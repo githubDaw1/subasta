@@ -1,3 +1,7 @@
+<?php
+  date_default_timezone_set('Europe/Madrid');
+?>
+
 <section class="productos">
 
   <h1>Tabla Productos</h1>
@@ -6,12 +10,12 @@
 
     <form method="GET">
 
-      <input type="number" name="codigo" value="<?php echo intval(count($products)) + 1; ?>">
-      <input type="text" name="nombre">
-      <input type="text" name="material">
-      <input type="number" name="anchura" min="0">
-      <input type="number" name="altura" min="0">
-      <input type="number" name="codSub" value="<?php echo intval(count($products)) + 1; ?>">
+      <input type="number" name="codigo" value="<?php echo intval(count($products)) + 1; ?>" required>
+      <input type="text" name="nombre" required>
+      <input type="text" name="material" required>
+      <input type="number" name="anchura" min="0" required>
+      <input type="number" name="altura" min="0" required>
+      <input type="number" name="codSub" value="<?php echo intval(count($products)) + 1; ?>" required>
 
       <div class="fin-float"></div>
 
@@ -54,16 +58,6 @@
             <td><?php echo $products[$p]['anchura']; ?></td>
             <td><?php echo $products[$p]['altura']; ?></td>
             <td><?php echo $products[$p]['codSubasta']; ?></td>
-
-            <!--
-              <td>
-                <button name="editProd">Editar producto</button>
-              </td>
-
-              <td>
-                <button name="delProd">Borrar producto</button>
-              </td>
-              -->
 
           </tr>
 
