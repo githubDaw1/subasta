@@ -50,7 +50,7 @@ Verión de Nodejs: versiones recientes (las últimas versiones)
 
 
 ## Modelado
-<img src="./img/modelsmodelado.webp" width="1000" height="500">
+<img src="./img/modelado.webp" width="1000" height="500">
 
 ## Ruta de páginas
 <img src="./img/figma.PNG" width="1000" height="500">
