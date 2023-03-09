@@ -33,10 +33,10 @@ composer update && npm audit && ncu && ncu -u
 |---------|
 | [![PHP](img/tecnologias/PHP.svg)](https://www.php.net)  [![MySQL](img/tecnologias/MySQL.svg)](https://www.mysql.com/)  [![Laravel](img/tecnologias/laravel.svg)](https://laravel.com/)  [![NodeJS](img/tecnologias/NodeJS.png)](https://nodejs.org/es/) |
 
-<p>Framework: Laravel 8</p><br/>
-<p>Lenguaje: PHP 8.0</p><br/>
-<p>Verión de Mysql establecida por el servidor</p><br/>
-<p>Verión de Nodejs: versiones recientes (las últimas versiones)</p>
+Framework: Laravel 8<br/>
+Lenguaje: PHP 8.0<br/>
+Verión de Mysql establecida por el servidor<br/>
+Verión de Nodejs: versiones recientes (las últimas versiones)
 
 | Others |
 |--------|
