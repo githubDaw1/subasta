@@ -56,7 +56,7 @@ Verión de Nodejs: versiones recientes (las últimas versiones)
 | [![Railway.app](img/tecnologias/railway.app.PNG)](https://railway.app/)  [![Vercel](img/tecnologias/vercel.PNG)](https://vercel.com/)  |
 
 
-## Combinación de colores, fuente
+## Combinación de colores y fuente
 | Color dominante: naranja |
 |--------------------------|
 | La impulsividad de los compradores para conseguir los productos que hay en oferta. Las reacciones de los pujadores y color dominante (naranja) son los facotres que forman esta gran combinación. Lo más llamativo de cada subasta celebrada será el ganador/a, la cantidad de pujas, y el último valor para el producto. |
