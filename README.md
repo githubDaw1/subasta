@@ -23,6 +23,11 @@ Upgrade dependencies
 composer update && npm audit && ncu && ncu -u
 ```
 
+Deploy local
+```bash
+php artisan serve
+```
+
 
 ## Tecnologías
 | Frontend |
@@ -54,6 +59,20 @@ Verión de Nodejs: versiones recientes (las últimas versiones)
 | Hosting |
 |---------|
 | [![Railway.app](img/tecnologias/railway.app.PNG)](https://railway.app/)  [![Vercel](img/tecnologias/vercel.PNG)](https://vercel.com/)  |
+
+
+Problemas en los despliegues
+
+[![Railway.app](img/error/railway_403.png)](https://subasta-production.up.railway.app/)
+
+[![Vercel](img/error/vercel_white.png)](https://subasta-production.up.railway.app/)
+
+
+Problemas en los despliegues
+
+[![Railway.app](img/error/railway_403.png)](https://subasta-production.up.railway.app/)
+
+[![Vercel](img/error/vercel_white.png)](https://subasta-production.up.railway.app/)
 
 
 ## Combinación de colores y fuente
