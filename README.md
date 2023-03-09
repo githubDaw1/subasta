@@ -65,7 +65,7 @@ Problemas en los despliegues
 
 [![Railway.app](img/error/railway_403.png)](https://subasta-production.up.railway.app/)
 
-[![Vercel](img/error/vercel_favicon.PNG)](https://subasta.vercel.app/)
+[![Vercel](img/error/vercel_favicon.png)](https://subasta.vercel.app/)
 
 
 ## Combinación de colores y fuente
