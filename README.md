@@ -94,4 +94,4 @@ Enlance de prototipo 360x640 (móvil): [Prototipo](https://www.figma.com/proto/W
 - Documentación: [PHP 8](https://www.php.net/manual/en/)
 - Documentación: [MySQL](https://dev.mysql.com/doc/)
 - Documentación: [Node.JS](https://nodejs.org/en/docs/)
-- Documentacioón: [Figma](https://help.figma.com/hc/en-us)
+- Documentación: [Figma](https://help.figma.com/hc/en-us)
