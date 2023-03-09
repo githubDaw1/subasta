@@ -1,9 +1,10 @@
 # Subasta Total
 Subasta total es una aplicación web donde se puja solamente con monedas de prueba.<br/>
 No se acepta dinero real ya sea físico o criptomonedas<br/>
-
 Es totalmente virtual, no se dejen engañar y pujen ahora que la cuenta atrás acaba pronto.
 
+
+## Comandos
 Download repository
 
 ```bash
@@ -55,7 +56,7 @@ Verión de Nodejs: versiones recientes (las últimas versiones)
 | [![Railway.app](img/tecnologias/railway.app.PNG)](https://railway.app/)  [![Vercel](img/tecnologias/vercel.PNG)](https://vercel.com/)  |
 
 
-## Diseño de interfaces
+## Combinación de colores, fuente
 | Color dominante: naranja |
 |--------------------------|
 | La impulsividad de los compradores para conseguir los productos que hay en oferta. Las reacciones de los pujadores y color dominante (naranja) son los facotres que forman esta gran combinación. Lo más llamativo de cada subasta celebrada será el ganador/a, la cantidad de pujas, y el último valor para el producto. |
@@ -85,6 +86,8 @@ Equilibrio visual y tensión compositiva.
 - El equilibrio depende de su posición
 - Técnica sugestiva: trata de llamar la atención del usuario, utilizando puntos de apoyo
 
+
+## Prototiapdo
 Prototipo 1920x1080 (portátil): [Prototipo](https://www.figma.com/proto/MGazLbzsWFdFpbrXs1uyWc/Prototipo-subasta-(DESKTOP)?node-id=1%3A5&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A5)
 
 Enlance de prototipo 360x640 (móvil): [Prototipo](https://www.figma.com/proto/WEoUJsjENQh8x2WGeOYmgg/Prototipo-subasta-(PHONE)?node-id=4%3A3&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A5)
@@ -95,3 +98,5 @@ Enlance de prototipo 360x640 (móvil): [Prototipo](https://www.figma.com/proto/W
 - Documentación: [MySQL](https://dev.mysql.com/doc/)
 - Documentación: [Node.JS](https://nodejs.org/en/docs/)
 - Documentación: [Figma](https://help.figma.com/hc/en-us)
+- Documentación: [SASS](https://sass-lang.com/documentation/)
+- Documentación: [TypeScript](https://www.typescriptlang.org/docs/)
