@@ -43,6 +43,11 @@ composer update && npm audit && ncu && ncu -u
 |--------|
 | [![Figma](img/tecnologias/figma.svg)](https://www.figma.com/)  [![Git](img/tecnologias/git.svg)](https://git-scm.com/)  [![GitHub](img/tecnologias/GitHub.svg)](https://github.com/) |
 
+| Hosting |
+|---------|
+| [![Railway.app](img/tecnologias/railway.app.PNG)](https://railway.app/)  [![Vercel](img/tecnologias/vercel.PNG)](https://vercel.com/)  |
+
+
 
 ## Modelado
 <img src="./img/modelado.webp" width="1000" height="500">
