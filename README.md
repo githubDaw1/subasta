@@ -32,12 +32,12 @@ php artisan serve
 ## Tecnologías
 | Frontend |
 |----------|
-| [![HTML5](img/tecnologias/HTML5.svg)](https://www.w3.org/html/)  [![CSS3](img/tecnologias/CSS3.svg)](https://www.w3schools.com/css/)  [![JavaScript](img/tecnologias/JS.svg)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)  [![SASS](img/tecnologias/SASS.svg)](https://sass-lang.com) |
+| [![HTML5](./img/tecnologias/HTML5.svg)](https://www.w3.org/html/)  [![CSS3](./img/tecnologias/CSS3.svg)](https://www.w3schools.com/css/)  [![JavaScript](./img/tecnologias/JS.svg)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)  [![SASS](./img/tecnologias/SASS.svg)](https://sass-lang.com) |
 | And JS Libraries |
 
 | Backend |
 |---------|
-| [![PHP](img/tecnologias/PHP.svg)](https://www.php.net)  [![MySQL](img/tecnologias/MySQL.svg)](https://www.mysql.com/)  [![Laravel](img/tecnologias/laravel.svg)](https://laravel.com/)  [![NodeJS](img/tecnologias/NodeJS.png)](https://nodejs.org/es/) |
+| [![PHP](./img/tecnologias/PHP.svg)](https://www.php.net)  [![MySQL](./img/tecnologias/MySQL.svg)](https://www.mysql.com/)  [![Laravel](./img/tecnologias/laravel.svg)](https://laravel.com/)  [![NodeJS](./img/tecnologias/NodeJS.png)](https://nodejs.org/es/) |
 
 Framework: Laravel 8<br/>
 Lenguaje: PHP 8.0<br/>
@@ -46,7 +46,7 @@ Verión de Nodejs: versiones recientes (las últimas versiones)
 
 | Others |
 |--------|
-| [![Figma](img/tecnologias/figma.svg)](https://www.figma.com/)  [![Git](img/tecnologias/git.svg)](https://git-scm.com/)  [![GitHub](img/tecnologias/GitHub.svg)](https://github.com/) |
+| [![Figma](./img/tecnologias/figma.svg)](https://www.figma.com/)  [![Git](./img/tecnologias/git.svg)](https://git-scm.com/)  [![GitHub](./img/tecnologias/GitHub.svg)](https://github.com/) |
 
 
 ## Modelado
@@ -58,14 +58,14 @@ Verión de Nodejs: versiones recientes (las últimas versiones)
 ## Hosting
 | Hosting |
 |---------|
-| [![Railway.app](img/tecnologias/railway.app.PNG)](https://railway.app/)  [![Vercel](img/tecnologias/vercel.PNG)](https://vercel.com/)  |
+| [![Railway.app](./img/tecnologias/railway.app.PNG)](https://railway.app/)  [![Vercel](./img/tecnologias/vercel.PNG)](https://vercel.com/)  |
 
 
 Problemas en los despliegues
 
-[![Railway.app](img/error/railway_403.png)](https://subasta-production.up.railway.app/)
+[![Railway.app](./img/error/railway_403.png)](https://subasta-production.up.railway.app/)
 
-[![Vercel](img/error/vercel_favicon.png)](https://subasta.vercel.app/)
+[![Vercel](./img/error/vercel_favicon.png)](https://subasta.vercel.app/)
 
 
 ## Combinación de colores y fuente
@@ -75,7 +75,7 @@ Problemas en los despliegues
 
 Paleta de colores: complementaria
 
-![Paleta de colores - Complementarias](img/paletaColores.webp)
+![Paleta de colores - Complementarias](./img/paletaColores.webp)
 
 Fuente del prototipo: Open Sans
 
@@ -88,7 +88,7 @@ Esta fuente también termina en Sans y es sans-serif. Su unión no sería un pro
 
 Contrast finder
 
-![Mejor combinación de colores](img/contraste.webp)
+![Mejor combinación de colores](./img/contraste.webp)
 
 Equilibrio visual y tensión compositiva.
 
