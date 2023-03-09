@@ -1,9 +1,8 @@
 # Subasta Total
-<p>
-Subasta total es una aplicación web donde todas tus pujas solamente se ven influidas por fondos viruales (sin dinero físico o criptomonedas).
-</p><br/>
+Subasta total es una aplicación web donde se puja solamente con monedas de prueba.<br/>
+No se acepta dinero real ya sea físico o criptomonedas<br/>
 
-<p>Es totalmente virtual, no se dejen engañar y pujen ahora que la cuenta atrás acaba pronto.</p>
+Es totalmente virtual, no se dejen engañar y pujen ahora que la cuenta atrás acaba pronto.
 
 Download repository
 
@@ -43,11 +42,6 @@ composer update && npm audit && ncu && ncu -u
 |--------|
 | [![Figma](img/tecnologias/figma.svg)](https://www.figma.com/)  [![Git](img/tecnologias/git.svg)](https://git-scm.com/)  [![GitHub](img/tecnologias/GitHub.svg)](https://github.com/) |
 
-| Hosting |
-|---------|
-| [![Railway.app](img/tecnologias/railway.app.PNG)](https://railway.app/)  [![Vercel](img/tecnologias/vercel.PNG)](https://vercel.com/)  |
-
-
 
 ## Modelado
 <img src="./img/modelado.webp" width="1000" height="500">
@@ -55,8 +49,11 @@ composer update && npm audit && ncu && ncu -u
 ## Ruta de páginas
 <img src="./img/figma.PNG" width="1000" height="500">
 
-## Despliegue de aplciaciones web
-Buscando un proveedor de hosting
+## Hosting
+| Hosting |
+|---------|
+| [![Railway.app](img/tecnologias/railway.app.PNG)](https://railway.app/)  [![Vercel](img/tecnologias/vercel.PNG)](https://vercel.com/)  |
+
 
 ## Diseño de interfaces
 | Color dominante: naranja |
@@ -92,13 +89,9 @@ Prototipo 1920x1080 (portátil): [Prototipo](https://www.figma.com/proto/MGazLbz
 
 Enlance de prototipo 360x640 (móvil): [Prototipo](https://www.figma.com/proto/WEoUJsjENQh8x2WGeOYmgg/Prototipo-subasta-(PHONE)?node-id=4%3A3&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A5)
 
-## Horas de libre configuración
-Bucar la forma más eficiente de traducir las páginas del proyecto (Mínimo: inglés o español)
-
 ## Bibilografía
 - Documentación: [Laravel 8](https://laravel.com/docs/8.x/releases)
 - Documentación: [PHP 8](https://www.php.net/manual/en/)
 - Documentación: [MySQL](https://dev.mysql.com/doc/)
 - Documentación: [Node.JS](https://nodejs.org/en/docs/)
-
 - Documentacioón: [Figma](https://help.figma.com/hc/en-us)
