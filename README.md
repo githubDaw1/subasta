@@ -99,7 +99,7 @@ Equilibrio visual y tensión compositiva.
 - Técnica sugestiva: trata de llamar la atención del usuario, utilizando puntos de apoyo
 
 
-## Prototiapdo
+## Prototipado
 Prototipo 1920x1080 (portátil): [Prototipo](https://www.figma.com/proto/MGazLbzsWFdFpbrXs1uyWc/Prototipo-subasta-(DESKTOP)?node-id=1%3A5&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A5)
 
 Enlance de prototipo 360x640 (móvil): [Prototipo](https://www.figma.com/proto/WEoUJsjENQh8x2WGeOYmgg/Prototipo-subasta-(PHONE)?node-id=4%3A3&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A5)
