@@ -8,7 +8,7 @@
 
     <a href="#close" title="Close" class="close">X</a>
 
-    <form action="/" method="GET" enctype="multipart/form-data">
+    <form method="GET" enctype="multipart/form-data">
 
       <h2>Login</h2>
 
