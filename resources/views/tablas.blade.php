@@ -18,17 +18,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <title>Todas las tablas</title>
-  <link href="{{ asset('img/logo.png') }}" type="image/x-icon" rel="icon">
-  <link href="{{ asset('icons/icomoon.min.css') }}" rel="stylesheet">
-  <link href="{{ asset('css/estilos.css') }}" rel="stylesheet">
-  <link href="{{ asset('css/styles.css') }}" rel="stylesheet">
-  <link href="{{ asset('css/tablas.css') }}" rel="stylesheet">
+  <link href="{{ secure_asset('img/logo.png') }}" type="image/x-icon" rel="icon">
+  <link href="{{ secure_asset('icons/icomoon.min.css') }}" rel="stylesheet">
+  <link href="{{ secure_asset('css/estilos.css') }}" rel="stylesheet">
+  <link href="{{ secure_asset('css/styles.css') }}" rel="stylesheet">
+  <link href="{{ secure_asset('css/tablas.css') }}" rel="stylesheet">
 </head>
 
 <body>
 
   <header>
-    <img src="{{ asset('img/cabecera.webp') }}" alt="Logo de Subasta total">
+    <img src="{{ secure_asset('img/cabecera.webp') }}" alt="Logo de Subasta total">
   </header>
 
   <nav class="topnav" id="myTopnav">
@@ -45,7 +45,7 @@
     </a>
 
     <a href="javascript:void(0);" class="icon nav">
-      <img src="{{ asset('img/menu.svg') }}" alt="Menu">
+      <img src="{{ secure_asset('img/menu.svg') }}" alt="Menu">
     </a>
 
   </nav>
@@ -76,7 +76,7 @@
     <div class="fin-float"></div><hr/>
 
     <?php
-      //echo asset('crud/subastas.php');
+      //echo secure_asset('crud/subastas.php');
       $subastas = new Subasta();
       $sub = $subastas->getSubastas();
       require_once("crud/subastas.php");
@@ -85,7 +85,7 @@
     <div class="fin-float"></div><hr/>
 
     <?php
-      //echo asset('crud/pujas.php');
+      //echo secure_asset('crud/pujas.php');
       $pujas = new Puja();
       $pu = $pujas->getPujas();
       require_once("crud/pujas.php");
@@ -94,7 +94,7 @@
     <div class="fin-float"></div><hr/>
 
     <?php
-      //echo asset('crud/usuarios.php');
+      //echo secure_asset('crud/usuarios.php');
       $usuario = new Usuario();
       $users = $usuario->getUsuarios();
       require_once("crud/usuarios.php");
@@ -107,9 +107,9 @@
     <p>Autor: Rafael Aguilar Muñoz</p>
   </footer>
 
-  <script src="{{ asset('js/app.js') }}" defer></script>
-  <script src="{{ asset('js/tablas.js') }}" defer></script>
-  <script src="{{ asset('js/script.js') }}" defer></script>
+  <script src="{{ secure_asset('js/app.js') }}" defer></script>
+  <script src="{{ secure_asset('js/tablas.js') }}" defer></script>
+  <script src="{{ secure_asset('js/script.js') }}" defer></script>
 
 </body>
 
