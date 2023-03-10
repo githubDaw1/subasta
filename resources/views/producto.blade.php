@@ -21,16 +21,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portal de Subastas</title>
-  <link href="{{ asset('img/logo.png') }}" type="image/x-icon" rel="icon">
-  <link href="{{ asset('css/login.css') }}" rel="stylesheet">
-  <link href="{{ asset('css/estilos.css') }}" rel="stylesheet">
-  <link href="{{ asset('css/styles.css') }}" rel="stylesheet">
+  <link href="{{ secure_asset('img/logo.png') }}" type="image/x-icon" rel="icon">
+  <link href="{{ secure_asset('css/login.css') }}" rel="stylesheet">
+  <link href="{{ secure_asset('css/estilos.css') }}" rel="stylesheet">
+  <link href="{{ secure_asset('css/styles.css') }}" rel="stylesheet">
 </head>
 
 <body>
 
   <header>
-    <img src="{{ asset('img/cabecera.webp') }}" alt="Logo de Subasta total">
+    <img src="{{ secure_asset('img/cabecera.webp') }}" alt="Logo de Subasta total">
   </header>
 
   <nav class="topnav" id="myTopnav">
@@ -46,7 +46,7 @@
     </a>
 
     <a href="javascript:void(0);" class="icon nav">
-      <img src="{{ asset('img/menu.svg') }}" alt="Menu">
+      <img src="{{ secure_asset('img/menu.svg') }}" alt="Menu">
     </a>
 
   </nav>
@@ -85,7 +85,7 @@
           <a href="/guardar" class="guardar">
             Guardar
             <span>Busqueda</span>
-            <img src="{{ asset('img/logoAcceso.png') }}" srcset="{{ asset('img/logoAcceso.svg') }}" alt="Sesion activa" />
+            <img src="{{ secure_asset('img/logoAcceso.png') }}" srcset="{{ secure_asset('img/logoAcceso.svg') }}" alt="Sesion activa" />
           </a>
 
         </li>
@@ -117,7 +117,7 @@
         <ul>
 
           <li>
-            <img src="{{ asset('img/productos/<?php echo $products[$i]['nomProd'] ?>.jgp') }}" alt="<?php echo $products[$i]['nomProd'] ?>">
+            <img src="{{ secure_asset('img/productos/<?php echo $products[$i]['nomProd'] ?>.jgp') }}" alt="<?php echo $products[$i]['nomProd'] ?>">
           </li>
 
           <li>
@@ -199,9 +199,9 @@
     <p>Autor: Rafael Aguilar Muñoz</p>
   </footer>
 
-  <script src="{{ asset('js/app.js') }}" defer></script>
-  <script src="{{ asset('js/reloj.js') }}" defer></script>
-  <script src="{{ asset('js/script.js') }}" defer></script>
+  <script src="{{ secure_asset('js/app.js') }}" defer></script>
+  <script src="{{ secure_asset('js/reloj.js') }}" defer></script>
+  <script src="{{ secure_asset('js/script.js') }}" defer></script>
 
 </body>
 
