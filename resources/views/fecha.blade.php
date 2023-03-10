@@ -7,9 +7,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Validar fechas</title>
-  <link href="{{ asset('img/logo.png')}}" type="image/x-icon" rel="icon">
-  <link href="{{ asset('icons/icomoon.min.css') }}" rel="stylesheet">
-  <link href="{{ asset('css/fecha.css') }}" rel="stylesheet">
+  <link href="{{ secure_asset('img/logo.png')}}" type="image/x-icon" rel="icon">
+  <link href="{{ secure_asset('icons/icomoon.min.css') }}" rel="stylesheet">
+  <link href="{{ secure_asset('css/fecha.css') }}" rel="stylesheet">
 </head>
 
 <body>
@@ -46,8 +46,8 @@
 
   </main>
 
-  <script src="{{ asset('js/app.js') }}" defer></script>
-  <script src="{{ asset('js/script.js') }}" defer></script>
+  <script src="{{ secure_asset('js/app.js') }}" defer></script>
+  <script src="{{ secure_asset('js/script.js') }}" defer></script>
 
 </body>
 
