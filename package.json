@@ -31,7 +31,6 @@
         "chart.js": "latest",
         "jquery": "latest",
         "popper.js": "latest",
-        "railway": "^2.0.17",
         "source-map-loader": "latest"
     }
 }

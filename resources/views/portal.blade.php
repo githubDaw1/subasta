@@ -29,12 +29,12 @@
   <nav class="topnav" id="myTopnav">
 
     <a href="/" class="active">Inicio</a>
-    <a href="<?php echo '/portal?idUsu='. $codigo ?>">Portal</a>
+    <a href="<?php echo '/portal?idUsu='. $codigo ."&pagina=1" ?>">Portal</a>
     <a href="/subasta" class="disabled">Subastas</a>
     <a href="<?php echo '/pujas?idUsu='. $codigo ?>">Mis pujas</a>
 
-    <a href="#loginModal" data-target="#loginModal" class="disabled">Iniciar sesion</a>
-    <a href="#registroModal" data-target="#registroModal" class="disabled">Registrarse</a>
+    <a href="#loginModal" data-target="#loginModal" class="login disabled">Iniciar sesion</a>
+    <a href="#registroModal" data-target="#registroModal" class="registro disabled">Registrarse</a>
 
     <a href="/">
       <button name="out" id="out">Log out</button>

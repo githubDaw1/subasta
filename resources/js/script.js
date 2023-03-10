@@ -67,8 +67,8 @@ nav[0].onclick = function foldNav() {
   }
 };
 
-var ctx = document.getElementById("myChart").getContext("2d");
-//const ctx = document.getElementById("myChart");
+//var ctx = document.getElementById("myChart").getContext("2d");
+const ctx = document.getElementById("myChart");
 
 var representacion = new Chart(ctx, {
 
