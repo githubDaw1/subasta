@@ -1,0 +1,20 @@
+img {
+  width: 25%;
+  height: 400px;
+  margin-right: 50px;
+  float: left;
+}
+
+.dragDrop { margin: 50px 0 0 25%; }
+
+#load, .loadText {
+  display: none;
+  float: right;
+  position: absolute;
+  margin: 175px 0 0 30%;
+}
+
+.secundario {
+  float: left;
+  margin: 50px 0 0 25%;
+}

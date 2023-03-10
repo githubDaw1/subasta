@@ -1,0 +1,323 @@
+$color_1: rgb(0, 0, 255);
+$color_2: rgb(255, 255, 255);
+$color_3: #912600;
+$font-family_1: 'Source Sans Pro', sans-serif;
+$background-color_1: rgb(255, 255, 255);
+$background-color_2: rgb(0, 0, 0);
+$background-color_3: #f9f9f9;
+$background-color_4: #EAEAEA;
+$background-color_5: #000000;
+
+body {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  margin: 0; /* Top, right, bottom and left */
+  padding: 0; /* Top, right, bottom and left */
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+header {
+  font-size: 30px;
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: 5px underline dotted rgb(255, 0, 0);
+  text-align: center;
+  color: rgb(0, 0, 255);
+}
+
+header img {
+  width: 100%;
+  height: 500px;
+}
+
+/***** Nav styles *****/
+nav {
+  overflow: hidden;
+  position: relative;
+  top: 0;
+  background-color: rgb(0, 0, 0);
+  text-align: left;
+  width: 100%;
+  justify-content: center;
+}
+
+nav a {
+  font-size: 30px;
+  float: left;
+  color: rgb(255, 255, 255);
+  padding: 0;
+  margin: 25px 40px;
+  text-decoration: none;
+}
+
+nav .disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+nav input[type=text] {
+  padding: 6px;
+  margin: 35px 0 0 250px;
+  font-size: 17px;
+  border: none;
+  float: left;
+}
+
+nav  button {
+  padding: 6px 10px;
+  margin: 35px 50px 0px 0px;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  float: left;
+}
+
+nav  button:hover { background-color: #ccc; }
+
+/*** Contenido princiapl ***/
+main { text-align: center; }
+
+section:first-child {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+section:first-child div {
+  padding: 15px 30%;
+  background-color: #f9f9f9;
+  color: #912600;
+  border-bottom: 1px solid #ddd;
+  height: 50px;
+}
+
+section:nth-child(2) {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+section:nth-child(2) div {
+  padding: 15px 30%;
+  background-color: #f9f9f9;
+  color: #912600;
+  border-bottom: 1px solid #ddd;
+  height: 50px;
+}
+
+main form {
+  width: 20%;
+  height: 550px;
+  border: 1px solid #9C9C9C;
+  background-color: #EAEAEA;
+  padding: 25px 50px;
+  margin: 30px 0 30px 40%;
+}
+
+main form h2 { margin-top: 30px; }
+
+main .form-group {
+  margin-top: 30px;
+  width: 100%;
+}
+
+main form label, main form input, main form select { float: left; }
+
+/***** Pie *****/
+footer {
+  clear: both;
+  width: 100%;
+  background-color: #000000;
+  padding: 1em 0;
+  font-size: 1.5em;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  border-top: 1px solid #ddd;
+  margin-top: 10px;
+}
+
+footer p { margin-top: 1.5em; }
+
+footer h2, footer p {
+  box-sizing: border-box;
+  padding: 0.5em;
+  /*margin: 0.3em auto;*/
+  height: 50px;
+}
+
+.fin-float { clear: both; }
+
+/** Small mobile **/
+@media only screen and (max-width: 320px) {
+
+  section:first-child div { height: 100px; }
+
+  main form {
+    width: 70%;
+    /*height: 350px;*/
+    padding: 25px 40px;
+    margin: 30px 15%;
+  }
+
+  nav input[type=text] {
+    padding: 6px;
+    margin: 25px 0 0 25px;
+    font-size: 17px;
+    border: none;
+    float: left;
+  }
+
+  nav button {
+    padding: 6px 10px;
+    margin: 25px 50px 0px 0px;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    float: left;
+  }
+}
+
+/** Medium mobile **/
+@media only screen and (min-width: 320px) and (max-width: 375px) {
+
+  section:first-child div { height: 100px; }
+
+  main form {
+    width: 70%;
+    /*height: 350px;*/
+    padding: 25px;
+    margin: 30px 15%;
+  }
+
+  nav input[type=text] {
+    padding: 6px;
+    margin: 25px 0 0 25px;
+    font-size: 17px;
+    border: none;
+    float: left;
+  }
+
+  nav button {
+    padding: 6px 10px;
+    margin: 25px 50px 0px 0px;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    float: left;
+  }
+}
+
+/** Big mobile **/
+@media only screen and (min-width: 375px) and (max-width: 425px) {
+
+  section:first-child div { height: 80px; }
+
+  main form {
+    width: 60%;
+    /*height: 350px;*/
+    padding: 25px;
+    margin: 30px 25%;
+  }
+
+  nav input[type=text] {
+    padding: 6px;
+    margin: 35px 0 0 50px;
+    font-size: 17px;
+    border: none;
+    float: left;
+  }
+
+  nav button {
+    padding: 6px 10px;
+    margin: 35px 50px 0px 0px;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    float: left;
+  }
+}
+
+/** Tablets **/
+@media only screen and (min-width: 425px) and (max-width: 768px) {
+
+  /*section:first-child div { height: 80px; }*/
+
+  main form {
+    width: 50%;
+    /*height: 350px;*/
+    padding: 25px;
+    margin: 30px 25%;
+  }
+
+  nav input[type=text] {
+    padding: 6px;
+    margin: 35px 0 0 50px;
+    font-size: 17px;
+    border: none;
+    float: left;
+  }
+
+  nav button {
+    padding: 6px 10px;
+    margin: 35px 50px 0px 0px;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    float: left;
+  }
+}
+
+/** Laptops **/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+  main form {
+    width: 40%;
+    /*height: 350px;*/
+    margin: 30px 30%;
+  }
+
+  nav input[type=text] {
+    padding: 6px;
+    margin: 35px 0 0 250px;
+    font-size: 17px;
+    border: none;
+    float: left;
+  }
+
+  nav button {
+    padding: 6px 10px;
+    margin: 35px 50px 0px 0px;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    float: left;
+  }
+}
+
+/** Media query for small devices **/
+@media screen and (max-width: 600px) {
+
+  .topnav a:not(:first-child, :last-child) { display: none; }
+
+  .topnav .icon { float: right; }
+
+  .topnav.responsive { position: relative; }
+
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    text-align: left;
+  }
+
+  .topnav.icon, .topnav.responsive a { display: block; }
+
+  table {
+    overflow-x: scroll;
+    text-align: left;
+    font-size: 14px;
+  }
+}

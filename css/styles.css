@@ -1,0 +1,455 @@
+body {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  margin: 0; /* Top, right, bottom and left */
+  padding: 0; /* Top, right, bottom and left */
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 600px;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: 5px underline dotted #A36200;
+  text-align: center;
+  /*color: rgb(0, 0, 255);*/
+  background-color: #fff;
+}
+
+header img {
+  width: 100%;
+  height: 100%;
+}
+
+/*** Nav styles ***/
+nav {
+  overflow: hidden;
+  position: relative;
+  top: 0;
+  background-color: #199CFF;
+  text-align: left;
+  width: 100%;
+  justify-content: center;
+}
+
+nav a:not(:last-child) { margin: 20px 40px; }
+
+nav a:last-child { margin: 20px 0; }
+
+nav a:not(:last-child), nav a:last-child {
+  text-decoration: none;
+  padding: 0;
+  padding: 0;
+  float: left;
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+}
+
+nav a.login, nav a.registro { opacity: 0; }
+
+nav input[type=text] {
+  padding: 6px;
+  margin: 30px 0 0 50px;
+  font-size: 17px;
+  border: none;
+  float: left;
+}
+
+nav button {
+  padding: 6px 10px;
+  margin: 8px 50px 0 0;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  float: left;
+}
+
+nav button:hover { background-color: #ccc; }
+
+/*** Contenido princiapl ***/
+main {
+  text-align: center;
+  width: 100%;
+  height: auto;
+  float: left;
+}
+
+.fin-float { clear: both; }
+
+section:first-child {
+  width: 100%;
+  /*margin-bottom: 40px;*/
+  text-align: center;
+  float: left;
+}
+
+section:first-child div {
+  padding: 15px 30%;
+  background-color: #f9f9f9;
+  color: #912600;
+  border-bottom: 1px solid #ddd;
+}
+
+section:nth-child(2) {
+  width: 100%;
+  height: auto;
+}
+
+section:nth-child(2) h2 {
+  font-size: 40px;
+  color: rgb(255, 0, 0);
+}
+
+.bloquePujas {
+  width: 100%;
+  height: auto;
+  padding: 30px 0;
+}
+
+.bloquePujas .pujas {
+  width: 20%;
+  margin: 30px 0 30px 20%;
+  float: left;
+}
+
+.bloquePujas .pujas button, section:nth-child(2) .subasta button { margin-top: 15px; }
+
+/*section:nth-child(2) ul {
+  box-sizing: border-box;
+  border-bottom: 1px solid #ccc;
+  margin: 50px 15%;
+  padding-bottom: 35px;
+  padding-left: 40px;
+}
+
+section:nth-child(2) ul li {
+  display: inline;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+section:nth-child(2) ul li h3, section:nth-child(2) ul li p { padding-left: 0; }
+
+section:nth-child(2) ul li a:link, section:nth-child(2) ul li a:visited {
+  color: #666;
+  font-size: 85%;
+  font-weight: 600;
+  line-height: 30px;
+  height: 30px;
+  margin-right: 8px;
+  float: left;
+  padding: 2px 10px;
+  text-decoration: none;
+  border-top: 2px solid rgb(255, 255, 255);
+}
+
+section:nth-child(2) ul li .current:link,
+section:nth-child(2) ul li .current:visited,
+section:nth-child(2) ul li .current:link,
+section:nth-child(2) ul li .current:visited {
+  background-color: #fff;
+  border-top: 2px solid #F29708;
+  border-bottom: 1px solid white;
+  border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  color: #000;
+}
+
+section:nth-child(2) ul a:hover { color: #00f; }
+
+section:nth-child(2) ul .guardar:link,
+section:nth-child(2) ul .guardar:visited,
+section:nth-child(2) ul .guardar.current:link,
+section:nth-child(2) ul .guardar.current:visited,
+section:nth-child(2) ul .derecha:link,
+section:nth-child(2) ul .derecha:visited,
+section:nth-child(2) ul .derecha.current:link,
+section:nth-child(2) ul .derecha.current:visited {
+  float: right;
+}
+
+section:nth-child(2) ul li .guardar img {
+  height: 1.5em;
+  margin: 0 0 0 0.5em;
+  vertical-align: middle;
+}*/
+
+
+.subastas {
+  /*box-sizing: border-box;*/
+  width: 100%;
+  height: auto;
+  text-align: center;
+  float: left;
+  /*margin-bottom: 50px;*/
+}
+
+section:nth-child(2) .productos {
+  box-sizing: border-box;
+  margin: 20px 0 10px 10%;
+  width: 30%;
+  height: auto;
+  text-align: center;
+  float: left;
+  /*margin-bottom: 50px;*/
+}
+
+/*section:nth-child(2) .productos button {
+  float: left;
+  margin: 25px 10px;
+  vertical-align: middle;
+  width: 90px;
+  margin: 25px 0 25px 10%;
+  height: 100px;
+  display: flex;
+}
+
+section:nth-child(2) .producto {
+  box-sizing: border-box;
+  margin: 20px 35% 10px 35%;
+  width: 30%;
+  text-align: center;
+  float: left;
+  margin-bottom: 50px;
+}*/
+
+section:nth-child(2) .subasta {
+  box-sizing: border-box;
+  margin: 20px 30% 50px 30%;
+  width: 40%;
+  text-align: center;
+  float: left;
+  /*margin-bottom: 50px;*/
+}
+
+section:nth-child(2) div ul { border: 2px solid rgb(0, 0, 0); }
+
+section:nth-child(2) button {
+  float: left;
+  /*margin: 25px 10px;
+  vertical-align: middle;*/
+  text-align: center;
+  /*width: 90px;
+  margin: 25px 0 25px 10%;
+  height: 100px;*/
+  border: 0;
+  background-image: linear-gradient(150deg, #9500ff, #09f, #00DDFF);
+  border-radius: 8px;
+  color: #fff;
+  /*display: flex;*/
+  font-size: 18px;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+section:nth-child(2) button span {
+  background-color: #111;
+  padding: 16px 24px;
+  border-radius:6px;
+  transition: 0.3s;
+}
+
+section:nth-child(2) button:hover span { background: none; }
+
+section:nth-child(2) button:active span { transform: scale(0.9); }
+
+section:nth-child(2) div ul li {
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+  list-style-type: none;
+}
+
+section:nth-child(2) div ul li img { width: 80%; }
+
+section:nth-child(2) ul li h3 { font-size: 1.5em; }
+
+section:nth-child(2) ul li h4 {
+  font-size: 1.2em;
+  padding: 15px 0;
+}
+
+section:nth-child(2) form {
+  clear: both;
+  /*margin-top: 75px;*/
+  padding: 0 25%;
+  width: 30%;
+  height: 50px;
+  margin: 50px 0 50px 15%;
+}
+
+section:nth-child(2) form input { float: left; }
+
+section:nth-child(2) form button { margin-top: 10px; }
+
+input.idSub, input.idUsu { display: none; }
+
+/*input.valorPuja { margin: 30px 20%;
+}*/
+
+.paginacion {
+  text-align: center;
+  font-size: 90%;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  float: left;
+  padding: 100px 25% 50 25%;
+}
+
+.paginacion ul {
+  padding: 0;
+  line-height: 1.5em;
+  margin: 50px 0;
+}
+
+.paginacion ul li {
+  display: inline;
+  padding: 0 0.5em;
+}
+
+.paginacion ul li a {
+  border-width: 0;
+  text-decoration: none;
+}
+
+.paginacion span.current {
+  font-weight: bold;
+  padding: 0.2em 0.5em;
+  background-color: #123a63;
+  color: #fff;
+}
+
+.fin-float { clear: both; }
+
+button a, button a:hover {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+footer {
+  clear: both;
+  width: 100%;
+  background-color: #0089F0;
+  padding: 1em 0;
+  font-size: 1.5em;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  border-top: 1px solid #ddd;
+  margin-top: 10px;
+}
+
+footer p { margin-top: 1.5em; }
+
+footer h2, footer p {
+  box-sizing: border-box;
+  padding: 0.5em;
+  font-size: 22px;
+}
+
+/** Small mobile **/
+@media only screen and (max-width: 320px) {
+
+  main form {
+    width: 70%;
+    height: 350px;
+    padding: 25px 40px;
+    margin: 30px 15%;
+  }
+
+  nav input[type=text] { margin: 25px 0 0 25px; }
+
+  /*nav button { margin: 25px 50px 0 0; }*/
+}
+
+/** Medium mobile **/
+@media only screen and (min-width: 321px) and (max-width: 375px) {
+
+  main form {
+    width: 70%;
+    height: 350px;
+    padding: 25px;
+    margin: 30px 15%;
+  }
+
+  nav input[type=text] { margin: 25px 0 0 25px; }
+
+  /*nav button { margin: 25px 50px 0 0; }*/
+}
+
+/** Big mobile **/
+@media only screen and (min-width: 376px) and (max-width: 425px) {
+
+  main form {
+    width: 60%;
+    height: 350px;
+    padding: 25px;
+    margin: 30px 25%;
+  }
+
+  nav input[type=text] { margin: 35px 0 0 50px; }
+
+  /*nav button { margin: 30px 50px 0 0; }*/
+}
+
+/** Tablets **/
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+
+  main form {
+    width: 50%;
+    height: 350px;
+    padding: 25px;
+    margin: 30px 25%;
+  }
+
+  nav input[type=text] { margin: 35px 0 0 50px; }
+
+  /*nav button { margin: 30px 50px 0 0; }*/
+}
+
+/** Laptops **/
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+  main form {
+    width: 40%;
+    height: 350px;
+    margin: 30px 30%;
+  }
+
+  nav input[type=text] { margin: 35px 0 0 250px; }
+
+  /*nav button { margin: 30px 50px 0 0; }*/
+}
+
+/** Media query for small devices **/
+@media screen and (max-width: 600px) {
+
+  .topnav a:not(:first-child, :last-child) { display: none; }
+
+  .topnav .icon { float: right; }
+
+  .topnav.responsive { position: relative; }
+
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    text-align: left;
+  }
+
+  .topnav.icon, .topnav.responsive a { display: block; }
+
+  table {
+    overflow-x: scroll;
+    text-align: left;
+    font-size: 14px;
+  }
+}
