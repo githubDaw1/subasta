@@ -13,7 +13,7 @@
     //protected $hidden = ['password'];
 
     public function __construct() {
-      $this->con = mysqli_connect('localhost', 'root' , '', 'subasta');
+      $this->con = mysqli_connect('containers-us-west-31.railway.app', 'root' , 'pK091DOyf7nqKTxSKcqM', 'railway');
     }
 
     // Obtener todos las subastas

@@ -1,11 +1,11 @@
 <?php
 
   class Modelo {
-  
+
     private $con;
 
     public function __construct() {
-      $this->con = new mysqli('localhost', 'root' , '', 'subasta');
+      $this->con = mysqli_connect('containers-us-west-31.railway.app', 'root' , 'pK091DOyf7nqKTxSKcqM', 'railway');
     }
 
     // Obtener todos los usuarios
@@ -51,9 +51,9 @@
     /*public function addUsuarios($usuario) {
 
     }
-    
+
     public function addProductos($producto) {
-      
+
       $query = $this->con->query("INSERT INTO genero (genero) VALUES genero=$genero");
 
       while ($row = $query->fetch_array(MYSQLI_ASSOC)) { $generos[] = $row; }
@@ -62,7 +62,7 @@
     }
 
     public function addSubastas($subasta) {
-      
+
       $query = $this->con->query("INSERT INTO genero (genero) VALUES genero=$genero");
 
       while ($row = $query->fetch_array(MYSQLI_ASSOC)) { $generos[] = $row; }
@@ -71,7 +71,7 @@
     }
 
     public function addPujas($puja) {
-      
+
       $query = $this->con->query("INSERT INTO genero (genero) VALUES genero=$genero");
 
       while ($row = $query->fetch_array(MYSQLI_ASSOC)) { $generos[] = $row; }
@@ -81,7 +81,7 @@
 
 
     public function delProducto($genero) {
-      
+
       $query = $this->con->query("DELETE FROM genero WHERE genero=$genero");
 
       while ($row = $query->fetch_array(MYSQLI_ASSOC)) { $generos[] = $row; }
@@ -90,7 +90,7 @@
     }
 
     public function updateSerie($serie) {
-      
+
       $codigo = $serie[0];
       $fecha = $serie[2];
       $temporadas = $serie[3];
@@ -106,5 +106,5 @@
   }
 
   //$this->con->close();
-  
+
 ?>
