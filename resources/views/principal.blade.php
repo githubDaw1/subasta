@@ -8,10 +8,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="content-security-policy|content-type|default-style|refresh">
   <title>Página principal</title>
-  <link href="{{ secure_asset('img/logo.png')}}" type="image/x-icon" rel="icon">
-  <link href="{{ secure_asset('icons/icomoon.min.css') }}" rel="stylesheet">
-  <link href="{{ secure_asset('css/modal.css') }}" rel="stylesheet">
-  <link href="{{ secure_asset('css/estilos.css') }}" rel="stylesheet">
+  <link href="{{ asset('img/logo.png')}}" type="image/x-icon" rel="icon">
+  <link href="{{ asset('icons/icomoon.min.css') }}" rel="stylesheet">
+  <link href="{{ asset('css/modal.css') }}" rel="stylesheet">
+  <link href="{{ asset('css/estilos.css') }}" rel="stylesheet">
 </head>
 
 <body>
@@ -35,7 +35,7 @@
     </div>
 
     <div class="imagen">
-      <img src="{{ secure_asset('img/cabecera.webp') }}" alt="Logo de Subasta total">
+      <img src="{{ asset('img/cabecera.webp') }}" alt="Logo de Subasta total">
     </div>
 
   </header>
@@ -52,7 +52,7 @@
     <a href="#registroModal" data-target="#registroModal">Registrarse</a>
 
     <a href="javascript:void(0);" class="icon nav">
-      <img src="{{ secure_asset('img/menu.svg') }}" alt="Menu">
+      <img src="{{ asset('img/menu.svg') }}" alt="Menu">
     </a>
 
   </nav>
@@ -80,7 +80,7 @@
 
       <div class="cardFeatures">
 
-        <img src="{{ secure_asset('img/piedrasPreciosas.jpg') }}" alt="Piedras muy valiosas">
+        <img src="{{ asset('img/piedrasPreciosas.jpg') }}" alt="Piedras muy valiosas">
 
         <h2>Piedras preciosas</h2>
 
@@ -95,7 +95,7 @@
 
       <div class="cardFeatures">
 
-        <img src="{{ secure_asset('img/autos.webp') }}" alt="Autos de lujo">
+        <img src="{{ asset('img/autos.webp') }}" alt="Autos de lujo">
 
         <h2>Vehículos lujosos</h2>
 
@@ -110,7 +110,7 @@
 
       <div class="cardFeatures">
 
-        <img src="{{ secure_asset('img/mobiliario.jpg') }}" alt="Hogar del futuro">
+        <img src="{{ asset('img/mobiliario.jpg') }}" alt="Hogar del futuro">
 
         <h2>Futuro hogar</h2>
 
@@ -182,7 +182,7 @@
         <h1>Eventos únicos</h1>
 
         <div class="imgCallToActions">
-          <img src="{{ secure_asset('img/evento.jpg') }}" alt="Evento único">
+          <img src="{{ asset('img/evento.jpg') }}" alt="Evento único">
         </div>
 
         <article class="contenido">
@@ -220,7 +220,7 @@
               <div class="boxProfesional">
 
                 <div class="imgProfesional">
-                  <img src="{{ secure_asset('img/cara.png') }}" alt="Cara del Administrador">
+                  <img src="{{ asset('img/cara.png') }}" alt="Cara del Administrador">
                 </div>
 
                 <div class="datosProfesional">
@@ -252,7 +252,7 @@
       <div class="personal">
 
         <div class="imagen">
-          <img src="{{ secure_asset('img/personal.jpg') }}" alt="Imagen del personal">
+          <img src="{{ asset('img/personal.jpg') }}" alt="Imagen del personal">
         </div>
 
         <article class="contenidoAbout">
@@ -290,8 +290,8 @@
     <p>Autor: Rafael Aguilar Muñoz</p>
   </footer>
 
-  <script src="{{ secure_asset('js/app.js') }}" defer></script>
-  <script src="{{ secure_asset('js/script.js') }}" defer></script>
+  <script src="{{ asset('js/app.js') }}" defer></script>
+  <script src="{{ asset('js/script.js') }}" defer></script>
 
 </body>
 
