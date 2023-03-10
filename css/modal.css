@@ -1,0 +1,127 @@
+.modalDialog {
+  position: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 99999;
+  opacity: 0;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+}
+
+.modalDialog:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modalDialog>div {
+  width: 500px;
+  position: relative;
+  margin: 6% auto;
+  padding: 5px 20px 13px 20px;
+  border-radius: 10px;
+  background-image: linear-gradient(#fff, #999);
+  transition: opacity 400ms ease-in;
+}
+
+.close {
+  background-color: #606061;
+  color: #FFFFFF;
+  line-height: 25px;
+  position: absolute;
+  right: -12px;
+  text-align: center;
+  top: -10px;
+  width: 24px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 12px;
+  box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover { background-color: #00d9ff; }
+
+#loginModal div form {
+  width: 70%;
+  height: 320px;
+  border: 1px solid #9C9C9C;
+  background-color: #EAEAEA;
+  padding: 25px 50px;
+  margin: 30px 15%;
+}
+
+#registroModal div form {
+  width: 70%;
+  height: 480px;
+  border: 1px solid #9C9C9C;
+  background-color: #EAEAEA;
+  padding: 25px 50px;
+  margin: 30px 15%;
+}
+
+#login div form {
+  width: 70%;
+  height: 320px;
+  border: 1px solid #9C9C9C;
+  background-color: #EAEAEA;
+  padding: 25px 50px;
+  margin: 30px 15%;
+}
+
+.modalDialog div form h2 {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.modalDialog div .form-group {
+  margin-top: 30px;
+  width: 100%;
+}
+
+.modalDialog div form h2, label {
+  color: #0dcaf0;
+  font-size: 20px;
+}
+
+.modalDialog div form label, .modalDialog div form input, .modalDialog div form select { float: left; }
+
+
+.form-group:last-child input {
+  font-size: 14px;
+  padding: 10px;
+}
+
+.form-group:last-child input:hover { background-color: rgb(255, 255, 255); }
+
+form button {
+  float: left;
+  /*margin: 25px 10px;
+  vertical-align: middle;*/
+  text-align: center;
+  /*width: 90px;*/
+  /*margin: 25px 0 25px 10%;*/
+  /*height: 100px;*/
+  border: 0;
+  background-image: linear-gradient(150deg, #9500ff, #09f, #00DDFF);
+  border-radius: 8px;
+  color: #fff;
+  /*display: flex;*/
+  font-size: 18px;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button span {
+  background-color: #111;
+  padding: 16px 24px;
+  border-radius:6px;
+  transition: 0.3s;
+}
+
+form button:hover span { background: none; }
+
+form button:active span { transform: scale(0.9); }
