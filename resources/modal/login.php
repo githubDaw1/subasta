@@ -8,7 +8,7 @@
 
     <a href="#close" title="Close" class="close">X</a>
 
-    <form method="GET" enctype="multipart/form-data">
+    <form method="POST" enctype="multipart/form-data">
 
       <h2>Login</h2>
 
@@ -42,10 +42,10 @@
   $permiso = 0;
   $codUsuario;
 
-  if (isset($_GET["login"])) {
+  if (isset($_POST["login"])) {
 
-    $user = $_GET["usuario"];
-    $password = $_GET["passw"];
+    $user = $_POST["usuario"];
+    $password = $_POST["passw"];
 
     $usuarios = new Usuario();
     $users = $usuarios->getUsuarios();
