@@ -63,10 +63,10 @@
     if ($usuarioExiste) {
 
       if ($permiso == 1) {
-        header("Location: /tablas");
+        header("Location: https://subasta-production.up.railway.app/tablas");
         exit();
       } else {
-        header("Location: /portal?idUsu=$codUsuario&pagina=1");
+        header("Location: https://subasta-production.up.railway.app/portal?idUsu=$codUsuario&pagina=1");
         exit();
       }
 

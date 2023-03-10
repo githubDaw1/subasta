@@ -8,7 +8,7 @@
 
     <a href="#close" title="Close" class="close">X</a>
 
-    <form action="#loginModal" method="GET" enctype="multipart/form-data">
+    <form action="https://subasta-production.up.railway.app/#loginModal" method="GET" enctype="multipart/form-data">
 
         <h2>Registrarse</h2>
 
