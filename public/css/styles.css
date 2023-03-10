@@ -331,6 +331,26 @@ button a, button a:hover {
   color: rgb(255, 255, 255);
 }
 
+footer {
+  clear: both;
+  width: 100%;
+  background-color: #0089F0;
+  padding: 1em 0;
+  font-size: 1.5em;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  border-top: 1px solid #ddd;
+  margin-top: 10px;
+}
+
+footer p { margin-top: 1.5em; }
+
+footer h2, footer p {
+  box-sizing: border-box;
+  padding: 0.5em;
+  font-size: 22px;
+}
+
 /** Small mobile **/
 @media only screen and (max-width: 320px) {
 

@@ -23,6 +23,7 @@
   <title>Portal de Subastas</title>
   <link href="{{ asset('img/logo.png') }}" type="image/x-icon" rel="icon">
   <link href="{{ asset('css/login.css') }}" rel="stylesheet">
+  <link href="{{ asset('css/estilos.css') }}" rel="stylesheet">
   <link href="{{ asset('css/styles.css') }}" rel="stylesheet">
 </head>
 
