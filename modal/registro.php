@@ -8,7 +8,7 @@
 
     <a href="#close" title="Close" class="close">X</a>
 
-    <form action="https://subasta-production.up.railway.app/#loginModal" method="POST" enctype="multipart/form-data">
+    <form action="https://subasta-production.up.railway.app/#loginModal" method="GET" enctype="multipart/form-data">
 
         <h2>Registrarse</h2>
 
@@ -56,12 +56,12 @@
   $usuarioExiste = false;
   $permiso = 0;
 
-  if (isset($_POST["register"])) {
+  if (isset($_GET["register"])) {
 
-    $name = $_POST["nombre"];
-    $surname = $_POST["apellidos"];
-    $correo = $_POST["usuario"];
-    $password = $_POST["passw"];
+    $name = $_GET["nombre"];
+    $surname = $_GET["apellidos"];
+    $correo = $_GET["usuario"];
+    $password = $_GET["passw"];
 
     $regex = "/^[A-Za-zÑñÁáÉéÍíÓóÚúÜü]@subasta\.com$/ism";
 
