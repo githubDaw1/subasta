@@ -8,7 +8,7 @@
 
   <div class="formulario">
 
-    <form method="GET">
+    <form method="GET" enctype="multipart/form-data">
 
       <input type="number" name="codigo" value="<?php echo intval(count($pu)) + 1; ?>" required>
       <input type="number" name="valor" required>

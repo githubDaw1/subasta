@@ -8,7 +8,7 @@
 
   <div class="formulario">
 
-    <form method="GET" class="usuario">
+    <form method="GET" enctype="multipart/form-data" class="usuario">
 
       <input type="number" name="codigo" value="<?php echo intval(count($users)) + 1; ?>" required>
       <input type="text" name="nombre" required>

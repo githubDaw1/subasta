@@ -166,7 +166,7 @@
 
       </div>
 
-      <form method="GET" class="pujaForm">
+      <form action="" method="GET" class="pujaForm">
 
         <input type="number" min="<?php echo $codigoSubasta ?>" max="<?php echo $codigoSubasta ?>" value="<?php echo $codigoSubasta ?>" class="idSub" name="idSub">
 
@@ -202,8 +202,9 @@
 
               $pujas->addPujas($codigo, $valor, $fecha, $codigoUsuario, $codigoSubasta);
 
-              header("Location: /subasta?idSub=$codigoSubasta&idUsu=$codigoUsuario&puja=$valor");
-              exit();
+              echo '<script type="text/javascript">
+                document.getElementsByClassName("pujaForm")[0].action="https://subasta-production.up.railway.app//subasta?idSub='. $codigoSubasta .'&idUsu='. $codigoUsuario .'&puja=.'$valor .'"
+              </script>';
             }
           }
         }

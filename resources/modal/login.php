@@ -8,7 +8,7 @@
 
     <a href="#close" title="Close" class="close">X</a>
 
-    <form method="GET" enctype="multipart/form-data">
+    <form action="" method="GET" enctype="multipart/form-data" class="loginForm">
 
       <h2>Login</h2>
 
@@ -63,11 +63,14 @@
     if ($usuarioExiste) {
 
       if ($permiso == 1) {
-        header("Location: https://subasta-production.up.railway.app/tablas");
-        exit();
+        echo '<script type="text/javascript">
+          document.getElementsByClassName("loginForm")[0].action="https://subasta-production.up.railway.app/tablas"
+        </script>';
       } else {
-        header("Location: https://subasta-production.up.railway.app/portal?idUsu=$codUsuario&pagina=1");
-        exit();
+
+        echo '<script type="text/javascript">
+          document.getElementsByClassName("loginForm")[0].action="https://subasta-production.up.railway.app/portal?idUsu="'. $codUsuario .'"&pagina=1"
+        </script>';
       }
 
     } else {
