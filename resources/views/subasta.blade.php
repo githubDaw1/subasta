@@ -90,28 +90,6 @@
 
       <h2>Pujar - Producto Nº <?php echo intval($codigoSubasta); ?></h2>
 
-      <!--<ul>
-
-        <li>
-          <a href="/subasta">Busqueda</a>
-        </li>
-
-        <li>
-          <a href="/resultados">Resultados</a>
-        </li>
-
-        <li>
-
-          <a href="/guardar" class="guardar">
-            Guardar
-            <span>Busqueda</span>
-            <img src="{{ secure_asset('img/logoAcceso.png') }}" srcset="{{ secure_asset('img/logoAcceso.svg') }}" alt="Sesion activa" />
-          </a>
-
-        </li>
-
-      </ul>-->
-
       <?php
 
         for ($i = 0; $i < count($products); $i++) {
