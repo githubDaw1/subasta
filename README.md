@@ -60,12 +60,7 @@ Verión de Nodejs: versiones recientes (las últimas versiones)
 |---------|
 | [![Railway.app](./img/tecnologias/railway.app.PNG)](https://railway.app/)  [![Vercel](./img/tecnologias/vercel.PNG)](https://vercel.com/)  |
 
-
-Problemas en los despliegues
-
-[![Railway.app](./img/error/railway_403.png)](https://subasta-production.up.railway.app/)
-
-[![Vercel](./img/error/vercel_favicon.png)](https://subasta.vercel.app/)
+URL: https://subasta-production.up.railway.app/
 
 
 ## Combinación de colores y fuente
