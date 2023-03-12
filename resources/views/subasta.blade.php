@@ -173,7 +173,7 @@
           //echo "<br/>Valor de la última puja: ". $valorFinal;
 
           if ($pujadorFinal == intval($codigoUsuario)) {
-            //echo '<noscript>alert("La puja ganadora te pertenece, espera una puja mayor de otra persona")</noscript>';
+            echo '<noscript>alert("La puja ganadora te pertenece, espera una puja mayor de otra persona")</noscript>';
           } else {
 
             if (number_format(floatval($valor), 2, '.', '') > $valorFinal) {
