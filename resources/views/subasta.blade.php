@@ -38,8 +38,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sala Nº <?php echo intval($codigoSubasta);; ?></title>
-  <link href="{{ secure_asset('img/logo.png')}}" type="image/x-icon" rel="icon">
+  <title>Sala Nº <?php echo intval($codigoSubasta); ?></title>
+  <link href="{{ asset('img/logo.png')}}" type="image/x-icon" rel="icon">
   <link href="{{ secure_asset('icons/icomoon.min.css') }}" rel="stylesheet">
   <link href="{{ secure_asset('css/estilos.css') }}" rel="stylesheet">
   <link href="{{ secure_asset('css/styles.css') }}" rel="stylesheet">
@@ -48,7 +48,7 @@
 <body>
 
   <header>
-    <img src="{{ secure_asset('img/cabecera.webp') }}" alt="Logo de Subasta total">
+    <img src="{{ asset('img/cabecera.webp') }}" alt="Logo de Subasta total">
   </header>
 
   <nav class="topnav" id="myTopnav">
@@ -66,7 +66,7 @@
     </a>
 
     <a href="javascript:void(0);" class="icon nav">
-      <img src="{{ secure_asset('img/menu.svg') }}" alt="Menu">
+      <img src="{{ asset('img/menu.svg') }}" alt="Menu">
     </a>
 
   </nav>
@@ -105,7 +105,7 @@
         <ul>
 
           <li>
-            <img src="{{ secure_asset('img/productos/imagen'. $codigoSubasta .'.jpg') }}" alt="<?php echo $products[$i]['nomProd']; ?>">
+            <img src="{{ asset('img/productos/imagen'. $codigoSubasta .'.jpg') }}" alt="<?php echo $products[$i]['nomProd']; ?>">
           </li>
 
           <li>
@@ -144,13 +144,13 @@
 
       </div>
 
-      <form action="" method="GET" class="pujaForm">
+      <form method="GET" class="pujaForm">
 
         <input type="number" min="<?php echo $codigoSubasta ?>" max="<?php echo $codigoSubasta ?>" value="<?php echo $codigoSubasta ?>" class="idSub" name="idSub">
 
         <input type="number" min="<?php echo $codigoUsuario ?>" max="<?php echo $codigoUsuario ?>" value="<?php echo $codigoUsuario ?>" class="idUsu" name="idUsu">
 
-        <input type="number" min="<?php echo $puWin[0]['valor']; ?>" value="<?php echo $puWin[0]['valor']; ?>" class="valorPuja" name="puja">
+        <input type="number" min="<?php echo $puWin[0]['valor'] ?>" value="<?php echo $puWin[0]['valor'] ?>" class="valorPuja" name="puja">
 
         <button class="pujar" name="pujar" value="Crear puja">Pujar</button>
 
@@ -166,30 +166,29 @@
           $fecha = date("Y-m-d");
 
           //echo "<br/>Id: ". $codigo;
-          echo "<br/>Valor insertado: ". $valor;
-          echo "<br/>Fecha: ". $fecha;
+          echo "<br/>Valor insertado: $valor";
+          echo "<br/>Fecha: $fecha";
           //echo "<br/>Id_Usuario: ". $codigoUsuario;
           //echo "<br/>Id_Subasta: ". $codigoSubasta;
           //echo "<br/>Valor de la última puja: ". $valorFinal;
 
           if ($pujadorFinal == intval($codigoUsuario)) {
-            echo '<script>alert("La puja ganadora te pertenece, espera una puja mayor de otra persona");</script>';
+            //echo '<noscript>alert("La puja ganadora te pertenece, espera una puja mayor de otra persona")</noscript>';
           } else {
 
             if (number_format(floatval($valor), 2, '.', '') > $valorFinal) {
 
               $pujas->addPujas($codigo, $valor, $fecha, $codigoUsuario, $codigoSubasta);
 
-              echo '<script type="text/javascript">
-                document.getElementsByClassName("pujaForm")[0].action="https://subasta-production.up.railway.app//subasta?idSub='. $codigoSubasta .'&idUsu='. $codigoUsuario .'&puja=.'$valor .'"
-              </script>';
+              header("Location: https://subasta-production.up.railway.app/subasta?idSub=$codigoSubasta&idUsu=$codigoUsuario&puja=$valor");
+              exit();
             }
           }
         }
 
       ?>
 
-      <p>Puja más alta: <?php echo $valorFinal; ?></p><br/><br/><br/>
+      <p>Puja más alta: <?php echo $valorFinal ?></p><br/><br/><br/>
 
       <!--<p class="ganador"></p>-->
 
@@ -201,32 +200,6 @@
       ?>
 
     </section>
-
-    <!--
-    <section class="paginacion">
-
-      <ul>
-
-        <li>
-          <span class="fuera">Está usted en la página de resultados número</span>
-          <span class="current">1</span>
-        </li>
-
-        <li>
-          <a href="/user">2</a>
-        </li>
-
-        <li>
-
-          <a href="/user">
-            <abbr title="Página">Pág.</abbr> siguiente
-          </a>
-
-        </li>
-
-      </ul>
-
-    </section>-->
 
     <div class="fin-float"></div><hr/>
 
@@ -247,8 +220,8 @@
     <p>Autor: Rafael Aguilar Muñoz</p>
   </footer>
 
-  <script src="{{ secure_asset('js/app.js') }}" defer></script>
-  <script src="{{ secure_asset('js/script.js') }}" defer></script>
+  <script src="{{ asset('js/app.js') }}" defer></script>
+  <script src="{{ asset('js/script.js') }}" defer></script>
 
   <?php
 
@@ -261,7 +234,7 @@
       }
     }
 
-    echo '<noscript type="text/javascript" src="">grafica('. $codigoSubasta .', '. json_encode($fechas) .', '. json_encode($valores) .'</noscript>';
+    echo '<noscript type="text/javascript">grafica('. $codigoSubasta .', '. json_encode($fechas) .', '. json_encode($valores) .'</noscript>';
 
   ?>
 

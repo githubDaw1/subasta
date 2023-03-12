@@ -71,7 +71,7 @@
       }
 
     } else {
-      echo '<script type="text/javascript">alert("El usuario o la contraseña son incorrectos");</script>';
+      echo '<noscript type="text/javascript">alert("El usuario o la contraseña son incorrectos");</noscript>';
     }
   }
 

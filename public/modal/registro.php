@@ -115,7 +115,7 @@
         $users = $usuario->addUsuarios($codigo, $name, $surname, $correo, hash('sha512', $password), date("Y-m-d"));
 
       } else {
-        echo "<script>alert('Hay agún error en el registro');</script>";
+        echo "<noscript>alert('Hay agún error en el registro');</noscript>";
       }
 
       if ($usuarioExiste) {
@@ -129,7 +129,7 @@
         }
 
       } else {
-        echo "<script>alert('El usuario o la contraseña son incorrectos');</script>";
+        echo "<noscript>alert('El usuario o la contraseña son incorrectos');</noscript>";
       }*/
     }
   }
