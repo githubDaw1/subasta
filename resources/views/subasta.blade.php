@@ -55,7 +55,7 @@
 
     <a href="/" class="active">Inicio</a>
     <a href="<?php echo '/portal?idUsu='. $codigoUsuario ."&pagina=1" ?>">Portal</a>
-    <a href="<?php echo '/subasta?idSub='. $codigoSubasta .'&idUsu='. $codigoUsuario; ?>">Subastas</a>
+    <a href="<?php echo '/subasta?idSub='. $codigoSubasta .'&idUsu='. $codigoUsuario ?>">Subastas</a>
     <a href="<?php echo '/pujas?idUsu='. $codigoUsuario ?>">Mis pujas</a>
 
     <a href="#loginModal" data-target="#loginModal" class="login disabled">Iniciar sesion</a>
@@ -88,7 +88,29 @@
 
     <section>
 
-      <h2>Pujar - Producto Nº <?php echo intval($codigoSubasta); ?></h2>
+      <h2>Pujar - Producto Nº <?php echo intval($codigoSubasta) ?></h2>
+
+      <!--<ul>
+
+        <li>
+          <a href="/subasta">Busqueda</a>
+        </li>
+
+        <li>
+          <a href="/resultados">Resultados</a>
+        </li>
+
+        <li>
+
+          <a href="/guardar" class="guardar">
+            Guardar
+            <span>Busqueda</span>
+            <img src="{{ asset('img/logoAcceso.png') }}" srcset="{{ asset('img/logoAcceso.svg') }}" alt="Sesion activa" />
+          </a>
+
+        </li>
+
+      </ul>-->
 
       <?php
 
@@ -173,7 +195,7 @@
           //echo "<br/>Valor de la última puja: ". $valorFinal;
 
           if ($pujadorFinal == intval($codigoUsuario)) {
-            echo '<noscript>alert("La puja ganadora te pertenece, espera una puja mayor de otra persona")</noscript>';
+            echo '<script>alert("La puja ganadora te pertenece, espera una puja mayor de otra persona");</script>';
           } else {
 
             if (number_format(floatval($valor), 2, '.', '') > $valorFinal) {
