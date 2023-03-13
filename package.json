@@ -31,6 +31,7 @@
         "chart.js": "latest",
         "jquery": "latest",
         "popper.js": "latest",
-        "source-map-loader": "latest"
+        "source-map-loader": "latest",
+        "translate-js": "^1.3.0"
     }
 }

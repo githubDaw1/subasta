@@ -18,5 +18,6 @@ mix.scripts([
   'node_modules/@popperjs/core/dist/umd/popper.min.js',
   'node_modules/bootstrap/dist/js/bootstrap.min.js',
   'node_modules/animejs/lib/anime.min.js',
-  'node_modules/chart.js/dist/chart.umd.js'
+  'node_modules/chart.js/dist/chart.umd.js',
+  'node_modules/translate-js/src/translate.js'
 ],'public/js/app.js');
