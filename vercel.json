@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "server.php",
+      "use": "@vercel/php"
+    }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "/server.php" }
+  ],
+  "env": {
+    "APP_KEY": "",
+    "DB_HOST": "127.0.0.1",
+    "DB_PORT": "3306",
+    "DB_DATABASE": "subasta",
+    "DB_USERNAME": "root",
+    "DB_PASSWORD": ""
+  }
+}
