@@ -1,7 +1,7 @@
 # Dockerfile
 
 # Use the official PHP 8.0 image as a parent image
-FROM php:8.0
+FROM php:8.1.19RC1-cli-buster
 
 # Set the working directory to /app
 WORKDIR /app
