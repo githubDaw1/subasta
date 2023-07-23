@@ -28,7 +28,7 @@
     "dependencies": {
         "@types/jquery": "latest",
         "animejs": "latest",
-        "chart.js": "latest",
+        "chart.js": "4.3.0",
         "jquery": "latest",
         "popper.js": "latest",
         "source-map-loader": "latest"
