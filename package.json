@@ -29,7 +29,7 @@
         "@types/jquery": "latest",
         "animejs": "latest",
         "chart.js": "latest",
-        "jquery": "latest",
+        "jquery": "3.7.0",
         "popper.js": "latest",
         "source-map-loader": "latest"
     }
