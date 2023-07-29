@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Validar fechas</title>
-  <link href="{{ secure_asset('img/logo.png')}}" type="image/x-icon" rel="icon">
-  <link href="{{ secure_asset('icons/icomoon.min.css') }}" rel="stylesheet">
-  <link href="{{ secure_asset('css/fecha.css') }}" rel="stylesheet">
+  <link href="img/logo.png" type="image/x-icon" rel="icon">
+  <link href="icons/icomoon.min.css" rel="stylesheet">
+  <link href="css/fecha.css" rel="stylesheet">
 </head>
 
 <body>
@@ -31,7 +31,7 @@
     <div class="inicio">
 
       <div class="fecha">
-        <div class="tiempo"><?php echo date_format($fechaIni, "H:i:s") ?></div>
+        <div class="tiempo"><?php echo date_format($fechaIni, "H:i:s"); ?></div>
       </div>
 
     </div>
@@ -39,15 +39,15 @@
     <div class="fin">
 
       <div class="fecha">
-        <div class="tiempo"><?php echo date_format($fechaFin, "H:i:s") ?></d>
+        <div class="tiempo"><?php echo date_format($fechaFin, "H:i:s"); ?></d>
       </div>
 
     </div>
 
   </main>
 
-  <script src="{{ secure_asset('js/app.js') }}" defer></script>
-  <script src="{{ secure_asset('js/script.js') }}" defer></script>
+  <script src="js/app.js" defer></script>
+  <script src="js/script.js" defer></script>
 
 </body>
 

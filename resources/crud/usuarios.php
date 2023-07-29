@@ -10,12 +10,12 @@
 
     <form method="GET" enctype="multipart/form-data" class="usuario">
 
-      <input type="number" name="codigo" value="<?php echo intval(count($users)) + 1; ?>" required>
+      <input type="number" name="codigo" value="<?php echo htmlspecialchars(intval(count($users)) + 1); ?>" required>
       <input type="text" name="nombre" required>
       <input type="text" name="apellidos" required>
       <input type="email" name="usuario" required>
       <input type="password" name="secreto" required>
-      <input type="date" name="fecha" value="<?php echo date("d/m/Y h:i:s"); ?>" disabled>
+      <input type="date" name="fecha" value="<?php echo htmlspecialchars(date("d/m/Y h:i:s")); ?>" disabled>
 
       <div class="fin-float"></div>
 
@@ -50,10 +50,10 @@
         ?>
 
           <tr>
-            <td><?php echo $users[$u]['codUsu'] ?></td>
-            <td><?php echo $users[$u]['nomUsu'] ?></td>
-            <td><?php echo $users[$u]['apeUsu'] ?></td>
-            <td><?php echo $users[$u]['fechaUnion'] ?></td>
+            <td><?php echo htmlspecialchars($users[$u]['codUsu']); ?></td>
+            <td><?php echo htmlspecialchars($users[$u]['nomUsu']); ?></td>
+            <td><?php echo htmlspecialchars($users[$u]['apeUsu']); ?></td>
+            <td><?php echo htmlspecialchars($users[$u]['fechaUnion']); ?></td>
           </tr>
 
         <?php

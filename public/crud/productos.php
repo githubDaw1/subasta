@@ -10,12 +10,12 @@
 
     <form method="GET" enctype="multipart/form-data">
 
-      <input type="number" name="codigo" value="<?php echo intval(count($products)) + 1; ?>" required>
+      <input type="number" name="codigo" value="<?php echo htmlspecialchars(intval(count($products)) + 1); ?>" required>
       <input type="text" name="nombre" required>
       <input type="text" name="material" required>
       <input type="number" name="anchura" min="0" required>
       <input type="number" name="altura" min="0" required>
-      <input type="number" name="codSub" value="<?php echo intval(count($products)) + 1; ?>" required>
+      <input type="number" name="codSub" value="<?php echo htmlspecialchars(intval(count($products)) + 1); ?>" required>
 
       <div class="fin-float"></div>
 
@@ -52,13 +52,12 @@
         ?>
 
           <tr>
-            <td><?php echo $products[$p]['codProd']; ?></td>
-            <td><?php echo $products[$p]['nomProd']; ?></td>
-            <td><?php echo $products[$p]['material']; ?></td>
-            <td><?php echo $products[$p]['anchura']; ?></td>
-            <td><?php echo $products[$p]['altura']; ?></td>
-            <td><?php echo $products[$p]['codSubasta']; ?></td>
-
+            <td><?php echo htmlspecialchars($products[$p]['codProd']); ?></td>
+            <td><?php echo htmlspecialchars($products[$p]['nomProd']); ?></td>
+            <td><?php echo htmlspecialchars($products[$p]['material']); ?></td>
+            <td><?php echo htmlspecialchars($products[$p]['anchura']); ?></td>
+            <td><?php echo htmlspecialchars($products[$p]['altura']); ?></td>
+            <td><?php echo htmlspecialchars($products[$p]['codSubasta']); ?></td>
           </tr>
 
         <?php

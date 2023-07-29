@@ -10,7 +10,7 @@
 
     <form method="GET" enctype="multipart/form-data">
 
-      <input type="number" name="codigo" value="<?php echo intval(count($pu)) + 1; ?>" required>
+      <input type="number" name="codigo" value="<?php echo htmlspecialchars(intval(count($pu)) + 1); ?>" required>
       <input type="number" name="valor" required>
       <input type="date" name="fecha">
       <input type="number" name="codUsu" required disabled>
@@ -50,11 +50,11 @@
         ?>
 
           <tr>
-            <td><?php echo $pu[$p]['codPuja'] ?></td>
-            <td><?php echo $pu[$p]['valor'] ?></td>
-            <td><?php echo $pu[$p]['fecha'] ?></td>
-            <td><?php echo $pu[$p]['codUsu'] ?></td>
-            <td><?php echo $pu[$p]['codSubasta'] ?></td>
+            <td><?php echo htmlspecialchars($pu[$p]['codPuja']); ?></td>
+            <td><?php echo htmlspecialchars($pu[$p]['valor']); ?></td>
+            <td><?php echo htmlspecialchars($pu[$p]['fecha']); ?></td>
+            <td><?php echo htmlspecialchars($pu[$p]['codUsu']); ?></td>
+            <td><?php echo htmlspecialchars($pu[$p]['codSubasta']); ?></td>
           </tr>
 
         <?php

@@ -4,22 +4,22 @@
 
 <!DOCTYPE html>
 
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Iniciar sesión</title>
-  <link href="{{ secure_asset('img/logo.png')}}" type="image/x-icon" rel="icon">
-  <link href="{{ secure_asset('icons/icomoon.min.css') }}" rel="stylesheet">
-  <link href="{{ secure_asset('css/login.css') }}" rel="stylesheet">
+  <link href="img/logo.png" type="image/x-icon" rel="icon">
+  <link href="icons/icomoon.min.css" rel="stylesheet">
+  <link href="css/login.css" rel="stylesheet">
 </head>
 
 <body>
 
   <header>
-    <img src="{{ secure_asset('img/cabecera.webp') }}" alt="Logo de Subasta total">
+    <img src="img/cabecera.webp" alt="Logo de Subasta total">
   </header>
 
   <nav class="topnav" id="myTopnav">
@@ -31,7 +31,7 @@
     <a href="/registro">Registrarse</a>
 
     <a href="javascript:void(0);" class="icon nav">
-      <img src="{{ secure_asset('img/menu.svg') }}" alt="Menu">
+      <img src="img/menu.svg" alt="Menu">
     </a>
 
   </nav>
@@ -118,7 +118,7 @@
           }
 
         } else {
-          echo "<script>alert('El usuario o la contraseña son incorrectos');</script>";
+          echo "<noscript>alert('El usuario o la contraseña son incorrectos');</noscript>";
         }
       }
 
@@ -131,9 +131,14 @@
     <p>Autor: Rafael Aguilar Muñoz</p>
   </footer>
 
-  <script src="{{ secure_asset('js/app.js') }}" defer></script>
-  <script src="{{ secure_asset('js/reloj.js') }}" defer></script>
-  <script src="{{ secure_asset('js/script.js') }}" defer></script>
+  <!--
+    <script src="{{ secure_asset('js/app.js') }}" defer></script>
+    <script src="{{ secure_asset('js/reloj.js') }}" defer></script>
+    <script src="{{ secure_asset('js/script.js') }}" defer></script>
+  -->
+  <script src="js/app.js" defer></script>
+  <script src="js/reloj.js" defer></script>
+  <script src="js/script.js" defer></script>
 
 </body>
 

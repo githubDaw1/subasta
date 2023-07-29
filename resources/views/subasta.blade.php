@@ -32,31 +32,31 @@
 
 <!DOCTYPE html>
 
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sala Nº <?php echo intval($codigoSubasta); ?></title>
-  <link href="{{ asset('img/logo.png')}}" type="image/x-icon" rel="icon">
-  <link href="{{ secure_asset('icons/icomoon.min.css') }}" rel="stylesheet">
-  <link href="{{ secure_asset('css/estilos.css') }}" rel="stylesheet">
-  <link href="{{ secure_asset('css/styles.css') }}" rel="stylesheet">
+  <link href="img/logo.png" type="image/x-icon" rel="icon">
+  <link href="icons/icomoon.min.css" rel="stylesheet">
+  <link href="css/estilos.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
 </head>
 
 <body>
 
   <header>
-    <img src="{{ asset('img/cabecera.webp') }}" alt="Logo de Subasta total">
+    <img src="img/cabecera.webp" alt="Logo de Subasta total">
   </header>
 
   <nav class="topnav" id="myTopnav">
 
     <a href="/" class="active">Inicio</a>
-    <a href="<?php echo '/portal?idUsu='. $codigoUsuario ."&pagina=1" ?>">Portal</a>
-    <a href="<?php echo '/subasta?idSub='. $codigoSubasta .'&idUsu='. $codigoUsuario ?>">Subastas</a>
-    <a href="<?php echo '/pujas?idUsu='. $codigoUsuario ?>">Mis pujas</a>
+    <a href="/portal?idUsu=<?php echo $codigoUsuario ?>&pagina=1">Portal</a>
+    <a href="/subasta?idSub=<?php echo $codigoSubasta ?>&idUsu=<?php echo $codigoUsuario ?>">Subastas</a>
+    <a href="/pujas?idUsu=<?php echo $codigoUsuario ?>">Mis pujas</a>
 
     <a href="#loginModal" data-target="#loginModal" class="login disabled">Iniciar sesion</a>
     <a href="#registroModal" data-target="#registroModal" class="registro disabled">Registrarse</a>
@@ -66,7 +66,7 @@
     </a>
 
     <a href="javascript:void(0);" class="icon nav">
-      <img src="{{ asset('img/menu.svg') }}" alt="Menu">
+      <img src="img/menu.svg" alt="Menu">
     </a>
 
   </nav>
@@ -88,7 +88,7 @@
 
     <section>
 
-      <h2>Pujar - Producto Nº <?php echo intval($codigoSubasta) ?></h2>
+      <h2>Pujar - Producto Nº <?php echo intval($codigoSubasta); ?></h2>
 
       <!--<ul>
 
@@ -131,48 +131,48 @@
           </li>
 
           <li>
-            <h3>Producto: <?php echo $products[$i]['nomProd'] ?></h3>
+            <h3>Producto: <?php echo $products[$i]['nomProd']; ?></h3>
           </li>
 
           <li>
-            <h4>Materiales: <?php echo $products[$i]['material'] ?></h4>
+            <h4>Materiales: <?php echo $products[$i]['material']; ?></h4>
           </li>
 
           <li>
-            <p>Anchura del producto: <?php echo $products[$i]['anchura'] ?></p>
+            <p>Anchura del producto: <?php echo $products[$i]['anchura']; ?></p>
           </li>
 
           <li>
-            <p>Altura del producto: <?php echo $products[$i]['altura'] ?></p>
+            <p>Altura del producto: <?php echo $products[$i]['altura']; ?></p>
           </li>
 
           <li>
-            <p>Fecha inicial: <?php echo $sub[$i]['fechaInic'] ?></p>
+            <p>Fecha inicial: <?php echo $sub[$i]['fechaInic']; ?></p>
           </li>
 
           <li>
-            <p>Fecha fin: <?php echo $sub[$i]['fechaFin'] ?></p>
+            <p>Fecha fin: <?php echo $sub[$i]['fechaFin']; ?></p>
           </li>
 
           <li>
-            <p>Precio inicial: <?php echo $sub[$i]['precIni'] ?></p>
+            <p>Precio inicial: <?php echo ($sub[$i]['precIni']); ?></p>
           </li>
 
         </ul>
 
         <button>
-          <a href="/portal?idUsu=<?php echo $codigoUsuario ?>&pagina=1" class="atras">Volver atrás</a>
+          <a href="/portal?idUsu=<?php echo $codigoUsuario; ?>&pagina=1" class="atras">Volver atrás</a>
         </button>
 
       </div>
 
       <form method="GET" class="pujaForm">
 
-        <input type="number" min="<?php echo $codigoSubasta ?>" max="<?php echo $codigoSubasta ?>" value="<?php echo $codigoSubasta ?>" class="idSub" name="idSub">
+        <input type="number" min="<?php echo $codigoSubasta; ?>" max="<?php echo $codigoSubasta; ?>" value="<?php echo $codigoSubasta; ?>" class="idSub" name="idSub">
 
-        <input type="number" min="<?php echo $codigoUsuario ?>" max="<?php echo $codigoUsuario ?>" value="<?php echo $codigoUsuario ?>" class="idUsu" name="idUsu">
+        <input type="number" min="<?php echo $codigoUsuario; ?>" max="<?php echo $codigoUsuario; ?>" value="<?php echo $codigoUsuario; ?>" class="idUsu" name="idUsu">
 
-        <input type="number" min="<?php echo $puWin[0]['valor'] ?>" value="<?php echo $puWin[0]['valor'] ?>" class="valorPuja" name="puja">
+        <input type="number" min="<?php echo $puWin[0]['valor']; ?>" value="<?php echo $puWin[0]['valor']; ?>" class="valorPuja" name="puja">
 
         <button class="pujar" name="pujar" value="Crear puja">Pujar</button>
 
@@ -187,12 +187,12 @@
 
           $fecha = date("Y-m-d");
 
-          //echo "<br/>Id: ". $codigo;
+          /*echo "<br/>Id: ". $codigo;
           echo "<br/>Valor insertado: $valor";
           echo "<br/>Fecha: $fecha";
-          //echo "<br/>Id_Usuario: ". $codigoUsuario;
-          //echo "<br/>Id_Subasta: ". $codigoSubasta;
-          //echo "<br/>Valor de la última puja: ". $valorFinal;
+          echo "<br/>Id_Usuario: ". $codigoUsuario;
+          echo "<br/>Id_Subasta: ". $codigoSubasta;
+          echo "<br/>Valor de la última puja: ". $valorFinal;*/
 
           if ($pujadorFinal == intval($codigoUsuario)) {
             echo '<script>alert("La puja ganadora te pertenece, espera una puja mayor de otra persona");</script>';
@@ -210,7 +210,7 @@
 
       ?>
 
-      <p>Puja más alta: <?php echo $valorFinal ?></p><br/><br/><br/>
+      <p>Puja más alta: <?php echo $valorFinal; ?></p><br/><br/><br/>
 
       <!--<p class="ganador"></p>-->
 
@@ -242,8 +242,8 @@
     <p>Autor: Rafael Aguilar Muñoz</p>
   </footer>
 
-  <script src="{{ asset('js/app.js') }}" defer></script>
-  <script src="{{ asset('js/script.js') }}" defer></script>
+  <script src="js/app.js" defer></script>
+  <script src="js/script.js" defer></script>
 
   <?php
 

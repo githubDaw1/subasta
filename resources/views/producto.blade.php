@@ -14,23 +14,23 @@
 
 <!DOCTYPE html>
 
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portal de Subastas</title>
-  <link href="{{ secure_asset('img/logo.png') }}" type="image/x-icon" rel="icon">
-  <link href="{{ secure_asset('css/login.css') }}" rel="stylesheet">
-  <link href="{{ secure_asset('css/estilos.css') }}" rel="stylesheet">
-  <link href="{{ secure_asset('css/styles.css') }}" rel="stylesheet">
+  <link href="img/logo.png" type="image/x-icon" rel="icon">
+  <link href="css/login.css" rel="stylesheet">
+  <link href="css/estilos.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
 </head>
 
 <body>
 
   <header>
-    <img src="{{ secure_asset('img/cabecera.webp') }}" alt="Logo de Subasta total">
+    <img src="img/cabecera.webp" alt="Logo de Subasta total">
   </header>
 
   <nav class="topnav" id="myTopnav">
@@ -46,7 +46,7 @@
     </a>
 
     <a href="javascript:void(0);" class="icon nav">
-      <img src="{{ secure_asset('img/menu.svg') }}" alt="Menu">
+      <img src="img/menu.svg" alt="Menu">
     </a>
 
   </nav>
@@ -68,7 +68,7 @@
 
     <section>
 
-      <h2>Producto Nº <?php echo $id; ?></h2>
+      <h2>Producto Nº <?php echo $id ?></h2>
 
       <!--<ul>
 
@@ -85,7 +85,7 @@
           <a href="/guardar" class="guardar">
             Guardar
             <span>Busqueda</span>
-            <img src="{{ secure_asset('img/logoAcceso.png') }}" srcset="{{ secure_asset('img/logoAcceso.svg') }}" alt="Sesion activa" />
+            <img src="img/logoAcceso.png" srcset="img/logoAcceso.svg" alt="Sesion activa" />
           </a>
 
         </li>
@@ -117,23 +117,23 @@
         <ul>
 
           <li>
-            <img src="{{ secure_asset('img/productos/<?php echo $products[$i]['nomProd'] ?>.jgp') }}" alt="<?php echo $products[$i]['nomProd'] ?>">
+            <img src="img/productos/<?php echo $products[$i]['nomProd'] ?>.jpg" alt="<?php echo $products[$i]['nomProd'] ?>">
           </li>
 
           <li>
-            <h3>Producto: <?php echo $products[$i]['nomProd'] ?></h3>
+            <h3>Producto: <?php echo $products[$i]['nomProd']; ?></h3>
           </li>
 
           <li>
-            <h4>Materiales: <?php echo $products[$i]['material'] ?></h4>
+            <h4>Materiales: <?php echo $products[$i]['material']; ?></h4>
           </li>
 
           <li>
-            <p>Anchura del producto: <?php echo $products[$i]['anchura'] ?></p>
+            <p>Anchura del producto: <?php echo $products[$i]['anchura']; ?></p>
           </li>
 
           <li>
-            <p>Altura del producto: <?php echo $products[$i]['altura'] ?></p>
+            <p>Altura del producto: <?php echo $products[$i]['altura']; ?></p>
           </li>
 
           <!--<li>
@@ -141,15 +141,15 @@
           </li>-->
 
           <li>
-            <p>Fecha inicial: <?php echo $sub[$i]['fechaInic'] ?></p>
+            <p>Fecha inicial: <?php echo $sub[$i]['fechaInic']; ?></p>
           </li>
 
           <li>
-            <p>Fecha fin: <?php echo $sub[$i]['fechaFin'] ?></p>
+            <p>Fecha fin: <?php echo $sub[$i]['fechaFin']; ?></p>
           </li>
 
           <li>
-            <p>Precio inicial: <?php echo $sub[$i]['precIni'] ?></p>
+            <p>Precio inicial: <?php echo $sub[$i]['precIni']; ?></p>
           </li>
 
         </ul>
@@ -199,9 +199,13 @@
     <p>Autor: Rafael Aguilar Muñoz</p>
   </footer>
 
-  <script src="{{ secure_asset('js/app.js') }}" defer></script>
+  <!--<script src="{{ secure_asset('js/app.js') }}" defer></script>
   <script src="{{ secure_asset('js/reloj.js') }}" defer></script>
-  <script src="{{ secure_asset('js/script.js') }}" defer></script>
+  <script src="{{ secure_asset('js/script.js') }}" defer></script>-->
+
+  <script src="js/app.js" defer></script>
+  <script src="js/reloj.js" defer></script>
+  <script src="js/script.js" defer></script>
 
 </body>
 

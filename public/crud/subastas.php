@@ -10,7 +10,7 @@
 
     <form method="GET" enctype="multipart/form-data">
 
-      <input type="number" name="codigo" value="<?php echo intval(count($sub)) + 1; ?>" required>
+      <input type="number" name="codigo" value="<?php echo htmlspecialchars(intval(count($sub)) + 1); ?>" required>
       <input type="date" name="fechaIni">
       <input type="date" name="fechaFin">
       <input type="number" name="precIni" min="1" required>
@@ -48,10 +48,10 @@
         ?>
 
           <tr>
-            <td><?php echo $sub[$s]['codSubasta']; ?></td>
-            <td><?php echo $sub[$s]['fechaInic']; ?></td>
-            <td><?php echo $sub[$s]['fechaFin']; ?></td>
-            <td><?php echo $sub[$s]['precIni']; ?></td>
+            <td><?php echo htmlspecialchars($sub[$s]['codSubasta']); ?></td>
+            <td><?php echo htmlspecialchars($sub[$s]['fechaInic']); ?></td>
+            <td><?php echo htmlspecialchars($sub[$s]['fechaFin']); ?></td>
+            <td><?php echo htmlspecialchars($sub[$s]['precIni']); ?></td>
           </tr>
 
         <?php
