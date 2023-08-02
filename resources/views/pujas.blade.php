@@ -35,25 +35,42 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tus pujas</title>
+<<<<<<< HEAD
   <link href="img/logo.png" type="image/x-icon" rel="icon">
   <link href="icons/icomoon.min.css" rel="stylesheet">
   <link href="css/estilos.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
 
+=======
+  <link href="{{ secure_asset('img/logo.png') }}" type="image/x-icon" rel="icon">
+  <link href="{{ secure_asset('icons/icomoon.min.css') }}" rel="stylesheet">
+  <link href="{{ secure_asset('css/estilos.css') }}" rel="stylesheet">
+  <link href="{{ secure_asset('css/styles.css') }}" rel="stylesheet">
+>>>>>>> cb28d42300f589250e9e4e73c0bac9df75c8c4ae
 </head>
 
 <body>
 
   <header>
+<<<<<<< HEAD
     <img src="img/cabecera.webp" alt="Logo de Subasta total">
+=======
+    <img src="{{ secure_asset('img/cabecera.webp') }}" alt="Logo de Subasta total">
+>>>>>>> cb28d42300f589250e9e4e73c0bac9df75c8c4ae
   </header>
 
   <nav class="topnav" id="myTopnav">
 
     <a href="/" class="active">Inicio</a>
+<<<<<<< HEAD
     <a href="/portal?idUsu=<?= echo $codigoUsuario ?>&pagina=1" ?>">Portal</a>
     <a href="/subasta" class="disabled">Subastas</a>
     <a href="/pujas?idUsu=<?= echo $codigoUsuario ?>">Mis pujas</a>
+=======
+    <a href="<?php echo '/portal?idUsu='. $codigoUsuario ."&pagina=1" ?>">Portal</a>
+    <a href="<?php echo '/subasta' ?>" class="disabled">Subastas</a>
+    <a href="<?php echo '/pujas?idUsu='. $codigoUsuario ?>">Mis pujas</a>
+>>>>>>> cb28d42300f589250e9e4e73c0bac9df75c8c4ae
 
     <a href="#loginModal" data-target="#loginModal" class="disabled">Iniciar sesion</a>
     <a href="#registroModal" data-target="#registroModal" class="disabled">Registrarse</a>
@@ -63,7 +80,11 @@
     </a>
 
     <a href="javascript:void(0);" class="icon nav">
+<<<<<<< HEAD
       <img src="img/menu.svg" alt="Menu">
+=======
+      <img src="{{ secure_asset('img/menu.svg') }}" alt="Menu">
+>>>>>>> cb28d42300f589250e9e4e73c0bac9df75c8c4ae
     </a>
 
   </nav>
@@ -225,9 +246,15 @@
   <p id="tictac">Tiempo: </p>
   -->
 
+<<<<<<< HEAD
   <script src="js/app.js" defer></script>
   <script src="js/pujar.js" defer></script>
   <script src="js/script.js" defer></script>
+=======
+  <script src="{{ secure_asset('js/app.js') }}" defer></script>
+  <script src="{{ secure_asset('js/pujar.js') }}" defer></script>
+  <script src="{{ secure_asset('js/script.js') }}" defer></script>
+>>>>>>> cb28d42300f589250e9e4e73c0bac9df75c8c4ae
 
 </body>
 

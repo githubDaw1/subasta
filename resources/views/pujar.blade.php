@@ -7,8 +7,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pujar</title>
+<<<<<<< HEAD
   <!--<link href="{{ secure_asset('css/pujar.css') }}" rel="stylesheet">-->
   <link href="css/pujar.css" rel="stylesheet">
+=======
+  <link href="{{ secure_asset('css/pujar.css') }}" rel="stylesheet">
+>>>>>>> cb28d42300f589250e9e4e73c0bac9df75c8c4ae
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
@@ -88,8 +92,12 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@latest/dist/umd/popper.min.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/js/bootstrap.min.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/animejs@latest/lib/anime.min.js" defer></script>
+<<<<<<< HEAD
   <!--<script src="{{ secure_asset('js/pujar.js') }}" defer></script>-->
   <script src="js/pujar.js" defer></script>
+=======
+  <script src="{{ secure_asset('js/pujar.js') }}" defer></script>
+>>>>>>> cb28d42300f589250e9e4e73c0bac9df75c8c4ae
 
 </body>
 

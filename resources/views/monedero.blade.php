@@ -7,9 +7,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Comprobar monedero</title>
+<<<<<<< HEAD
   <link href="img/logo.png" type="image/x-icon" rel="icon">
   <link href="icons/icomoon.min.css" rel="stylesheet">
   <link href="css/monedero.css" rel="stylesheet">
+=======
+  <link href="{{ secure_asset('img/logo.png')}}" type="image/x-icon" rel="icon">
+  <link href="{{ secure_asset('icons/icomoon.min.css') }}" rel="stylesheet">
+  <link href="{{ secure_asset('css/monedero.css') }}" rel="stylesheet">
+>>>>>>> cb28d42300f589250e9e4e73c0bac9df75c8c4ae
 </head>
 
 <body>
@@ -92,19 +98,32 @@
   ?>
 
   <div class="dragDrop">
+<<<<<<< HEAD
 
     <img src="../img/billetes.jfif" alt="Billetes">
     <img src="../img/carteraVacia.jfif" alt="Cartera Vacía">
 
+=======
+    <img src="{{ secure_asset('../img/billetes.jfif') }}" alt="Billetes">
+    <img src="{{ secure_asset('../img/carteraVacia.jfif') }}" alt="Cartera Vacía">
+>>>>>>> cb28d42300f589250e9e4e73c0bac9df75c8c4ae
     <div class="spinner-border text-secondary" id="load" role="status" aria-hidden="true"></div>
   </div>
 
   <div class="secundario">
+<<<<<<< HEAD
     <img src="img/carteraVacia.jfif" alt="Cartera Vacía">
   </div>
 
   <script src="js/app.js" defer></script>
   <script src="js/script.js" defer></script>
+=======
+    <img src="{{ secure_asset('img/carteraVacia.jfif') }}" alt="Cartera Vacía">
+  </div>
+
+  <script src="{{ secure_asset('js/app.js') }}" defer></script>
+  <script src="{{ secure_asset('js/script.js') }}" defer></script>
+>>>>>>> cb28d42300f589250e9e4e73c0bac9df75c8c4ae
 
 </body>
 
