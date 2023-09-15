@@ -8,11 +8,7 @@
 
     <a href="#close" title="Close" class="close">X</a>
 
-<<<<<<< HEAD
     <form action="https://subasta-production.up.railway.app/#loginModal" method="GET" enctype="multipart/form-data">
-=======
-    <form action="#loginModal" method="GET" enctype="multipart/form-data">
->>>>>>> cb28d42300f589250e9e4e73c0bac9df75c8c4ae
 
         <h2>Registrarse</h2>
 
@@ -119,11 +115,7 @@
         $users = $usuario->addUsuarios($codigo, $name, $surname, $correo, hash('sha512', $password), date("Y-m-d"));
 
       } else {
-<<<<<<< HEAD
         echo "<noscript>alert('Hay agún error en el registro');</noscript>";
-=======
-        echo "<script>alert('Hay agún error en el registro');</script>";
->>>>>>> cb28d42300f589250e9e4e73c0bac9df75c8c4ae
       }
 
       if ($usuarioExiste) {
@@ -137,11 +129,7 @@
         }
 
       } else {
-<<<<<<< HEAD
         echo "<noscript>alert('El usuario o la contraseña son incorrectos');</noscript>";
-=======
-        echo "<script>alert('El usuario o la contraseña son incorrectos');</script>";
->>>>>>> cb28d42300f589250e9e4e73c0bac9df75c8c4ae
       }*/
     }
   }

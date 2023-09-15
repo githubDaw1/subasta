@@ -15,37 +15,23 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portal de Subastas</title>
-<<<<<<< HEAD
   <link href="img/logo.png" type="image/x-icon" rel="icon">
   <link href="icons/icomoon.min.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
-=======
-  <link href="{{ secure_asset('img/logo.png')}}" type="image/x-icon" rel="icon">
-  <link href="{{ secure_asset('icons/icomoon.min.css') }}" rel="stylesheet">
-  <link href="{{ secure_asset('css/styles.css') }}" rel="stylesheet">
->>>>>>> cb28d42300f589250e9e4e73c0bac9df75c8c4ae
 </head>
 
 <body>
 
   <header>
-<<<<<<< HEAD
     <img src="img/cabecera.webp" alt="Logo de Subasta total">
-=======
-    <img src="{{ secure_asset('img/cabecera.webp') }}" alt="Logo de Subasta total">
->>>>>>> cb28d42300f589250e9e4e73c0bac9df75c8c4ae
   </header>
 
   <nav class="topnav" id="myTopnav">
 
     <a href="/" class="active">Inicio</a>
-<<<<<<< HEAD
-    <a href="/portal?idUsu=<?php echo $codigo; ?>&pagina=1">Portal</a>
-=======
-    <a href="<?php echo '/portal?idUsu='. $codigo ."&pagina=1" ?>">Portal</a>
->>>>>>> cb28d42300f589250e9e4e73c0bac9df75c8c4ae
+    <a href="/portal?idUsu='<?php echo htmlspecialchars($codigo); ?>'&pagina='1'">Portal</a>
     <a href="/subasta" class="disabled">Subastas</a>
-    <a href="/pujas?idUsu=<?php echo $codigo; ?>">Mis pujas</a>
+    <a href="/pujas?idUsu='<?php echo htmlspecialchars($codigo); ?>'">Mis pujas</a>
 
     <a href="#loginModal" data-target="#loginModal" class="login disabled">Iniciar sesion</a>
     <a href="#registroModal" data-target="#registroModal" class="registro disabled">Registrarse</a>
@@ -55,11 +41,7 @@
     </a>
 
     <a href="javascript:void(0);" class="icon nav">
-<<<<<<< HEAD
       <img src="img/menu.svg" alt="Menu">
-=======
-      <img src="{{ secure_asset('img/menu.svg') }}" alt="Menu">
->>>>>>> cb28d42300f589250e9e4e73c0bac9df75c8c4ae
     </a>
 
   </nav>
@@ -104,19 +86,19 @@
         <ul>
 
           <li>
-            <h3>Producto: <?php echo $products[$i]['nomProd']; ?></h3>
+            <h3>Producto: <?php echo htmlspecialchars($products[$i]['nomProd']); ?></h3>
           </li>
 
           <li>
-            <h4>Materiales: <?php echo $products[$i]['material']; ?></h4>
+            <h4>Materiales: <?php echo htmlspecialchars($products[$i]['material']); ?></h4>
           </li>
 
           <li>
-            <p>Anchura del producto: <?php echo $products[$i]['anchura']; ?></p>
+            <p>Anchura del producto: <?php echo htmlspecialchars($products[$i]['anchura']); ?></p>
           </li>
 
           <li>
-            <p>Altura del producto: <?php echo $products[$i]['altura']; ?></p>
+            <p>Altura del producto: <?php echo htmlspecialchars($products[$i]['altura']); ?></p>
           </li>
 
           <!--<li>
@@ -124,21 +106,21 @@
           </li>-->
 
           <li>
-            <p>Fecha inicial: <?php echo $sub[$i]['fechaInic']; ?></p>
+            <p>Fecha inicial: <?php echo htmlspecialchars($sub[$i]['fechaInic']); ?></p>
           </li>
 
           <li>
-            <p>Fecha fin: <?php echo $sub[$i]['fechaFin']; ?></p>
+            <p>Fecha fin: <?php echo htmlspecialchars($sub[$i]['fechaFin']); ?></p>
           </li>
 
           <li>
-            <p>Precio inicial: <?php echo $sub[$i]['precIni']; ?></p>
+            <p>Precio inicial: <?php echo htmlspecialchars($sub[$i]['precIni']); ?></p>
           </li>
 
         </ul>
 
         <button>
-          <a href="/subasta?idSub=<?php echo $i + 1; ?>&idUsu=<?php echo $codigo; ?>">Ir a subasta</a>
+          <a href="/subasta?idSub='<?php echo htmlspecialchars($i + 1); ?>'&idUsu='<?php echo htmlspecialchars($codigo); ?>'">Ir a subasta</a>
         </button>
 
       </div>
@@ -154,27 +136,27 @@
       <ul>
 
         <li>
-          <a href="/portal?idUsu=<?= echo $codigo; ?>&pagina=1" class="current">1</a>
+          <a href="/portal?idUsu=<?php echo htmlspecialchars($codigo); ?>&pagina=1" class="current">1</a>
         </li>
 
         <li>
-          <a href="/portal?idUsu=<?= echo $codigo; ?>&pagina=2">2</a>
+          <a href="/portal?idUsu=<?php echo htmlspecialchars($codigo); ?>&pagina=2">2</a>
         </li>
 
         <li>
-          <a href="/portal?idUsu=<?= echo $codigo; ?>&pagina=3">3</a>
+          <a href="/portal?idUsu=<?php echo htmlspecialchars($codigo9; ?>&pagina=3">3</a>
         </li>
 
         <li>
-          <a href="/portal?idUsu=<?= echo $codigo; ?>&pagina=4">4</a>
+          <a href="/portal?idUsu=<?php echo htmlspecialchars($codigo); ?>&pagina=4">4</a>
         </li>
 
         <li>
-          <a href="/portal?idUsu=<?= echo $codigo; ?>&pagina=5">5</a>
+          <a href="/portal?idUsu=<?php echo htmlspecialchars($codigo); ?>&pagina=5">5</a>
         </li>
         <li>
 
-          <a href="/portal?idUsu=<?= echo $codigo; ?>&pagina=6">
+          <a href="/portal?idUsu=<?php echo htmlspecialchars($codigo); ?>&pagina=6">
             <abbr title="Página">Pág.</abbr> siguiente
           </a>
 
@@ -191,7 +173,6 @@
     <p>Autor: Rafael Aguilar Muñoz</p>
   </footer>
 
-<<<<<<< HEAD
   <!--<script src="{{ secure_asset('js/app.js') }}" defer></script>
   <script src="{{ secure_asset('js/reloj.js') }}" defer></script>
   <script src="{{ secure_asset('js/script.js') }}" defer></script>-->
@@ -199,11 +180,6 @@
   <script src="js/app.js" defer></script>
   <script src="js/reloj.js" defer></script>
   <script src="js/script.js" defer></script>
-=======
-  <script src="{{ secure_asset('js/app.js') }}" defer></script>
-  <script src="{{ secure_asset('js/reloj.js') }}" defer></script>
-  <script src="{{ secure_asset('js/script.js') }}" defer></script>
->>>>>>> cb28d42300f589250e9e4e73c0bac9df75c8c4ae
 
 </body>
 

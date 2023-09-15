@@ -8,11 +8,7 @@
 
     <a href="#close" title="Close" class="close">X</a>
 
-<<<<<<< HEAD
     <form action="https://subasta-production.up.railway.app" method="GET" enctype="multipart/form-data">
-=======
-    <form action="/" method="GET" enctype="multipart/form-data">
->>>>>>> cb28d42300f589250e9e4e73c0bac9df75c8c4ae
 
       <h2>Login</h2>
 
@@ -67,26 +63,15 @@
     if ($usuarioExiste) {
 
       if ($permiso == 1) {
-<<<<<<< HEAD
         header("Location: https://subasta-production.up.railway.app/tablas");
         exit();
       } else {
         header("Location: https://subasta-production.up.railway.app/portal?idUsu=$codUsuario&pagina=1");
-=======
-        header("Location: /tablas");
-        exit();
-      } else {
-        header("Location: /portal?idUsu=$codUsuario&pagina=1");
->>>>>>> cb28d42300f589250e9e4e73c0bac9df75c8c4ae
         exit();
       }
 
     } else {
-<<<<<<< HEAD
       echo '<noscript type="text/javascript">alert("El usuario o la contraseña son incorrectos");</noscript>';
-=======
-      echo '<script type="text/javascript">alert("El usuario o la contraseña son incorrectos");</script>';
->>>>>>> cb28d42300f589250e9e4e73c0bac9df75c8c4ae
     }
   }
 

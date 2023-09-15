@@ -8,17 +8,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="content-security-policy|content-type|default-style|refresh">
   <title>Página principal</title>
-<<<<<<< HEAD
   <link href="img/logo.png" type="image/x-icon" rel="icon">
   <link href="icons/icomoon.min.css" rel="stylesheet">
   <link href="css/modal.css" rel="stylesheet">
   <link href="css/estilos.css" rel="stylesheet">
-=======
-  <link href="{{ secure_asset('img/logo.png')}}" type="image/x-icon" rel="icon">
-  <link href="{{ secure_asset('icons/icomoon.min.css') }}" rel="stylesheet">
-  <link href="{{ secure_asset('css/modal.css') }}" rel="stylesheet">
-  <link href="{{ secure_asset('css/estilos.css') }}" rel="stylesheet">
->>>>>>> cb28d42300f589250e9e4e73c0bac9df75c8c4ae
 </head>
 
 <body>
@@ -42,11 +35,7 @@
     </div>
 
     <div class="imagen">
-<<<<<<< HEAD
       <img src="img/cabecera.webp" alt="Logo de Subasta total">
-=======
-      <img src="{{ secure_asset('img/cabecera.webp') }}" alt="Logo de Subasta total">
->>>>>>> cb28d42300f589250e9e4e73c0bac9df75c8c4ae
     </div>
 
   </header>
@@ -63,11 +52,7 @@
     <a href="#registroModal" data-target="#registroModal">Registrarse</a>
 
     <a href="javascript:void(0);" class="icon nav">
-<<<<<<< HEAD
       <img src="img/menu.svg" alt="Menu">
-=======
-      <img src="{{ secure_asset('img/menu.svg') }}" alt="Menu">
->>>>>>> cb28d42300f589250e9e4e73c0bac9df75c8c4ae
     </a>
 
   </nav>
@@ -95,11 +80,7 @@
 
       <div class="cardFeatures">
 
-<<<<<<< HEAD
         <img src="img/piedrasPreciosas.jpg" alt="Piedras muy valiosas">
-=======
-        <img src="{{ secure_asset('img/piedrasPreciosas.jpg') }}" alt="Piedras muy valiosas">
->>>>>>> cb28d42300f589250e9e4e73c0bac9df75c8c4ae
 
         <h2>Piedras preciosas</h2>
 
@@ -114,11 +95,7 @@
 
       <div class="cardFeatures">
 
-<<<<<<< HEAD
         <img src="img/autos.webp" alt="Autos de lujo">
-=======
-        <img src="{{ secure_asset('img/autos.webp') }}" alt="Autos de lujo">
->>>>>>> cb28d42300f589250e9e4e73c0bac9df75c8c4ae
 
         <h2>Vehículos lujosos</h2>
 
@@ -133,11 +110,7 @@
 
       <div class="cardFeatures">
 
-<<<<<<< HEAD
         <img src="img/mobiliario.jpg" alt="Hogar del futuro">
-=======
-        <img src="{{ secure_asset('img/mobiliario.jpg') }}" alt="Hogar del futuro">
->>>>>>> cb28d42300f589250e9e4e73c0bac9df75c8c4ae
 
         <h2>Futuro hogar</h2>
 
@@ -209,11 +182,7 @@
         <h1>Eventos únicos</h1>
 
         <div class="imgCallToActions">
-<<<<<<< HEAD
           <img src="img/evento.jpg" alt="Evento único">
-=======
-          <img src="{{ secure_asset('img/evento.jpg') }}" alt="Evento único">
->>>>>>> cb28d42300f589250e9e4e73c0bac9df75c8c4ae
         </div>
 
         <article class="contenido">
@@ -251,11 +220,7 @@
               <div class="boxProfesional">
 
                 <div class="imgProfesional">
-<<<<<<< HEAD
                   <img src="img/cara.png" alt="Cara del Administrador">
-=======
-                  <img src="{{ secure_asset('img/cara.png') }}" alt="Cara del Administrador">
->>>>>>> cb28d42300f589250e9e4e73c0bac9df75c8c4ae
                 </div>
 
                 <div class="datosProfesional">
@@ -287,11 +252,7 @@
       <div class="personal">
 
         <div class="imagen">
-<<<<<<< HEAD
           <img src="img/personal.jpg" alt="Imagen del personal">
-=======
-          <img src="{{ secure_asset('img/personal.jpg') }}" alt="Imagen del personal">
->>>>>>> cb28d42300f589250e9e4e73c0bac9df75c8c4ae
         </div>
 
         <article class="contenidoAbout">
@@ -329,13 +290,8 @@
     <p>Autor: Rafael Aguilar Muñoz</p>
   </footer>
 
-<<<<<<< HEAD
   <script src="js/app.js" defer></script>
   <script src="js/script.js" defer></script>
-=======
-  <script src="{{ secure_asset('js/app.js') }}" defer></script>
-  <script src="{{ secure_asset('js/script.js') }}" defer></script>
->>>>>>> cb28d42300f589250e9e4e73c0bac9df75c8c4ae
 
 </body>
 

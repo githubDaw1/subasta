@@ -10,11 +10,7 @@
 
     <form method="GET" enctype="multipart/form-data">
 
-<<<<<<< HEAD
       <input type="number" name="codigo" value="<?php echo htmlspecialchars(intval(count($pu)) + 1); ?>" required>
-=======
-      <input type="number" name="codigo" value="<?php echo intval(count($pu)) + 1; ?>" required>
->>>>>>> cb28d42300f589250e9e4e73c0bac9df75c8c4ae
       <input type="number" name="valor" required>
       <input type="date" name="fecha">
       <input type="number" name="codUsu" required disabled>

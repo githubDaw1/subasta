@@ -11,7 +11,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Registrarse</title>
-<<<<<<< HEAD
   <!--
     <link href="{{ secure_asset('img/logo.png') }}" type="image/x-icon" rel="icon">
     <link href="{{ secure_asset('css/login.css') }}" rel="stylesheet">
@@ -21,22 +20,13 @@
   <link href="img/logo.png" type="image/x-icon" rel="icon">
   <link href="css/login.css" rel="stylesheet">
   <link href="css/registro.css" rel="stylesheet">
-=======
-  <link href="{{ secure_asset('img/logo.png') }}" type="image/x-icon" rel="icon">
-  <link href="{{ secure_asset('css/login.css') }}" rel="stylesheet">
-  <link href="{{ secure_asset('css/registro.css') }}" rel="stylesheet">
->>>>>>> cb28d42300f589250e9e4e73c0bac9df75c8c4ae
 </head>
 
 <body>
 
   <header>
-<<<<<<< HEAD
     <!--<img src="{{ secure_asset('img/cabecera.webp') }}" alt="Logo de Subasta total">-->
     <img src="img/cabecera.webp" alt="Logo de Subasta total">
-=======
-    <img src="{{ secure_asset('img/cabecera.webp') }}" alt="Logo de Subasta total">
->>>>>>> cb28d42300f589250e9e4e73c0bac9df75c8c4ae
   </header>
 
   <nav class="topnav" id="myTopnav">
@@ -48,12 +38,8 @@
     <a href="/registro">Registrarse</a>
 
     <a href="javascript:void(0);" class="icon nav">
-<<<<<<< HEAD
       <!-- <img src="{{ secure_asset('img/menu.svg') }}" alt="Menu"> -->
       <img src="img/menu.svg" alt="Menu">
-=======
-      <img src="{{ secure_asset('img/menu.svg') }}" alt="Menu">
->>>>>>> cb28d42300f589250e9e4e73c0bac9df75c8c4ae
     </a>
 
   </nav>
@@ -284,7 +270,6 @@
     <p>Autor: Rafael Aguilar Muñoz</p>
   </footer>
 
-<<<<<<< HEAD
   <!--
     <script src="{{ secure_asset('js/app.js') }}" defer></script>
     <script src="{{ secure_asset('js/reloj.js') }}" defer></script>
@@ -294,11 +279,6 @@
   <script src="js/app.js" defer></script>
   <script src="js/reloj.js" defer></script>
   <script srtc="js/script.js" defer></script>
-=======
-  <script src="{{ secure_asset('js/app.js') }}" defer></script>
-  <script src="{{ secure_asset('js/reloj.js') }}" defer></script>
-  <script srtc="{{ secure_asset('js/script.js') }}"></script>
->>>>>>> cb28d42300f589250e9e4e73c0bac9df75c8c4ae
 
 </body>
 

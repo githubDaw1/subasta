@@ -10,20 +10,12 @@
 
     <form method="GET" enctype="multipart/form-data" class="usuario">
 
-<<<<<<< HEAD
       <input type="number" name="codigo" value="<?php echo htmlspecialchars(intval(count($users)) + 1); ?>" required>
-=======
-      <input type="number" name="codigo" value="<?php echo intval(count($users)) + 1; ?>" required>
->>>>>>> cb28d42300f589250e9e4e73c0bac9df75c8c4ae
       <input type="text" name="nombre" required>
       <input type="text" name="apellidos" required>
       <input type="email" name="usuario" required>
       <input type="password" name="secreto" required>
-<<<<<<< HEAD
       <input type="date" name="fecha" value="<?php echo htmlspecialchars(date("d/m/Y h:i:s")); ?>" disabled>
-=======
-      <input type="date" name="fecha" value="<?php echo date("d/m/Y h:i:s"); ?>" disabled>
->>>>>>> cb28d42300f589250e9e4e73c0bac9df75c8c4ae
 
       <div class="fin-float"></div>
 

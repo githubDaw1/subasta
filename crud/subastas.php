@@ -8,11 +8,7 @@
 
   <div class="formulario">
 
-<<<<<<< HEAD
     <form method="GET" enctype="multipart/form-data">
-=======
-    <form method="GET">
->>>>>>> cb28d42300f589250e9e4e73c0bac9df75c8c4ae
 
       <input type="number" name="codigo" value="<?php echo intval(count($sub)) + 1; ?>" required>
       <input type="date" name="fechaIni">
