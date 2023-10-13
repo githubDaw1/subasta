@@ -136,27 +136,27 @@
       <ul>
 
         <li>
-          <a href="/portal?idUsu=<?php echo htmlspecialchars($codigo); ?>&pagina=1" class="current">1</a>
+          <a href="/portal?idUsu='<?php echo htmlspecialchars($codigo); ?>'&pagina=1" class="current">1</a>
         </li>
 
         <li>
-          <a href="/portal?idUsu=<?php echo htmlspecialchars($codigo); ?>&pagina=2">2</a>
+          <a href="/portal?idUsu='<?php echo htmlspecialchars($codigo); ?>'&pagina=2">2</a>
         </li>
 
         <li>
-          <a href="/portal?idUsu=<?php echo htmlspecialchars($codigo9; ?>&pagina=3">3</a>
+          <a href="/portal?idUsu='<?php echo htmlspecialchars($codigo); ?>'&pagina=3">3</a>
         </li>
 
         <li>
-          <a href="/portal?idUsu=<?php echo htmlspecialchars($codigo); ?>&pagina=4">4</a>
+          <a href="/portal?idUsu='<?php echo htmlspecialchars($codigo); ?>'&pagina=4">4</a>
         </li>
 
         <li>
-          <a href="/portal?idUsu=<?php echo htmlspecialchars($codigo); ?>&pagina=5">5</a>
+          <a href="/portal?idUsu='<?php echo htmlspecialchars($codigo); ?>'&pagina=5">5</a>
         </li>
         <li>
 
-          <a href="/portal?idUsu=<?php echo htmlspecialchars($codigo); ?>&pagina=6">
+          <a href="/portal?idUsu='<?php echo htmlspecialchars($codigo); ?>'&pagina=6">
             <abbr title="Página">Pág.</abbr> siguiente
           </a>
 
